@@ -1,0 +1,436 @@
+<template>
+    <div v-if="schema" class="col-12">
+        <form>
+            <div class="table-filter-row">
+            
+                <div class="filter-search" :class="{'active':gridSearch}">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <i class="hotbox-icon hotbox-icon-search-3"></i>
+                        </div>
+                        <input type="text" 
+                            v-model="gridSearch" 
+                            class="form-control border-left-0" 
+                            :placeholder="schema.lang.searchPrompt || 'Search Grid'"
+                            @input="searchGrid"
+                            @keydown.enter.prevent="searchGrid">
+                    </div>
+                </div>
+                
+                <div v-if="gridFilters" class="filters">
+
+                    <filter-more v-if="gridData" 
+                        :meta="gridData.meta"
+                        :schema="schema"
+                        :gridFilters.sync="gridFilters"
+                        :columns.sync="gridColumns"
+                        :isDownloading="isDownloading"
+                        @downloadExport="downloadExport">
+                    </filter-more>
+                    
+                    <filter-in v-for="(filt,fkey) in schema.filters" v-if="filt.type=='wherein'"
+                        :key="fkey"
+                        :schema="filt"
+                        :filter="gridFilters.filter[fkey]" 
+                        @update="(upd) => {gridFilters.filter[fkey] = upd}">
+                    </filter-in>
+
+                    <filter-tabs v-for="(filt,fkey) in schema.filters" v-if="filt.type=='tabular'"
+                        :key="fkey"
+                        :schema="filt"
+                        :filter="gridFilters.filter[fkey]"
+                        @update="(upd) => {gridFilters.filter[fkey] = upd}">
+                    </filter-tabs>
+                    
+                </div>
+
+            </div>
+        </form>
+
+        
+        <loading :display="isLoading" type="loadGrid" />
+        <transition name="bo-slide">
+            <b-table v-if="schema && gridFilters" striped hover                
+                id="users_table"
+                primary-key="id"
+                :items="(gridData) ? gridData.data : []"
+                :fields="columnsVisible"
+                :busy.sync="isLoading"
+                :show-empty="true"
+                :sort-by.sync="gridFilters.sortBy"
+                :sort-desc.sync="gridFilters.orderDesc"
+                :no-local-sorting="true"
+                :no-local-filtering="true"
+                :per-page="0"
+                :tbodyTrClass="renderRowBg"
+                responsive="md"
+                stacked="sm"
+            >
+              
+                <template v-for="(field,ind) in schema.meta.fields" v-slot:head(field.key)="column">
+                  <em>
+                    <i v-if="field.icon" :class="field.icon"></i> 
+                    <i v-if="field.description" class="hotbox-icon hotbox-icon-c-question" :title="field.name" v-b-tooltip.hover="field.description"></i> 
+                    {{ column.label }}
+                  </em>
+                </template>
+
+
+                <template v-slot:cell(avatar)="row">
+                    <img :src="(row.item.avatar) ? row.item.avatar : schema.model.avatar" class="responsive" width="65">
+                </template>
+
+                <template v-slot:cell(email)="row">
+                    {{ row.value }}<br>
+                    <span class="small"><b>As {{ row.item.type | renderValue(schema.form.type.values) }} 
+                    <i class="float-right" :class="{'show-green':row.item.status=='activated','show-red':row.item.status=='denied','show-orange':row.item.status=='pending_activation'}">
+                        ({{ row.item.status | renderValue(schema.form.status.values) }})
+                    </i></b></span>
+                </template>
+
+                <template v-slot:cell(name)="row">
+                    {{ row.value }}<br>
+                    <span class="small">Roles: {{ renderRoleList(row.item.roles) }}</span>
+                </template>
+
+                <template v-slot:cell(settings)="row">
+                    <span v-if="row.item.settings">
+                    Contact: {{ row.item.settings.contact_email }} {{ row.item.settings.contact_phone }}<br>
+                    <span class="small" v-if="row.item.type=='staff'">Employee Lic: {{ row.item.settings.employee_licensenum }}, Hired on: {{ row.item.settings.employee_hired_on | localDate }}</span>
+                    </span>
+                    <span v-else>
+                        <a href="" class="" @click.prevent="loadModal(row.item.id,'edit')">Add Employee/Staff Settings &raquo;</a>
+                    </span>
+                </template>
+                
+                <template v-slot:cell(created_at)="row">
+                    {{ row.value | localDate }}
+                </template>
+                
+                <template v-slot:cell(updated_at)="row">
+                    {{ row.value | localDate }}
+                </template>
+                
+                <template v-slot:cell(actions)="row">
+                    <div class="dropdown" v-if="$store.getters.userCan('Staff Update') || $store.state.user.id==row.item.id">
+                        <a data-toggle="dropdown" class="" aria-haspopup="true" aria-expanded="false">
+                            <i class="ti-more-alt"></i>
+                        </a>
+                        <div class="dropdown-menu tight dropdown-menu-right">
+                            <a href="" class="dropdown-item" @click.prevent="loadModal(row.item.id,'edit')"><i class="hotbox-icon hotbox-icon-pencil"></i> Manage User Profile</a>
+                            <a href="" class="dropdown-item" @click.prevent="loadModal(row.item.id,'password')"><i class="hotbox-icon hotbox-icon-key-26"></i> Change Password</a>
+
+                            <a v-if="row.item.status==='archived'" class="dropdown-item action-danger" style="" @click="unArchive(row.item.id)"><i class="hotbox-icon hotbox-icon-redo-81"></i> UnArchive User</a>
+                            <a v-else class="dropdown-item action-danger" @click="confirmDelete(row.item.id)"><i class="hotbox-icon hotbox-icon-trash-round"></i> Archive User</a>
+                        </div>
+                    </div>
+                </template>
+
+                <template v-slot:table-caption v-if="gridData">
+                    <div v-if="gridData.data.length>0" class="paginate-foot">
+                        <span v-if="gridData.meta">
+                            Showing {{ ((gridData.meta.per_page*(gridPage-1))+1) }} to {{ (((gridData.meta.per_page*gridPage) < gridData.meta.total) ? (gridData.meta.per_page*gridPage) : gridData.meta.total) }} of {{ gridData.meta.total }} {{ (schema.lang.items) ? schema.lang.items : 'Records' }}
+                            <form-boolean :declared="gridArchive" :schema="{name:'archived',title:'Include Archived Items'}" @input="(upd) => {gridArchive = upd; }" class="mt-1"/>
+                        </span>
+                        <span v-else>Showing All {{ (schema.lang.items) ? schema.lang.items : 'Records' }}</span>
+                        
+                        <div class="table-pager-footer">
+                            <b-pagination v-if="gridData.meta.total>0"
+                              v-model="gridPage"
+                              :total-rows="gridData.meta.total"
+                              :per-page="gridData.meta.per_page"
+                              aria-controls="users_table"
+                            ></b-pagination>
+                        </div>
+                    </div>
+                </template>
+                
+                <template v-slot:empty>
+                    <div v-if="!isLoading">
+                        <form-boolean :declared="gridArchive" :schema="{name:'archived',title:'Include Archived Items'}" @input="(upd) => {gridArchive = upd; }" class="mt-1"/>
+                        <img src="/images/logo.png" alt="No Results" class="" width="115" />
+                        <h4>Hmm, There are currently no Results.</h4>
+                    </div><div v-else class="h-100">&nbsp;</div>
+                </template>
+
+            </b-table>
+        </transition>
+
+
+        <b-modal centered ref="editModal"
+            v-model="editModal"
+            size="lg"
+            header-bg-variant="light"
+            header-text-variant="primary">
+          
+            <template slot="modal-header">
+              <i class="modal-top-close fal ti-close" @click="editModal=!editModal"></i>
+              <h5 class="w-100 mb-0 text-center">Staff Management</h5>
+            </template>
+          
+              <edit-modal v-if="editModal"
+                :id="editRef"
+                :type="editType"
+                @refresh="refreshFromModal">
+              </edit-modal>
+          
+            <template slot="modal-footer">
+                <span class="btn-label btn-sm btn-light float-right" @click="editModal=!editModal">Close</span>
+            </template>
+        </b-modal>
+
+    </div>
+    <div v-else>
+        <loading :display="schema ? false : true" type="loadPage" />
+    </div>
+</template>
+
+<script>
+
+    import EditModal from './editModal';
+    import Grid from '../../../../models/User';
+    import _ from 'lodash';
+
+
+    export default {
+        
+        props: {
+            model: {
+                type: String,
+                default: 'User'
+            },
+            module: {
+                type: String,
+                default: 'auth',
+            },
+            filters: {                                                          // optional initial filters (filters.filter) object can be passed via this prop!
+                type: Object,
+                default: () => {}
+            }
+        },
+        
+        data(){
+            return {
+                isLoading: false,
+                isDownloading: false,
+                shouldReload: false,
+                gridData: null,
+                gridSearch:null,
+                gridPage:1,
+                gridColumns: null,
+                gridFilters:null,
+                gridArchive:false,
+                editModal:(this.$route.params.showProfile) ? this.$route.params.showProfile : false,
+                editRef:(this.$route.params.profileId) ? this.$route.params.profileId : 0,
+                editType:'edit'
+            };
+        },
+        
+        components :{
+            EditModal
+        },
+        
+        mounted() {
+            //this.gridSearch = this.$store.state[this.module].search || null;    // if we have a search state - populate
+            this.gridSearch = this.$route.query.search || null;
+            
+            if(this.schema){
+                this.setFilters(this.$store.state.disp.location);               // if we have schema, then set filters, else we watch schema load/change and then set.
+                this.gridColumns = this.schema.meta.fields;                     // for some reason, the schema changing on edit doesnt register - need to reload upon mount
+            }
+        },
+        
+        methods: {
+            async fetchGrid(){                                                  // get the grid data
+                if(!this.schema || !this.gridFilters) return false;             // dont fetch grid without a schema or the filters loaded, this will be trigered when they load
+                else if(this.isLoading == true) return false;                   // do not fetch if we are already fetching
+
+                this.isLoading = true;
+                this.gridData = await new Grid()
+                    .setFilters(this.gridFilters.filter)
+                    .params({
+                        search: this.gridSearch,
+                        archived: (this.gridArchive) ? 1 : 0
+                    })
+                    .orderBy(((this.gridFilters.orderDesc) ? '-' : '')+this.gridFilters.sortBy)
+                    .limit(this.gridFilters.pageLimit)
+                    .page(this.gridPage)
+                    .get();
+                this.isLoading = false;
+            },
+            
+            searchGrid: _.debounce(function (e) {                               // upon search filter update, throttle .5 sec grid and scope refresh
+                this.gridPage = 1;
+                //this.$store.commit(this.module+'/setSearch',this.gridSearch);   // persist search setting
+                this.fetchGrid();
+            }, 500),
+            
+            setFilters(focus='all'){
+                if(!this.schema) return false;
+                this.gridFilters = {                                            // (re)set the filters from schema (which fetchGrid will watch and run)
+                    pageLimit: 50,
+                    sortBy: Object.keys(this.schema.filters).find(key => this.schema.filters[key].type === 'daterange') || 'created_at', // use first daterange filter field(key) in schema
+                    orderDesc: false,
+                    //filter: Object.assign({}, ...Object.keys(this.schema.filters).map((k) => { return {[k]:this.schema.filters[k].values.map((v) => { return v.id; })}; }),this.filters)
+                    filter: Object.assign({}, ...Object.keys(this.schema.filters).map((k) => { return {[k]:['all']}; }),this.filters)
+                };
+            },
+            
+            parseStatus(value){
+                let schemaValue = this.schema.form.status.values.find(k => k.id==value);
+                return (schemaValue) ? schemaValue.name : value;
+            },
+            
+            loadModal(ref,typ){
+                this.editRef = ref;
+                this.editType = typ;
+                this.editModal = true;
+            },
+            
+            refreshFromModal(upd){
+                this.editModal=!this.editModal;
+                this.shouldReload = true;                                       // in the ecent the schema doesnt change from anything edited in the modal, flag a relaod.
+            },
+            
+            renderRoleList(list){
+                return (list) ? list.map(v=>{return v.name;}).join(', ') : 'n/a';
+            },
+
+            confirmDelete(id){
+                this.$swal.fire({
+                  title: 'Are you sure?',
+                  text: 'This will Archive this User',
+                  type: 'warning',
+                  showCancelButton: true,
+                  confirmButtonText: 'Yes, Archive User'
+                }).then(async (result) => {
+                  if(result.value){
+                    this.isLoading = true;
+                    
+                    let withPin = await this.requirePin('Please Enter an Admin PIN to archive this User');
+                    if(withPin===false){ 
+                        this.isLoading = false;
+                        return false;                                           // an adminpin couldnt be validated HINT add error message here if desired.
+                    }
+                    
+                    new Grid({id:id}).delete().then(response => {
+                        this.isLoading = false;
+                        this.$store.dispatch(this.module+'/setSchemas',this.model.toLowerCase()); // get schema for new agg data
+                        this.$announcer(response);
+                        this.fetchGrid();                                       // if we deleted an item, then refetch..
+        	        }).catch(error => {
+        	            this.isLoading = false;
+                        this.$announcer(error.response);
+        	        });
+        	        
+        	        return true;
+                  }
+                });
+            },
+            
+            unArchive(id){
+                this.isLoading = true;
+                axios.get('/api/v1/'+this.schema.meta.resource+'/'+id+'/unarchive').then(response =>  {
+                    this.isLoading = false;
+                    this.$store.dispatch(this.module+'/setSchemas',this.model.toLowerCase()); // get schema for new agg data
+                    this.$announcer(response);
+                    this.fetchGrid();                                       // if we deleted an item, then refetch..
+                }).catch(error => {
+                    this.isLoading = false;
+                    this.$announcer(error.response);
+                });
+            },
+
+            downloadExport(typ){
+                this.isDownloading = true;
+                    axios({
+                        url: new Grid().setFilters(this.gridFilters.filter).custom(this.schema.meta.resource+'/export/'+typ).getUrl(),
+                        method: 'GET',
+                        responseType: 'blob', // important
+                    }).then((response) => {
+                        this.isDownloading = false;
+                        this.downloadFile(response);
+                    }).catch(error => {
+        	            this.isDownloading = false;
+                        this.$announcer(error.response);
+        	        });
+            },
+
+            renderRowBg(item,type){
+                if(!item) return null;
+                return {
+                    'grid-table-rows' : true,
+                    'is-archived': item.status==='archived',
+                };
+            },
+
+            alertDisabledArchive() {
+                this.$swal.fire({
+                    text: 'User Already Archived.',
+                    title: 'Archiving Unavailable',
+                    type: 'warning',
+                    confirmButtonText: 'OK'}
+                )
+            }
+        },
+        
+        computed: {
+            schema(){
+                return this.$store.state[this.module][this.model.toLowerCase()+'Schema'];
+            },
+
+            columnsVisible(){
+               return (this.gridColumns) ? this.gridColumns.filter((col) => { return (col.toggle === true || !col.hasOwnProperty('toggle')); }) : [];
+            },
+            
+            gridFocus(){
+    		    return this.$store.state[this.module].focus;
+    		}
+        },
+        
+        watch: {
+            gridFilters:{
+                handler(to,from){
+                    this.gridPage = 1;                                          // reset page to 1 if filters change
+                    if(this.gridFilters) this.fetchGrid();
+                },
+                deep: true
+            },
+
+            gridPage(to,from){
+                if(this.gridFilters) this.fetchGrid();
+            },
+            
+            schema:{
+                handler(to,from){
+                    if(!from && to) this.setFilters();                          // if we just loaded a new schema data, then set filters (otherwise, this is set on mounted)
+                    else if(!_.isEqual(to.filters, from.filters)) this.setFilters(this.gridFilters.filter.location_id[0]); // if a schema filter change - reset the filters - which will refresh the grid
+                    else if(this.shouldReload==true){                           // or if we set a should reload flag, reload with refreshed schema
+                        this.fetchGrid();
+                        this.shouldReload = false;
+                    }
+                    
+                    if(to && !this.gridColumns) this.gridColumns = to.meta.fields; // load gridColumns if not already loaded.
+                },
+                deep: true
+            },
+            
+            gridFocus(to,from){
+                if(to && this.gridFilters && !_.isEqual(to,from)){
+                    if(to!='all' && from!='all') this.gridSearch = null;        // if we are changing focus tab, clear search
+                    if(this.gridFilters) this.gridFilters.filter['type'] = [to];
+                }
+            },
+
+            gridArchive(to,from){
+                if(this.gridFilters) this.fetchGrid();
+            },
+        }
+        
+    };
+    
+</script>
+
+<style>
+
+</style>

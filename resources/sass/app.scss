@@ -1,0 +1,53 @@
+/**
+This file is the main style definition for the entire Hotbox application.
+
+Here we define the fonts used, import Bootstrap 4, import the Now UI theme,
+and define GLOBAL styles used throughout the application.
+
+Global styles are those used in components throughout the application.
+For example, tweaks to the main layout of the application, as well as to
+individual components like Datatables.net.
+
+Plugin styles:
+
+If a style will only apply to a specific plugin, just create a new scss
+file in the plugins directory and import it in the plugins.scss file.
+
+HOW TO DEVELOP
+
+In the root directory of the application, enter the command:
+
+    npm run development
+
+You should see information printed to the screen, including the line:
+
+    DONE  Compiled successfully in XXXms
+
+Any time you make a change to the files, the application stylesheet and
+javascript code will be automatically re-built.  You may need to reload
+your browser to see changes.
+ */
+ 
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700,200,300);
+@import './../plugins/themify-icons/themify-icons';
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+@import "now-ui-dashboard";
+//@import "nucleo-font/nucleo";
+@import "hotbox-font/nucleo";
+
+@import "loader";
+@import "vue-ui";
+@import "spinners";
+@import "bootstrap-notifications";
+@import 'notify';
+@import "plugins";
+
+@import "custom";

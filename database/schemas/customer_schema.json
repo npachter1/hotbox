@@ -1,0 +1,618 @@
+{
+  "code": "customer_schema",
+  "type": "model",
+  "content": {
+    "model": {
+      "id": 0,
+      "location_id": null,
+      "addressbook_id": null,
+      "metrc_id": null,
+      "type": "recreational",
+      "first_name": null,
+      "last_name": null,
+      "alias": null,
+      "contact_name": null,
+      "receiving_party_name": null,
+      "employee_position": null,
+      "tax_exempt_number": null,
+      "license_type": null,
+      "password": null,
+      "middle_name": null,
+      "online_login_email": null,
+      "birthdate": null,
+      "gender": null,
+      "mmj_card_state": null,
+      "mmj_card_expiry_date": null,
+      "drivers_license_state": null,
+      "drivers_license_expiry_date": null,
+      "document_image": null,
+      "tax_exempt": false,
+      "sms_optin": false,
+      "email_optin": false,
+      "settings": {
+        "med_carry_weight": null,
+        "med_plant_count": null,
+        "med_conditions": [],
+        "wholesale_license_id": null,
+        "rereffal": "visit"
+      },
+      "preferences": [],
+      "comments": null,
+      "total_orders": 0,
+      "total_reward_points": null,
+      "total_spent": null,
+      "referred_by": null,
+      "archived_at": null,
+      "created_at": null,
+      "updated_at": null,
+      "address": {
+        "email": null,
+        "cell": null,
+        "country": "US"
+      },
+      "rewards": [],
+      "sales": []
+    },
+    "filters": {
+      "type": {
+        "type": "wherein",
+        "name": "By Type",
+        "values": []
+      },
+      "location_id": {
+        "type": "wherein",
+        "name": "By Location",
+        "values": []
+      },
+      "group_id": {
+        "type": "wherein",
+        "name": "By Group",
+        "values": []
+      }
+    },
+    "form": {
+      "type": {
+        "type": "select",
+        "name": "type",
+        "title": "Customer Type",
+        "container": "col-12 col-sm-12 mb-3 clearfix",
+        "values": [
+          {
+            "id": "recreational",
+            "name": "Recreational"
+          },
+          {
+            "id": "patient",
+            "name": "Registered Patient"
+          },
+          {
+            "id": "wholesale",
+            "name": "Wholesale"
+          },
+          {
+            "id": "caregiver",
+            "name": "Caregiver"
+          }
+        ]
+      },
+      "settings": {
+        "type": "simpleobject",
+        "title": "Patient Settings",
+        "container": "col-12 mt-3",
+        "properties": {
+          "med_carry_weight": {
+            "type": "text",
+            "scope": "type",
+            "key": "patient",
+            "name": "settings.med_carry_weight",
+            "title": "Carry Weight:",
+            "append": 1,
+            "append_text": "/Oz",
+            "placeholder": ""
+          },
+          "med_plant_count": {
+            "type": "number",
+            "scope": "type",
+            "key": "patient",
+            "name": "settings.med_plant_count",
+            "title": "Plant Count"
+          },
+          "med_conditions": {
+            "type": "list",
+            "scope": "type",
+            "key": "patient",
+            "name": "settings.med_conditions",
+            "title": "Medical Conditions"
+          },
+          "wholesale_license_id": {
+            "type": "text",
+            "scope": "type",
+            "key": "wholesale",
+            "name": "settings.wholesale_license_id",
+            "title": "Dispensary License/ID"
+          },
+          "referral": {
+            "type": "select",
+            "scope": "type",
+            "key": "none",
+            "name": "settings.referral",
+            "title": "How did you hear about us?",
+            "values": [
+              {
+                "id": "visit",
+                "name": "Just Visiting"
+              },
+              {
+                "id": "ad",
+                "name": "An Advertisement / Circular"
+              },
+              {
+                "id": "referral",
+                "name": "A Friend.."
+              }
+            ]
+          }
+        }
+      },
+      "first_name": {
+        "type": "text",
+        "name": "first_name",
+        "title": "First Name",
+        "placeholder": "John",
+        "container": "col-12 col-sm-3 clearfix"
+      },
+      "middle_name": {
+        "type": "text",
+        "name": "middle_name",
+        "title": "Middle Name",
+        "placeholder": "E.",
+        "container": "col-12 col-sm-3"
+      },
+      "last_name": {
+        "type": "text",
+        "name": "last_name",
+        "title": "Last Name",
+        "placeholder": "Doe",
+        "container": "col-12 col-sm-3"
+      },
+      "company_name": {
+        "type": "text",
+        "name": "first_name",
+        "title": "Company Name",
+        "placeholder": "Acne Corp, Inc.",
+        "container": "col-12 col-sm-6 clearfix"
+      },
+      "alias": {
+        "type": "text",
+        "name": "alias",
+        "title": "Alias",
+        "description": "If you wish to remain annomous for our staff, or on the Queue display, feel free to enter an alias here..",
+        "placeholder": "Smokey McPots"
+      },
+      "contact_name": {
+        "type": "text",
+        "name": "contact_name",
+        "title": "Contact Name",
+        "placeholder": "",
+        "container": "col-12 col-sm-6 clearfix"
+      },
+      "receiving_party_name": {
+        "type": "text",
+        "name": "receiving_party_name",
+        "title": "Receiving Party Name",
+        "placeholder": "",
+        "container": "col-12 col-sm-6 clearfix"
+      },
+      "employee_position": {
+        "type": "text",
+        "name": "employee_position",
+        "title": "Employee Position",
+        "placeholder": "",
+        "container": "col-12 col-sm-6 clearfix"
+      },
+      "tax_exempt_number": {
+        "type": "text",
+        "name": "tax_exempt_number",
+        "title": "Tax Exempt Number",
+        "placeholder": "",
+        "container": "col-12 col-sm-6 clearfix"
+      },
+      "license_type": {
+        "type": "select",
+        "name": "license_type",
+        "title": "License Type",
+        "container": "col-12 col-sm-12 mb-3 clearfix",
+        "values": [
+          {
+            "id": "grow",
+            "name": "Grow"
+          },
+          {
+            "id": "patient",
+            "name": "Registered Patient"
+          },
+          {
+            "id": "processor",
+            "name": "Processor"
+          },
+          {
+            "id": "dispensary",
+            "name": "Dispensary"
+          }
+        ]
+      },
+      "email": {
+        "type": "text",
+        "name": "address.email",
+        "title": "Contact Email",
+        "placeholder": "johndoe@widgets.com",
+        "validation": "email",
+        "container": "col-12 col-sm-6",
+        "batchable": true
+      },
+      "password": {
+        "type": "text",
+        "name": "password",
+        "title": "Password",
+        "placeholder": "",
+        "container": "col-12 col-sm-6 clearfix"
+      },
+      "phone": {
+        "type": "text",
+        "name": "address.phone",
+        "title": "Contact Phone",
+        "placeholder": "555 555-5555",
+        "validation": "",
+        "container": "col-12 col-sm-6",
+        "prepend": "hotbox-icon hotbox-icon-phone"
+      },
+      "comments": {
+        "type": "text",
+        "name": "comments",
+        "title": "Comments",
+        "description": "",
+        "placeholder": "Customer Comments / Notes",
+        "container": "col-12 col-sm-6"
+      },
+      "birthdate": {
+        "type": "datetime",
+        "name": "birthdate",
+        "title": "Birthday",
+        "validation": "required",
+        "container": "col-12 col-sm-3",
+        "append": "hotbox-icon hotbox-icon-calendar-date"
+      },
+      "drivers_license_state": {
+        "type": "select",
+        "name": "region",
+        "title": "Resident of",
+        "validation": "required",
+        "container": "col-12 col-sm-6",
+        "searchable": true,
+        "placeholder": "Search/Select Region/State",
+        "values": []
+      },
+      "mmj_card_state": {
+        "type": "select",
+        "name": "mmj_card_state",
+        "title": "State",
+        "validation": "required",
+        "container": "col-12 col-sm-6",
+        "searchable": true,
+        "placeholder": "Search/Select Region/State",
+        "values": []
+      },
+      "document_image": {
+        "type": "file",
+        "name": "document_image",
+        "title": "Document Attachment"
+      },
+      "tax_exempt": {
+        "type": "boolean",
+        "name": "tax_exempt",
+        "title": "Tax Exempt?",
+        "container": "col-12 col-sm-12 mt-2"
+      },
+      "email_optin": {
+        "type": "boolean",
+        "name": "email_optin",
+        "title": "Email Optin",
+        "container": "col-12 col-sm-12 mt-3 clearfix",
+        "batchable": true
+      },
+      "sms_optin": {
+        "type": "boolean",
+        "name": "sms_optin",
+        "title": "SMS Optin",
+        "container": "col-12 col-sm-12 mt-2",
+        "batchable": true
+      },
+      "gender": {
+        "type": "text",
+        "name": "gender",
+        "title": "Gender",
+        "description": "",
+        "container": "col-12 col-sm-6"
+      },
+      "address1": {
+        "type": "text",
+        "name": "address.address1",
+        "title": "Address1",
+        "description": "",
+        "container": "col-12 col-sm-6"
+      },
+      "address2": {
+        "type": "text",
+        "name": "address.address2",
+        "title": "Address2",
+        "description": "",
+        "container": "col-12 col-sm-6"
+      },
+      "city": {
+        "type": "text",
+        "name": "address.city",
+        "title": "City",
+        "description": "",
+        "container": "col-12 col-sm-6"
+      },
+      "zip": {
+        "type": "text",
+        "name": "address.zip",
+        "title": "Zip",
+        "description": "",
+        "container": "col-12 col-sm-6"
+      },
+      "country": {
+        "type": "select",
+        "name": "address.country",
+        "title": "Country",
+        "validation": "required",
+        "container": "col-12 col-sm-6",
+        "searchable": true,
+        "placeholder": "Search/Select Country",
+        "values": []
+      },
+      "mmj_card": {
+        "type": "text",
+        "name": "mmj_card",
+        "title": "Medical License",
+        "description": "",
+        "container": "col-12 col-sm-6"
+      },
+      "drivers_license": {
+        "type": "text",
+        "name": "drivers_license",
+        "title": "Drivers License",
+        "description": "",
+        "container": "col-12 col-sm-6"
+      },
+      "referred_by": {
+        "type": "search",
+        "name": "referred_by",
+        "title": "Referred By",
+        "placeholder": "Search by Customer Name",
+        "container": "drsection-content mt-2",
+        "values": [],
+        "search_resource": "admin/dispensary/customers",
+        "search_fields": [
+          "first_name",
+          "middle_name",
+          "last_name",
+          "alias"
+        ]
+      },
+      "mmj_card_expiry_date": {
+        "type": "datetime",
+        "name": "mmj_card_expiry_date",
+        "title": "Expiration",
+        "validation": "",
+        "container": "col-12 col-sm-3",
+        "append": "hotbox-icon hotbox-icon-calendar-date"
+      },
+      "drivers_license_expiry_date": {
+        "type": "datetime",
+        "name": "drivers_license_expiry_date",
+        "title": "Expiration",
+        "validation": "",
+        "container": "col-12 col-sm-3",
+        "append": "hotbox-icon hotbox-icon-calendar-date"
+      },
+      "location_id": {
+        "type": "select",
+        "name": "location_id",
+        "title": "Location",
+        "container": "col-12 col-sm-6",
+        "searchable": true,
+        "placeholder": "Select Location",
+        "values": []
+      },
+      "preferences": {
+        "type": "multiselect",
+        "name": "preferences",
+        "title": "Customer Preferences",
+        "container": "col-12 col-sm-12 mt-2 mb-3",
+        "batchable": true,
+        "values": [
+          {
+            "id": "bud",
+            "name": "Buds"
+          },
+          {
+            "id": "joint",
+            "name": "Joints"
+          },
+          {
+            "id": "resin",
+            "name": "Resin"
+          },
+          {
+            "id": "shatter",
+            "name": "Shatter"
+          },
+          {
+            "id": "topicals",
+            "name": "Topicals"
+          },
+          {
+            "id": "shake",
+            "name": "Shake/Trim"
+          },
+          {
+            "id": "concentrate",
+            "name": "Concentrates"
+          },
+          {
+            "id": "infused_edible",
+            "name": "Infused (Edible)"
+          },
+          {
+            "id": "infused",
+            "name": "Infused (InEdible)"
+          }
+        ]
+      },
+      "account_payment": {
+        "type": "custom",
+        "name": "account_payment",
+        "title": "Amount Paid",
+        "placeholder": "9.95",
+        "validation": "required|min_value:0.01",
+        "prepend": "hotbox-icon hotbox-icon-currency-dollar"
+      }
+    },
+    "lang": {
+      "items": "Customers",
+      "searchPrompt": "Search by Name"
+    },
+    "meta": {
+      "fields": [
+        {
+          "key": "batch_ids",
+          "label": "Sel",
+          "sortable": false
+        },
+        {
+          "key": "created_at",
+          "label": "Created On",
+          "sortable": true
+        },
+        {
+          "key": "first_name",
+          "label": "First",
+          "sortable": true
+        },
+        {
+          "key": "middle_name",
+          "label": "Middle",
+          "sortable": true,
+          "toggle": false
+        },
+        {
+          "key": "last_name",
+          "label": "Last",
+          "sortable": true,
+          "toggle": true
+        },
+        {
+          "key": "email",
+          "label": "Email",
+          "sortable": false,
+          "toggle": true
+        },
+        {
+          "key": "phone",
+          "label": "Phone",
+          "sortable": false,
+          "toggle": false
+        },
+        {
+          "key": "address",
+          "label": "Address",
+          "sortable": false,
+          "toggle": true
+        },
+        {
+          "key": "birthdate",
+          "label": "Age",
+          "sortable": true,
+          "toggle": true
+        },
+        {
+          "key": "drivers_license_expiry_date",
+          "label": "Drivers License Expires",
+          "sortable": true,
+          "toggle": true
+        },
+        {
+          "key": "mmj_card_expiry_date",
+          "label": "MMJ Card Expiers",
+          "sortable": true,
+          "toggle": false
+        },
+        {
+          "key": "settings",
+          "label": "Settings",
+          "sortable": false,
+          "toggle": false
+        },
+        {
+          "key": "total_reward_points",
+          "label": "Reward Points",
+          "sortable": true,
+          "toggle": false
+        },
+        {
+          "key": "referral_count",
+          "label": "Referral Count",
+          "sortable": true,
+          "toggle": false
+        },
+        {
+          "key": "total_spent",
+          "label": "Total Spent",
+          "sortable": true,
+          "toggle": false
+        },
+        {
+          "key": "email_optin",
+          "label": "Email Optin",
+          "sortable": false,
+          "toggle": false
+        },
+        {
+          "key": "sms_optin",
+          "label": "SMS Optin",
+          "sortable": false,
+          "toggle": false
+        },
+        {
+          "key": "actions",
+          "label": "",
+          "sortable": false
+        },
+        {
+          "key": "comments",
+          "label": "Comments",
+          "sortable": false,
+          "toggle": false
+        }
+      ],
+      "pos_fields": [
+        {
+          "key": "alias",
+          "label": "Customer Checkin",
+          "sortable": true,
+          "tdAttr": {
+            "width": "60%"
+          }
+        }
+      ],
+      "can_edit": [
+        "Customers Update"
+      ],
+      "resource": "admin/dispensary/customers"
+    }
+  },
+  "created_at": "2019-07-29 06:51:29",
+  "updated_at": "2020-04-12 21:29:18"
+}

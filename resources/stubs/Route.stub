@@ -1,0 +1,16 @@
+<?php 
+
+/* {{service}}/{{module}}/{{model}} api routes */
+Route::group(['middleware' => ['auth:api'],'namespace' => 'Api\V1\{{service}}', 'prefix' => 'v1/admin/{{serviceLowerCase}}', 'as' => 'v1.admin.{{serviceLowerCase}}.'], function (){
+
+    Route::get('/{{modelPluralLowerCase}}', '{{model}}Controller@index');
+    Route::get('/{{modelPluralLowerCase}}/batch', '{{model}}Controller@batch');
+    Route::get('/{{modelPluralLowerCase}}/export/{type}', '{{model}}Controller@exportGrid');
+    Route::get('/{{modelPluralLowerCase}}/{id}/export/{type}', '{{model}}Controller@exportView');
+    Route::get('/{{modelPluralLowerCase}}/{id}', '{{model}}Controller@show');
+    Route::post('/{{modelPluralLowerCase}}/batch/{type}', '{{model}}Controller@updateBatch');
+    Route::post('/{{modelPluralLowerCase}}', '{{model}}Controller@store');
+    Route::put('/{{modelPluralLowerCase}}/{id}', '{{model}}Controller@update');
+    Route::delete('/{{modelPluralLowerCase}}/{id}', '{{model}}Controller@destroy');
+
+});

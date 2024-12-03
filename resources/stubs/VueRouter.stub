@@ -1,0 +1,19 @@
+import store from '../store/store.js';
+
+/* {{module}} / {{model}} Vue Views */
+const {{moduleLowerCase}}View = {
+                path: 'admin/{{moduleLowerCase}}',
+                component: () => import(/* webpackChunkName: "js/view-{{serviceLowerCase}}" */ '../components/views/{{moduleLowerCase}}/index'),
+                meta: { },
+                name: '{{moduleLowerCase}}',                                    // must match $store.state.sections[].module
+                beforeEnter: async(to, from, next) => {
+                    await store.dispatch('setLocationSection',to);              // set the location section and its schemas
+                    if(to.query.search) store.commit('{{moduleLowerCase}}/setSearch',to.query.search || null);
+                    if(to.params.focus) store.commit('auth/setFocus',to.params.focus || null);
+                    next();
+                },
+                children: {{moduleVueViews}}
+            };
+            
+
+export default {{moduleLowerCase}}View;

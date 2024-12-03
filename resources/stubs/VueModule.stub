@@ -1,0 +1,50 @@
+import axios from "axios";
+
+const state = {
+  search: null,
+  {{moduleSchemaList}}
+};
+
+const getters = {
+
+};
+
+const mutations = {
+  setView(state, payload) {
+    state.view = payload;
+  },
+
+  setSearch(state, payload) {
+    state.search = payload;
+  },
+
+  setFocus(state, payload) {
+    state.focus = payload;
+  },
+  
+  setSchema(state,payload){
+    state[payload.key] = payload.data;
+  }
+  
+};
+
+const actions = {
+  setSchemas({commit,dispatch},list){
+    return axios.get('/api/v1/admin/schemas/{{serviceLowerCase}}/'+list).then(response =>  {
+      if(response.data)
+        Object.keys(response.data).forEach((k)=>{
+          commit('setSchema',{data:response.data[k],key:k});
+        });
+    }).catch(error => {
+      //
+    });
+  }
+};
+
+export default {
+  state,
+  mutations,
+  actions,
+  getters,
+  namespaced: true
+};

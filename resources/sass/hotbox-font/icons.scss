@@ -1,0 +1,5193 @@
+/*------------------------
+	icons
+-------------------------*/
+@function unicode($str) {
+  @return unquote("\"\\#{$str}\"");
+}
+
+$hotbox-icon-back-78: unicode(ea02);
+$hotbox-icon-back-80: unicode(ea03);
+$hotbox-icon-block-bottom-left: unicode(ea04);
+$hotbox-icon-block-bottom-right: unicode(ea05);
+$hotbox-icon-block-down: unicode(ea06);
+$hotbox-icon-block-left: unicode(ea07);
+$hotbox-icon-block-right: unicode(ea08);
+$hotbox-icon-block-top-left: unicode(ea09);
+$hotbox-icon-block-top-right: unicode(ea0a);
+$hotbox-icon-block-up: unicode(ea0b);
+$hotbox-icon-bold-direction: unicode(ea0c);
+$hotbox-icon-bold-down: unicode(ea0d);
+$hotbox-icon-bold-left: unicode(ea0e);
+$hotbox-icon-bold-right: unicode(ea0f);
+$hotbox-icon-bold-up: unicode(ea10);
+$hotbox-icon-centralize: unicode(ea11);
+$hotbox-icon-circle-down-12: unicode(ea12);
+$hotbox-icon-circle-down-40: unicode(ea13);
+$hotbox-icon-circle-down: unicode(ea14);
+$hotbox-icon-circle-in: unicode(ea15);
+$hotbox-icon-circle-left-10: unicode(ea16);
+$hotbox-icon-circle-left-38: unicode(ea17);
+$hotbox-icon-circle-left: unicode(ea18);
+$hotbox-icon-circle-out: unicode(ea19);
+$hotbox-icon-circle-right-09: unicode(ea1a);
+$hotbox-icon-circle-right-37: unicode(ea1b);
+$hotbox-icon-circle-right: unicode(ea1c);
+$hotbox-icon-circle-simple-down: unicode(ea1d);
+$hotbox-icon-circle-simple-left: unicode(ea1e);
+$hotbox-icon-circle-simple-right: unicode(ea1f);
+$hotbox-icon-circle-simple-up: unicode(ea20);
+$hotbox-icon-circle-up-11: unicode(ea21);
+$hotbox-icon-circle-up-39: unicode(ea22);
+$hotbox-icon-circle-up: unicode(ea23);
+$hotbox-icon-circuit-round: unicode(ea24);
+$hotbox-icon-circuit: unicode(ea25);
+$hotbox-icon-cloud-download-93: unicode(ea26);
+$hotbox-icon-cloud-download-95: unicode(ea27);
+$hotbox-icon-cloud-refresh: unicode(ea28);
+$hotbox-icon-cloud-upload-94: unicode(ea29);
+$hotbox-icon-cloud-upload-96: unicode(ea2a);
+$hotbox-icon-compare: unicode(ea2b);
+$hotbox-icon-computer-upload: unicode(ea2c);
+$hotbox-icon-contrast: unicode(ea2d);
+$hotbox-icon-conversion: unicode(ea2e);
+$hotbox-icon-corner-down-round: unicode(ea2f);
+$hotbox-icon-corner-down: unicode(ea30);
+$hotbox-icon-corner-left-down: unicode(ea31);
+$hotbox-icon-corner-left-round: unicode(ea32);
+$hotbox-icon-corner-left: unicode(ea33);
+$hotbox-icon-corner-right-down: unicode(ea34);
+$hotbox-icon-corner-right-round: unicode(ea35);
+$hotbox-icon-corner-right: unicode(ea36);
+$hotbox-icon-corner-up-left: unicode(ea37);
+$hotbox-icon-corner-up-right: unicode(ea38);
+$hotbox-icon-corner-up-round: unicode(ea39);
+$hotbox-icon-corner-up: unicode(ea3a);
+$hotbox-icon-cross-down: unicode(ea3b);
+$hotbox-icon-cross-horizontal: unicode(ea3c);
+$hotbox-icon-cross-left: unicode(ea3d);
+$hotbox-icon-cross-right: unicode(ea3e);
+$hotbox-icon-cross-up: unicode(ea3f);
+$hotbox-icon-cross-vertical: unicode(ea40);
+$hotbox-icon-cross: unicode(ea41);
+$hotbox-icon-curve-circuit: unicode(ea42);
+$hotbox-icon-curve-directions: unicode(ea43);
+$hotbox-icon-curve-split: unicode(ea44);
+$hotbox-icon-curved-next: unicode(ea45);
+$hotbox-icon-curved-previous: unicode(ea46);
+$hotbox-icon-delete-49: unicode(ea47);
+$hotbox-icon-delete-50: unicode(ea48);
+$hotbox-icon-diag-bottom-left: unicode(ea49);
+$hotbox-icon-diag-bottom-right: unicode(ea4a);
+$hotbox-icon-diag-top-left: unicode(ea4b);
+$hotbox-icon-diag-top-right: unicode(ea4c);
+$hotbox-icon-direction-53: unicode(ea4d);
+$hotbox-icon-direction-56: unicode(ea4e);
+$hotbox-icon-direction: unicode(ea4f);
+$hotbox-icon-disperse: unicode(ea50);
+$hotbox-icon-dots-download: unicode(ea51);
+$hotbox-icon-dots-upload: unicode(ea52);
+$hotbox-icon-double-left: unicode(ea53);
+$hotbox-icon-double-right: unicode(ea54);
+$hotbox-icon-download-file: unicode(ea55);
+$hotbox-icon-download-3: unicode(ea56);
+$hotbox-icon-download: unicode(ea57);
+$hotbox-icon-eject: unicode(ea58);
+$hotbox-icon-enlarge-45: unicode(ea59);
+$hotbox-icon-enlarge-46: unicode(ea5a);
+$hotbox-icon-enlarge-circle: unicode(ea5b);
+$hotbox-icon-enlarge-diagonal-43: unicode(ea5c);
+$hotbox-icon-enlarge-diagonal-44: unicode(ea5d);
+$hotbox-icon-enlarge-horizontal: unicode(ea5e);
+$hotbox-icon-enlarge-vertical: unicode(ea5f);
+$hotbox-icon-export: unicode(ea60);
+$hotbox-icon-file-download-87: unicode(ea61);
+$hotbox-icon-file-download-89: unicode(ea62);
+$hotbox-icon-file-download-94: unicode(ea63);
+$hotbox-icon-file-upload-86: unicode(ea64);
+$hotbox-icon-file-upload-88: unicode(ea65);
+$hotbox-icon-file-upload-93: unicode(ea66);
+$hotbox-icon-fit-horizontal: unicode(ea67);
+$hotbox-icon-fit-vertical: unicode(ea68);
+$hotbox-icon-fork-round: unicode(ea69);
+$hotbox-icon-fork: unicode(ea6a);
+$hotbox-icon-format-left: unicode(ea6b);
+$hotbox-icon-format-right: unicode(ea6c);
+$hotbox-icon-fullscreen-70: unicode(ea6d);
+$hotbox-icon-fullscreen-71: unicode(ea6e);
+$hotbox-icon-fullscreen-76: unicode(ea6f);
+$hotbox-icon-fullscreen-77: unicode(ea70);
+$hotbox-icon-fullscreen-double-74: unicode(ea71);
+$hotbox-icon-fullscreen-double-75: unicode(ea72);
+$hotbox-icon-fullscreen-split-72: unicode(ea73);
+$hotbox-icon-fullscreen-split-73: unicode(ea74);
+$hotbox-icon-hit-down: unicode(ea75);
+$hotbox-icon-hit-left: unicode(ea76);
+$hotbox-icon-hit-right: unicode(ea77);
+$hotbox-icon-hit-up: unicode(ea78);
+$hotbox-icon-input-12: unicode(ea79);
+$hotbox-icon-input-21: unicode(ea7a);
+$hotbox-icon-invert: unicode(ea7b);
+$hotbox-icon-launch-11: unicode(ea7c);
+$hotbox-icon-launch-47: unicode(ea7d);
+$hotbox-icon-lines: unicode(ea7e);
+$hotbox-icon-log-in: unicode(ea7f);
+$hotbox-icon-log-out-2: unicode(ea80);
+$hotbox-icon-log-out: unicode(ea81);
+$hotbox-icon-logout: unicode(ea82);
+$hotbox-icon-loop-30: unicode(ea83);
+$hotbox-icon-loop-34: unicode(ea84);
+$hotbox-icon-loop-82: unicode(ea85);
+$hotbox-icon-loop-83: unicode(ea86);
+$hotbox-icon-loop: unicode(ea87);
+$hotbox-icon-merge-2: unicode(ea88);
+$hotbox-icon-merge-round: unicode(ea89);
+$hotbox-icon-merge: unicode(ea8a);
+$hotbox-icon-minimal-down: unicode(ea8b);
+$hotbox-icon-minimal-left: unicode(ea8c);
+$hotbox-icon-minimal-right: unicode(ea8d);
+$hotbox-icon-minimal-up: unicode(ea8e);
+$hotbox-icon-move-05: unicode(ea8f);
+$hotbox-icon-move-06: unicode(ea90);
+$hotbox-icon-move-92: unicode(ea91);
+$hotbox-icon-move-down-2: unicode(ea92);
+$hotbox-icon-move-down-right: unicode(ea93);
+$hotbox-icon-move-down: unicode(ea94);
+$hotbox-icon-move-left: unicode(ea95);
+$hotbox-icon-move-right: unicode(ea96);
+$hotbox-icon-move-up-2: unicode(ea97);
+$hotbox-icon-move-up-left: unicode(ea98);
+$hotbox-icon-move-up: unicode(ea99);
+$hotbox-icon-open-in-browser: unicode(ea9a);
+$hotbox-icon-priority-high: unicode(ea9b);
+$hotbox-icon-priority-low: unicode(ea9c);
+$hotbox-icon-push-next: unicode(ea9d);
+$hotbox-icon-push-previous: unicode(ea9e);
+$hotbox-icon-redo-10: unicode(ea9f);
+$hotbox-icon-redo-26: unicode(eaa0);
+$hotbox-icon-redo-79: unicode(eaa1);
+$hotbox-icon-redo-81: unicode(eaa2);
+$hotbox-icon-refresh-68: unicode(eaa3);
+$hotbox-icon-refresh-69: unicode(eaa4);
+$hotbox-icon-reload: unicode(eaa5);
+$hotbox-icon-replay: unicode(eaa6);
+$hotbox-icon-reply-all: unicode(eaa7);
+$hotbox-icon-reply: unicode(eaa8);
+$hotbox-icon-restore: unicode(eaa9);
+$hotbox-icon-rotate-left-2: unicode(eaaa);
+$hotbox-icon-rotate-left: unicode(eaab);
+$hotbox-icon-rotate-right-2: unicode(eaac);
+$hotbox-icon-rotate-right: unicode(eaad);
+$hotbox-icon-round-down: unicode(eaae);
+$hotbox-icon-round-left-down: unicode(eaaf);
+$hotbox-icon-round-left: unicode(eab0);
+$hotbox-icon-round-right-down: unicode(eab1);
+$hotbox-icon-round-right: unicode(eab2);
+$hotbox-icon-round-up-left: unicode(eab3);
+$hotbox-icon-round-up-right: unicode(eab4);
+$hotbox-icon-round-up: unicode(eab5);
+$hotbox-icon-select-83: unicode(eab6);
+$hotbox-icon-select-84: unicode(eab7);
+$hotbox-icon-separate-2: unicode(eab8);
+$hotbox-icon-separate-round: unicode(eab9);
+$hotbox-icon-separate: unicode(eaba);
+$hotbox-icon-upload: unicode(eabb);
+$hotbox-icon-share-91: unicode(eabc);
+$hotbox-icon-share-92: unicode(eabd);
+$hotbox-icon-share-left: unicode(eabe);
+$hotbox-icon-share-right: unicode(eabf);
+$hotbox-icon-share: unicode(eac0);
+$hotbox-icon-shuffle-01: unicode(eac1);
+$hotbox-icon-shuffle-35: unicode(eac2);
+$hotbox-icon-shuffle-97: unicode(eac3);
+$hotbox-icon-shuffle-98: unicode(eac4);
+$hotbox-icon-simple-down: unicode(eac5);
+$hotbox-icon-simple-left: unicode(eac6);
+$hotbox-icon-simple-right: unicode(eac7);
+$hotbox-icon-simple-up: unicode(eac8);
+$hotbox-icon-skew-down: unicode(eac9);
+$hotbox-icon-skew-left: unicode(eaca);
+$hotbox-icon-skew-right: unicode(eacb);
+$hotbox-icon-skew-up: unicode(eacc);
+$hotbox-icon-small-down: unicode(eacd);
+$hotbox-icon-small-left: unicode(eace);
+$hotbox-icon-small-right: unicode(eacf);
+$hotbox-icon-small-triangle-down: unicode(ead0);
+$hotbox-icon-small-triangle-left: unicode(ead1);
+$hotbox-icon-small-triangle-right: unicode(ead2);
+$hotbox-icon-small-triangle-up: unicode(ead3);
+$hotbox-icon-small-up: unicode(ead4);
+$hotbox-icon-split-33: unicode(ead5);
+$hotbox-icon-split-37: unicode(ead6);
+$hotbox-icon-split-horizontal: unicode(ead7);
+$hotbox-icon-split-round: unicode(ead8);
+$hotbox-icon-split-vertical: unicode(ead9);
+$hotbox-icon-split: unicode(eada);
+$hotbox-icon-square-corner-down-left: unicode(eadb);
+$hotbox-icon-square-corner-down-right: unicode(eadc);
+$hotbox-icon-square-corner-up-left: unicode(eadd);
+$hotbox-icon-square-corner-up-right: unicode(eade);
+$hotbox-icon-square-down-06: unicode(eadf);
+$hotbox-icon-square-down-22: unicode(eae0);
+$hotbox-icon-square-down: unicode(eae1);
+$hotbox-icon-square-download: unicode(eae2);
+$hotbox-icon-square-enlarge: unicode(eae3);
+$hotbox-icon-square-left-04: unicode(eae4);
+$hotbox-icon-square-left-20: unicode(eae5);
+$hotbox-icon-square-left: unicode(eae6);
+$hotbox-icon-square-right-03: unicode(eae7);
+$hotbox-icon-square-right-19: unicode(eae8);
+$hotbox-icon-square-right: unicode(eae9);
+$hotbox-icon-square-simple-down: unicode(eaea);
+$hotbox-icon-square-simple-left: unicode(eaeb);
+$hotbox-icon-square-simple-right: unicode(eaec);
+$hotbox-icon-square-simple-up: unicode(eaed);
+$hotbox-icon-square-up-05: unicode(eaee);
+$hotbox-icon-square-up-21: unicode(eaef);
+$hotbox-icon-square-up: unicode(eaf0);
+$hotbox-icon-square-upload: unicode(eaf1);
+$hotbox-icon-square-zoom: unicode(eaf2);
+$hotbox-icon-stre-down: unicode(eaf3);
+$hotbox-icon-stre-left: unicode(eaf4);
+$hotbox-icon-stre-right: unicode(eaf5);
+$hotbox-icon-stre-up: unicode(eaf6);
+$hotbox-icon-strong-down: unicode(eaf7);
+$hotbox-icon-strong-left: unicode(eaf8);
+$hotbox-icon-strong-right: unicode(eaf9);
+$hotbox-icon-strong-up: unicode(eafa);
+$hotbox-icon-super-bold-down: unicode(eafb);
+$hotbox-icon-super-bold-left: unicode(eafc);
+$hotbox-icon-super-bold-right: unicode(eafd);
+$hotbox-icon-super-bold-up: unicode(eafe);
+$hotbox-icon-swap-horizontal: unicode(eaff);
+$hotbox-icon-swap-vertical: unicode(eb00);
+$hotbox-icon-system-update: unicode(eb01);
+$hotbox-icon-tail-down: unicode(eb02);
+$hotbox-icon-tail-left: unicode(eb03);
+$hotbox-icon-tail-right: unicode(eb04);
+$hotbox-icon-tail-triangle-down: unicode(eb05);
+$hotbox-icon-tail-triangle-left: unicode(eb06);
+$hotbox-icon-tail-triangle-right: unicode(eb07);
+$hotbox-icon-tail-triangle-up: unicode(eb08);
+$hotbox-icon-tail-up: unicode(eb09);
+$hotbox-icon-time: unicode(eb0a);
+$hotbox-icon-trend-down: unicode(eb0b);
+$hotbox-icon-trend-up: unicode(eb0c);
+$hotbox-icon-triangle-down-20: unicode(eb0d);
+$hotbox-icon-triangle-down-65: unicode(eb0e);
+$hotbox-icon-triangle-down: unicode(eb0f);
+$hotbox-icon-triangle-left-18: unicode(eb10);
+$hotbox-icon-triangle-left-63: unicode(eb11);
+$hotbox-icon-triangle-left: unicode(eb12);
+$hotbox-icon-triangle-right-17: unicode(eb13);
+$hotbox-icon-triangle-right-62: unicode(eb14);
+$hotbox-icon-triangle-right: unicode(eb15);
+$hotbox-icon-triangle-up-19: unicode(eb16);
+$hotbox-icon-triangle-up-64: unicode(eb17);
+$hotbox-icon-triangle-up: unicode(eb18);
+$hotbox-icon-undo-25: unicode(eb19);
+$hotbox-icon-undo-29: unicode(eb1a);
+$hotbox-icon-unite-round: unicode(eb1b);
+$hotbox-icon-unite: unicode(eb1c);
+$hotbox-icon-upload-2: unicode(eb1d);
+$hotbox-icon-upload-file: unicode(eb1e);
+$hotbox-icon-window-zoom-in: unicode(eb1f);
+$hotbox-icon-window-zoom-out: unicode(eb20);
+$hotbox-icon-zoom-88: unicode(eb21);
+$hotbox-icon-zoom-99: unicode(eb22);
+$hotbox-icon-zoom-100: unicode(eb23);
+$hotbox-icon-zoom: unicode(eb24);
+$hotbox-icon-zoom-e: unicode(eb25);
+$hotbox-icon-zoom-triangles: unicode(eb26);
+$hotbox-icon-resize-v: unicode(eb27);
+$hotbox-icon-resize-h: unicode(eb28);
+$hotbox-icon-backward: unicode(eb29);
+$hotbox-icon-forward: unicode(eb2a);
+$hotbox-icon-slide-left: unicode(eb2b);
+$hotbox-icon-slide-right: unicode(eb2c);
+$hotbox-icon-agenda: unicode(eb2d);
+$hotbox-icon-atm: unicode(eb2e);
+$hotbox-icon-cockade: unicode(eb2f);
+$hotbox-icon-award-49: unicode(eb30);
+$hotbox-icon-certificate: unicode(eb31);
+$hotbox-icon-badge: unicode(eb32);
+$hotbox-icon-bank: unicode(eb33);
+$hotbox-icon-board-27: unicode(eb34);
+$hotbox-icon-board-28: unicode(eb35);
+$hotbox-icon-board-29: unicode(eb36);
+$hotbox-icon-board-30: unicode(eb37);
+$hotbox-icon-books: unicode(eb38);
+$hotbox-icon-briefcase-24: unicode(eb39);
+$hotbox-icon-briefcase-25: unicode(eb3a);
+$hotbox-icon-briefcase-26: unicode(eb3b);
+$hotbox-icon-building: unicode(eb3c);
+$hotbox-icon-bulb-61: unicode(eb3d);
+$hotbox-icon-bulb-62: unicode(eb3e);
+$hotbox-icon-bulb-63: unicode(eb3f);
+$hotbox-icon-businessman-03: unicode(eb40);
+$hotbox-icon-businessman-04: unicode(eb41);
+$hotbox-icon-calculator: unicode(eb42);
+$hotbox-icon-chair: unicode(eb43);
+$hotbox-icon-chart-bar-32: unicode(eb44);
+$hotbox-icon-chart-bar-33: unicode(eb45);
+$hotbox-icon-chart-growth: unicode(eb46);
+$hotbox-icon-chart-pie-35: unicode(eb47);
+$hotbox-icon-chart-pie-36: unicode(eb48);
+$hotbox-icon-chart: unicode(eb49);
+$hotbox-icon-cheque: unicode(eb4a);
+$hotbox-icon-coins: unicode(eb4b);
+$hotbox-icon-connect: unicode(eb4c);
+$hotbox-icon-contacts-2: unicode(eb4d);
+$hotbox-icon-contacts: unicode(eb4e);
+$hotbox-icon-currency-dollar: unicode(eb4f);
+$hotbox-icon-dice: unicode(eb53);
+$hotbox-icon-factory: unicode(eb54);
+$hotbox-icon-globe: unicode(eb55);
+$hotbox-icon-goal-64: unicode(eb56);
+$hotbox-icon-goal-65: unicode(eb57);
+$hotbox-icon-gold: unicode(eb58);
+$hotbox-icon-handout: unicode(eb5a);
+$hotbox-icon-handshake: unicode(eb5b);
+$hotbox-icon-hierarchy-53: unicode(eb5d);
+$hotbox-icon-hierarchy-54: unicode(eb5e);
+$hotbox-icon-hierarchy-55: unicode(eb5f);
+$hotbox-icon-hierarchy-56: unicode(eb60);
+$hotbox-icon-math: unicode(eb65);
+$hotbox-icon-money-11: unicode(eb66);
+$hotbox-icon-money-12: unicode(eb67);
+$hotbox-icon-money-13: unicode(eb68);
+$hotbox-icon-money-bag: unicode(eb69);
+$hotbox-icon-money-coins: unicode(eb6a);
+$hotbox-icon-money-growth: unicode(eb6b);
+$hotbox-icon-money-time: unicode(eb6c);
+$hotbox-icon-net: unicode(eb6d);
+$hotbox-icon-notes: unicode(eb6e);
+$hotbox-icon-payment: unicode(eb6f);
+$hotbox-icon-percentage-38: unicode(eb70);
+$hotbox-icon-percentage-39: unicode(eb71);
+$hotbox-icon-pig: unicode(eb72);
+$hotbox-icon-pin: unicode(eb73);
+$hotbox-icon-plug: unicode(eb74);
+$hotbox-icon-progress: unicode(eb75);
+$hotbox-icon-round-dollar: unicode(eb78);
+$hotbox-icon-safe: unicode(eb7c);
+$hotbox-icon-scale: unicode(eb7d);
+$hotbox-icon-sign: unicode(eb7e);
+$hotbox-icon-signature: unicode(eb7f);
+$hotbox-icon-stock: unicode(eb80);
+$hotbox-icon-tactic: unicode(eb82);
+$hotbox-icon-wallet-43: unicode(eb85);
+$hotbox-icon-wallet-44: unicode(eb86);
+$hotbox-icon-wallet-90: unicode(eb87);
+$hotbox-icon-bill: unicode(eb8d);
+$hotbox-icon-name-card: unicode(eb8e);
+$hotbox-icon-privacy-policy: unicode(eb8f);
+$hotbox-icon-ranking: unicode(eb90);
+$hotbox-icon-personal-trainer: unicode(eb91);
+$hotbox-icon-presentation: unicode(eb92);
+$hotbox-icon-3d-model: unicode(eb93);
+$hotbox-icon-3d-29: unicode(eb94);
+$hotbox-icon-album-2: unicode(eb95);
+$hotbox-icon-album: unicode(eb96);
+$hotbox-icon-align-bottom: unicode(eb97);
+$hotbox-icon-align-center-horizontal: unicode(eb98);
+$hotbox-icon-align-center-vertical: unicode(eb99);
+$hotbox-icon-align-left: unicode(eb9a);
+$hotbox-icon-align-right: unicode(eb9b);
+$hotbox-icon-align-top: unicode(eb9c);
+$hotbox-icon-angle: unicode(eb9e);
+$hotbox-icon-animation-14: unicode(eb9f);
+$hotbox-icon-animation-31: unicode(eba0);
+$hotbox-icon-animation-32: unicode(eba1);
+$hotbox-icon-app: unicode(eba2);
+$hotbox-icon-artboard: unicode(eba4);
+$hotbox-icon-blend: unicode(eba5);
+$hotbox-icon-book-bookmark-2: unicode(eba6);
+$hotbox-icon-book-bookmark: unicode(eba7);
+$hotbox-icon-book-open-2: unicode(eba8);
+$hotbox-icon-book-open: unicode(eba9);
+$hotbox-icon-browser-safari: unicode(ebaa);
+$hotbox-icon-brush: unicode(ebab);
+$hotbox-icon-bucket: unicode(ebac);
+$hotbox-icon-bug: unicode(ebad);
+$hotbox-icon-bullet-list-67: unicode(ebae);
+$hotbox-icon-bullet-list-68: unicode(ebaf);
+$hotbox-icon-bullet-list-69: unicode(ebb0);
+$hotbox-icon-bullet-list-70: unicode(ebb1);
+$hotbox-icon-button-2: unicode(ebb2);
+$hotbox-icon-canvas: unicode(ebb3);
+$hotbox-icon-clone: unicode(ebb4);
+$hotbox-icon-code-editor: unicode(ebb5);
+$hotbox-icon-code: unicode(ebb6);
+$hotbox-icon-collection: unicode(ebb7);
+$hotbox-icon-command: unicode(ebb8);
+$hotbox-icon-contrast-2: unicode(ebb9);
+$hotbox-icon-copy: unicode(ebba);
+$hotbox-icon-crop: unicode(ebbb);
+$hotbox-icon-cursor-48: unicode(ebbc);
+$hotbox-icon-cursor-49: unicode(ebbd);
+$hotbox-icon-cursor-text: unicode(ebbe);
+$hotbox-icon-design: unicode(ebbf);
+$hotbox-icon-distribute-horizontal: unicode(ebc0);
+$hotbox-icon-distribute-vertical: unicode(ebc1);
+$hotbox-icon-divider: unicode(ebc2);
+$hotbox-icon-drag: unicode(ebc3);
+$hotbox-icon-drop-15: unicode(ebc4);
+$hotbox-icon-eps: unicode(ebc5);
+$hotbox-icon-eraser-32: unicode(ebc6);
+$hotbox-icon-eraser-33: unicode(ebc7);
+$hotbox-icon-eraser-46: unicode(ebc8);
+$hotbox-icon-filter-organization: unicode(ebc9);
+$hotbox-icon-flip-horizontal: unicode(ebca);
+$hotbox-icon-flip-vertical: unicode(ebcb);
+$hotbox-icon-form: unicode(ebcc);
+$hotbox-icon-frame: unicode(ebcd);
+$hotbox-icon-group: unicode(ebce);
+$hotbox-icon-image-2: unicode(ebcf);
+$hotbox-icon-image: unicode(ebd0);
+$hotbox-icon-layers-3: unicode(ebd1);
+$hotbox-icon-layers-2: unicode(ebd2);
+$hotbox-icon-layers: unicode(ebd3);
+$hotbox-icon-layout-11: unicode(ebd4);
+$hotbox-icon-layout-25: unicode(ebd5);
+$hotbox-icon-magnet: unicode(ebd6);
+$hotbox-icon-marker: unicode(ebd7);
+$hotbox-icon-measure-02: unicode(ebd8);
+$hotbox-icon-measure-17: unicode(ebd9);
+$hotbox-icon-measure-big: unicode(ebda);
+$hotbox-icon-microsoft: unicode(ebdb);
+$hotbox-icon-mirror: unicode(ebdc);
+$hotbox-icon-mobile-design: unicode(ebdd);
+$hotbox-icon-mobile-dev: unicode(ebde);
+$hotbox-icon-mouse-08: unicode(ebdf);
+$hotbox-icon-mouse-09: unicode(ebe0);
+$hotbox-icon-mouse-10: unicode(ebe1);
+$hotbox-icon-move-down-2-2: unicode(ebe2);
+$hotbox-icon-move-up-2-2: unicode(ebe3);
+$hotbox-icon-newsletter-dev: unicode(ebe4);
+$hotbox-icon-note-code: unicode(ebe5);
+$hotbox-icon-paint-16: unicode(ebe6);
+$hotbox-icon-paint-37: unicode(ebe7);
+$hotbox-icon-paint-38: unicode(ebe8);
+$hotbox-icon-paint-brush: unicode(ebe9);
+$hotbox-icon-paint-bucket-39: unicode(ebea);
+$hotbox-icon-paint-bucket-40: unicode(ebeb);
+$hotbox-icon-palette: unicode(ebec);
+$hotbox-icon-pantone: unicode(ebed);
+$hotbox-icon-paper-design: unicode(ebee);
+$hotbox-icon-paper-dev: unicode(ebef);
+$hotbox-icon-patch-19: unicode(ebf0);
+$hotbox-icon-patch-34: unicode(ebf1);
+$hotbox-icon-path-exclude: unicode(ebf2);
+$hotbox-icon-path-intersect: unicode(ebf3);
+$hotbox-icon-path-minus: unicode(ebf4);
+$hotbox-icon-path-unite: unicode(ebf5);
+$hotbox-icon-pen-01: unicode(ebf6);
+$hotbox-icon-pen-23: unicode(ebf7);
+$hotbox-icon-pen-tool: unicode(ebf8);
+$hotbox-icon-phone: unicode(ebf9);
+$hotbox-icon-photo-editor: unicode(ebfa);
+$hotbox-icon-responsive: unicode(ebfb);
+$hotbox-icon-ruler-pencil: unicode(ebfc);
+$hotbox-icon-scale-2: unicode(ebfd);
+$hotbox-icon-scale-down: unicode(ebfe);
+$hotbox-icon-scale-up: unicode(ebff);
+$hotbox-icon-scissors-dashed: unicode(ec00);
+$hotbox-icon-scissors: unicode(ec01);
+$hotbox-icon-selection: unicode(ec02);
+$hotbox-icon-shape-adjust: unicode(ec03);
+$hotbox-icon-shape-circle: unicode(ec04);
+$hotbox-icon-shape-polygon: unicode(ec05);
+$hotbox-icon-shape-square: unicode(ec06);
+$hotbox-icon-shape-triangle: unicode(ec07);
+$hotbox-icon-shapes: unicode(ec08);
+$hotbox-icon-sharpener: unicode(ec09);
+$hotbox-icon-slice: unicode(ec0a);
+$hotbox-icon-slider: unicode(ec0b);
+$hotbox-icon-spray: unicode(ec0c);
+$hotbox-icon-stamp: unicode(ec0d);
+$hotbox-icon-tablet-mobile: unicode(ec0e);
+$hotbox-icon-tablet: unicode(ec0f);
+$hotbox-icon-text-2: unicode(ec10);
+$hotbox-icon-text: unicode(ec11);
+$hotbox-icon-time-2: unicode(ec12);
+$hotbox-icon-todo: unicode(ec13);
+$hotbox-icon-transform-origin: unicode(ec14);
+$hotbox-icon-transform: unicode(ec15);
+$hotbox-icon-undo-29-2: unicode(ec16);
+$hotbox-icon-ungroup: unicode(ec17);
+$hotbox-icon-usb: unicode(ec18);
+$hotbox-icon-vector: unicode(ec19);
+$hotbox-icon-wand-11: unicode(ec1a);
+$hotbox-icon-wand-99: unicode(ec1b);
+$hotbox-icon-watch-dev: unicode(ec1c);
+$hotbox-icon-web-design: unicode(ec1d);
+$hotbox-icon-webpage: unicode(ec1e);
+$hotbox-icon-window-code: unicode(ec1f);
+$hotbox-icon-window-dev: unicode(ec20);
+$hotbox-icon-window-paragraph: unicode(ec21);
+$hotbox-icon-window-responsive: unicode(ec22);
+$hotbox-icon-design-dev: unicode(ec23);
+$hotbox-icon-zoom-2: unicode(ec24);
+$hotbox-icon-zoom-99-2: unicode(ec25);
+$hotbox-icon-refresh-02: unicode(ec26);
+$hotbox-icon-mirror-2: unicode(ec27);
+$hotbox-icon-sidebar: unicode(ec28);
+$hotbox-icon-timeline: unicode(ec29);
+$hotbox-icon-gradient: unicode(ec2a);
+$hotbox-icon-prototype: unicode(ec2b);
+$hotbox-icon-cards: unicode(ec2c);
+$hotbox-icon-transform-2d: unicode(ec2d);
+$hotbox-icon-border: unicode(ec2e);
+$hotbox-icon-border-radius: unicode(ec2f);
+$hotbox-icon-position: unicode(ec30);
+$hotbox-icon-shape-triangle-2: unicode(ec31);
+$hotbox-icon-shape-oval: unicode(ec32);
+$hotbox-icon-shape-rectangle: unicode(ec33);
+$hotbox-icon-shape-polygon-2: unicode(ec34);
+$hotbox-icon-shape-star: unicode(ec35);
+$hotbox-icon-shape-line: unicode(ec36);
+$hotbox-icon-shape-arrow: unicode(ec37);
+$hotbox-icon-shape-custom: unicode(ec38);
+$hotbox-icon-design-system: unicode(ec39);
+$hotbox-icon-git-commit: unicode(ec3a);
+$hotbox-icon-size-small: unicode(ec3b);
+$hotbox-icon-size-medium: unicode(ec3c);
+$hotbox-icon-size-large: unicode(ec3d);
+$hotbox-icon-transparent: unicode(ec3e);
+$hotbox-icon-tool-blur: unicode(ec3f);
+$hotbox-icon-texture: unicode(ec40);
+$hotbox-icon-mask-oval: unicode(ec41);
+$hotbox-icon-mask-rect: unicode(ec42);
+$hotbox-icon-grid-system: unicode(ec43);
+$hotbox-icon-components: unicode(ec44);
+$hotbox-icon-tool-select: unicode(ec45);
+$hotbox-icon-tool-hand: unicode(ec46);
+$hotbox-icon-hot-key: unicode(ec47);
+$hotbox-icon-img-stack: unicode(ec48);
+$hotbox-icon-geometry: unicode(ec49);
+$hotbox-icon-apps: unicode(ec4a);
+$hotbox-icon-app-store: unicode(ec4b);
+$hotbox-icon-layout-grid: unicode(ec4c);
+$hotbox-icon-layout: unicode(ec4d);
+$hotbox-icon-wireframe: unicode(ec4e);
+$hotbox-icon-battery-charging: unicode(ec4f);
+$hotbox-icon-battery-status: unicode(ec50);
+$hotbox-icon-battery-low: unicode(ec51);
+$hotbox-icon-battery-power: unicode(ec52);
+$hotbox-icon-temperature-24: unicode(ec53);
+$hotbox-icon-temperature-23: unicode(ec54);
+$hotbox-icon-bulb: unicode(ec55);
+$hotbox-icon-brightness-46: unicode(ec56);
+$hotbox-icon-plant-leaf: unicode(ec57);
+$hotbox-icon-plant-vase: unicode(ec58);
+$hotbox-icon-plant-ground: unicode(ec59);
+$hotbox-icon-water-hand: unicode(ec5a);
+$hotbox-icon-water-sink: unicode(ec5b);
+$hotbox-icon-water: unicode(ec5c);
+$hotbox-icon-oil: unicode(ec5d);
+$hotbox-icon-round-dollar-add-real: unicode(ec5e);
+$hotbox-icon-warning: unicode(ec5f);
+$hotbox-icon-question: unicode(ec60);
+$hotbox-icon-c-warning: unicode(ec61);
+$hotbox-icon-c-question: unicode(ec62);
+$hotbox-icon-c-info: unicode(ec63);
+$hotbox-icon-info: unicode(ec64);
+$hotbox-icon-s-warning: unicode(ec65);
+$hotbox-icon-s-question: unicode(ec66);
+$hotbox-icon-s-info: unicode(ec67);
+$hotbox-icon-t-warning: unicode(ec68);
+$hotbox-icon-s-pulse: unicode(ec69);
+$hotbox-icon-c-pulse: unicode(ec6a);
+$hotbox-icon-archive-drawer: unicode(ec6b);
+$hotbox-icon-archive: unicode(ec6c);
+$hotbox-icon-attachment: unicode(ec6d);
+$hotbox-icon-attach: unicode(ec6e);
+$hotbox-icon-backward-2: unicode(ec6f);
+$hotbox-icon-shopping-bag: unicode(ec70);
+$hotbox-icon-s-ban: unicode(ec71);
+$hotbox-icon-ban: unicode(ec72);
+$hotbox-icon-basket: unicode(ec73);
+$hotbox-icon-battery-power-2: unicode(ec74);
+$hotbox-icon-battery-charging-2: unicode(ec75);
+$hotbox-icon-battery-status-2: unicode(ec76);
+$hotbox-icon-battery-low-2: unicode(ec77);
+$hotbox-icon-alarm: unicode(ec78);
+$hotbox-icon-buzz: unicode(ec79);
+$hotbox-icon-bell: unicode(ec7a);
+$hotbox-icon-bluetooth: unicode(ec7b);
+$hotbox-icon-d-add: unicode(ec7c);
+$hotbox-icon-d-delete: unicode(ec7d);
+$hotbox-icon-d-remove: unicode(ec7e);
+$hotbox-icon-bolt: unicode(ec7f);
+$hotbox-icon-book: unicode(ec80);
+$hotbox-icon-bookmark: unicode(ec81);
+$hotbox-icon-bookmark-add: unicode(ec82);
+$hotbox-icon-bookmark-add-2: unicode(ec83);
+$hotbox-icon-bookmark-delete: unicode(ec84);
+$hotbox-icon-bookmark-delete-2: unicode(ec85);
+$hotbox-icon-bullet-list: unicode(ec86);
+$hotbox-icon-calendar: unicode(ec87);
+$hotbox-icon-calendar-2: unicode(ec88);
+$hotbox-icon-calendar-event-create: unicode(ec89);
+$hotbox-icon-calendar-event: unicode(ec8a);
+$hotbox-icon-calendar-event-2: unicode(ec8b);
+$hotbox-icon-calendar-date: unicode(ec8c);
+$hotbox-icon-calendar-date-2: unicode(ec8d);
+$hotbox-icon-add-notification: unicode(ec8e);
+$hotbox-icon-new-notification: unicode(ec8f);
+$hotbox-icon-add-to-cart-2: unicode(ec90);
+$hotbox-icon-shopping-cart-2: unicode(ec91);
+$hotbox-icon-add-to-cart: unicode(ec92);
+$hotbox-icon-shopping-cart: unicode(ec93);
+$hotbox-icon-a-chart: unicode(ec94);
+$hotbox-icon-p-chart: unicode(ec95);
+$hotbox-icon-g-chart: unicode(ec96);
+$hotbox-icon-d-chart: unicode(ec97);
+$hotbox-icon-b-chart: unicode(ec98);
+$hotbox-icon-chart-2: unicode(ec99);
+$hotbox-icon-b-comment: unicode(ec9a);
+$hotbox-icon-a-chat: unicode(ec9b);
+$hotbox-icon-b-chat: unicode(ec9c);
+$hotbox-icon-f-chat: unicode(ec9d);
+$hotbox-icon-r-chat: unicode(ec9e);
+$hotbox-icon-f-comment: unicode(ec9f);
+$hotbox-icon-comment: unicode(eca0);
+$hotbox-icon-chat: unicode(eca1);
+$hotbox-icon-check: unicode(eca2);
+$hotbox-icon-o-check: unicode(eca3);
+$hotbox-icon-n-check: unicode(eca4);
+$hotbox-icon-c-check: unicode(eca5);
+$hotbox-icon-g-check: unicode(eca6);
+$hotbox-icon-check-in: unicode(eca7);
+$hotbox-icon-check-out: unicode(eca8);
+$hotbox-icon-f-check: unicode(eca9);
+$hotbox-icon-d-check: unicode(ecaa);
+$hotbox-icon-i-check: unicode(ecab);
+$hotbox-icon-s-check: unicode(ecac);
+$hotbox-icon-c-add: unicode(ecad);
+$hotbox-icon-f-add: unicode(ecae);
+$hotbox-icon-f-delete: unicode(ecaf);
+$hotbox-icon-f-remove: unicode(ecb0);
+$hotbox-icon-c-delete: unicode(ecb1);
+$hotbox-icon-c-remove: unicode(ecb2);
+$hotbox-icon-cloud-forecast: unicode(ecb3);
+$hotbox-icon-cloud: unicode(ecb4);
+$hotbox-icon-speedometer: unicode(ecb5);
+$hotbox-icon-f-dashboard: unicode(ecb6);
+$hotbox-icon-h-dashboard: unicode(ecb7);
+$hotbox-icon-dashboard: unicode(ecb8);
+$hotbox-icon-database: unicode(ecb9);
+$hotbox-icon-floppy-disk: unicode(ecba);
+$hotbox-icon-disk: unicode(ecbb);
+$hotbox-icon-dock-bottom: unicode(ecbc);
+$hotbox-icon-dock-left: unicode(ecbd);
+$hotbox-icon-dock-right: unicode(ecbe);
+$hotbox-icon-dock-top: unicode(ecbf);
+$hotbox-icon-download-2: unicode(ecc0);
+$hotbox-icon-drop: unicode(ecc1);
+$hotbox-icon-pen-2: unicode(ecc2);
+$hotbox-icon-pen: unicode(ecc3);
+$hotbox-icon-i-edit: unicode(ecc4);
+$hotbox-icon-edit: unicode(ecc5);
+$hotbox-icon-n-edit: unicode(ecc6);
+$hotbox-icon-d-edit: unicode(ecc7);
+$hotbox-icon-s-edit: unicode(ecc8);
+$hotbox-icon-c-edit: unicode(ecc9);
+$hotbox-icon-letter: unicode(ecca);
+$hotbox-icon-mail: unicode(eccb);
+$hotbox-icon-email: unicode(eccc);
+$hotbox-icon-screen-maximize: unicode(eccd);
+$hotbox-icon-screen-enlarge: unicode(ecce);
+$hotbox-icon-screen-expand: unicode(eccf);
+$hotbox-icon-preview: unicode(ecd0);
+$hotbox-icon-eye: unicode(ecd1);
+$hotbox-icon-b-preview: unicode(ecd2);
+$hotbox-icon-b-eye: unicode(ecd3);
+$hotbox-icon-t-add: unicode(ecd4);
+$hotbox-icon-t-delete: unicode(ecd5);
+$hotbox-icon-t-remove: unicode(ecd6);
+$hotbox-icon-heart: unicode(ecd7);
+$hotbox-icon-star: unicode(ecd8);
+$hotbox-icon-add-fav: unicode(ecd9);
+$hotbox-icon-add-like: unicode(ecda);
+$hotbox-icon-remove-fav: unicode(ecdb);
+$hotbox-icon-remove-like: unicode(ecdc);
+$hotbox-icon-filter-check: unicode(ecdd);
+$hotbox-icon-filter-remove: unicode(ecde);
+$hotbox-icon-filter: unicode(ecdf);
+$hotbox-icon-flame: unicode(ece0);
+$hotbox-icon-forward-2: unicode(ece1);
+$hotbox-icon-fullsize: unicode(ece2);
+$hotbox-icon-sort-tool: unicode(ece3);
+$hotbox-icon-filter-tool: unicode(ece4);
+$hotbox-icon-funnel: unicode(ece5);
+$hotbox-icon-present: unicode(ece6);
+$hotbox-icon-grid-interface: unicode(ece7);
+$hotbox-icon-gallery-view: unicode(ece8);
+$hotbox-icon-grid-view: unicode(ece9);
+$hotbox-icon-table-layout: unicode(ecea);
+$hotbox-icon-gallery-layout: unicode(eceb);
+$hotbox-icon-grid-layout: unicode(ecec);
+$hotbox-icon-favorite: unicode(eced);
+$hotbox-icon-heart-add: unicode(ecee);
+$hotbox-icon-heart-remove: unicode(ecef);
+$hotbox-icon-home-2: unicode(ecf0);
+$hotbox-icon-home-3: unicode(ecf1);
+$hotbox-icon-home-minimal: unicode(ecf2);
+$hotbox-icon-home-simple: unicode(ecf3);
+$hotbox-icon-hourglass: unicode(ecf4);
+$hotbox-icon-infinite: unicode(ecf5);
+$hotbox-icon-key-25: unicode(ecf6);
+$hotbox-icon-key-26: unicode(ecf7);
+$hotbox-icon-lab: unicode(ecf8);
+$hotbox-icon-layers-3-2: unicode(ecf9);
+$hotbox-icon-plant-leaf-2: unicode(ecfa);
+$hotbox-icon-leaf-81: unicode(ecfb);
+$hotbox-icon-leaf-edit: unicode(ecfc);
+$hotbox-icon-like-2: unicode(ecfd);
+$hotbox-icon-link-2: unicode(ecfe);
+$hotbox-icon-link-66: unicode(ecff);
+$hotbox-icon-link-67: unicode(ed00);
+$hotbox-icon-link-68: unicode(ed01);
+$hotbox-icon-link-69: unicode(ed02);
+$hotbox-icon-link-71: unicode(ed03);
+$hotbox-icon-link-72: unicode(ed04);
+$hotbox-icon-link-broken-70: unicode(ed05);
+$hotbox-icon-link-broken-73: unicode(ed06);
+$hotbox-icon-lock-circle-open: unicode(ed07);
+$hotbox-icon-lock-circle: unicode(ed08);
+$hotbox-icon-lock-open: unicode(ed09);
+$hotbox-icon-lock: unicode(ed0a);
+$hotbox-icon-log-out-2-2: unicode(ed0b);
+$hotbox-icon-log-out-3: unicode(ed0c);
+$hotbox-icon-menu-34: unicode(ed0d);
+$hotbox-icon-menu-35: unicode(ed0e);
+$hotbox-icon-menu-bold: unicode(ed0f);
+$hotbox-icon-menu-dots: unicode(ed10);
+$hotbox-icon-menu-left: unicode(ed11);
+$hotbox-icon-menu-right: unicode(ed12);
+$hotbox-icon-menu-square: unicode(ed13);
+$hotbox-icon-menu: unicode(ed14);
+$hotbox-icon-metrics: unicode(ed15);
+$hotbox-icon-node: unicode(ed16);
+$hotbox-icon-notification-69: unicode(ed17);
+$hotbox-icon-notification-70: unicode(ed18);
+$hotbox-icon-paper-2: unicode(ed19);
+$hotbox-icon-paragraph: unicode(ed1a);
+$hotbox-icon-pencil: unicode(ed1b);
+$hotbox-icon-phone-2: unicode(ed1c);
+$hotbox-icon-phone-3: unicode(ed1d);
+$hotbox-icon-phone-call-end: unicode(ed1e);
+$hotbox-icon-phone-call: unicode(ed1f);
+$hotbox-icon-playlist: unicode(ed20);
+$hotbox-icon-preferences-circle-rotate: unicode(ed21);
+$hotbox-icon-preferences-circle: unicode(ed22);
+$hotbox-icon-preferences-container-circle-rotate: unicode(ed23);
+$hotbox-icon-preferences-container-circle: unicode(ed24);
+$hotbox-icon-preferences-container-rotate: unicode(ed25);
+$hotbox-icon-preferences-container: unicode(ed26);
+$hotbox-icon-preferences-rotate: unicode(ed27);
+$hotbox-icon-preferences: unicode(ed28);
+$hotbox-icon-search-2: unicode(ed29);
+$hotbox-icon-security: unicode(ed2a);
+$hotbox-icon-segmentation: unicode(ed2b);
+$hotbox-icon-select-83-2: unicode(ed2c);
+$hotbox-icon-select-84-2: unicode(ed2d);
+$hotbox-icon-select: unicode(ed2e);
+$hotbox-icon-send-2: unicode(ed2f);
+$hotbox-icon-send: unicode(ed30);
+$hotbox-icon-settings-gear-63: unicode(ed31);
+$hotbox-icon-settings-gear-64: unicode(ed32);
+$hotbox-icon-settings-gear-65: unicode(ed33);
+$hotbox-icon-settings-tool-66: unicode(ed34);
+$hotbox-icon-settings-tool-67: unicode(ed35);
+$hotbox-icon-settings: unicode(ed36);
+$hotbox-icon-share-2: unicode(ed37);
+$hotbox-icon-upload-3: unicode(ed38);
+$hotbox-icon-share-91-2: unicode(ed39);
+$hotbox-icon-share-92-2: unicode(ed3a);
+$hotbox-icon-network-connection: unicode(ed3b);
+$hotbox-icon-share-3: unicode(ed3c);
+$hotbox-icon-shop: unicode(ed3d);
+$hotbox-icon-signal-2: unicode(ed3e);
+$hotbox-icon-e-add: unicode(ed3f);
+$hotbox-icon-e-delete: unicode(ed40);
+$hotbox-icon-e-remove: unicode(ed41);
+$hotbox-icon-single-folded-content: unicode(ed42);
+$hotbox-icon-single-paragraph: unicode(ed43);
+$hotbox-icon-slide-left-2: unicode(ed44);
+$hotbox-icon-slide-right-2: unicode(ed45);
+$hotbox-icon-i-add: unicode(ed46);
+$hotbox-icon-i-delete: unicode(ed47);
+$hotbox-icon-i-remove: unicode(ed48);
+$hotbox-icon-spaceship: unicode(ed49);
+$hotbox-icon-s-add: unicode(ed4a);
+$hotbox-icon-square-add-11: unicode(ed4b);
+$hotbox-icon-s-delete: unicode(ed4c);
+$hotbox-icon-square-delete-13: unicode(ed4d);
+$hotbox-icon-square-download-2: unicode(ed4e);
+$hotbox-icon-s-remove: unicode(ed4f);
+$hotbox-icon-square-remove-12: unicode(ed50);
+$hotbox-icon-square-upload-2: unicode(ed51);
+$hotbox-icon-table-left: unicode(ed54);
+$hotbox-icon-table-right: unicode(ed55);
+$hotbox-icon-shopping-label: unicode(ed56);
+$hotbox-icon-tag-content: unicode(ed57);
+$hotbox-icon-tag-line: unicode(ed58);
+$hotbox-icon-tag: unicode(ed59);
+$hotbox-icon-target: unicode(ed5a);
+$hotbox-icon-layout-grid-2: unicode(ed5b);
+$hotbox-icon-layout-2: unicode(ed5c);
+$hotbox-icon-clock: unicode(ed5d);
+$hotbox-icon-time-alarm: unicode(ed5e);
+$hotbox-icon-time-clock: unicode(ed5f);
+$hotbox-icon--stopwatch: unicode(ed60);
+$hotbox-icon-time-3: unicode(ed61);
+$hotbox-icon-trash-round: unicode(ed62);
+$hotbox-icon-trash-simple: unicode(ed63);
+$hotbox-icon-trash: unicode(ed64);
+$hotbox-icon-ui-03: unicode(ed65);
+$hotbox-icon-ui-04: unicode(ed66);
+$hotbox-icon-wireframe-2: unicode(ed67);
+$hotbox-icon-webpage-2: unicode(ed68);
+$hotbox-icon-widget: unicode(ed69);
+$hotbox-icon-window-add: unicode(ed6a);
+$hotbox-icon-window-delete: unicode(ed6b);
+$hotbox-icon-zoom-2-2: unicode(ed6c);
+$hotbox-icon-zoom-bold-in: unicode(ed6d);
+$hotbox-icon-zoom-bold-out: unicode(ed6e);
+$hotbox-icon-zoom-bold: unicode(ed6f);
+$hotbox-icon-zoom-in: unicode(ed70);
+$hotbox-icon-zoom-out: unicode(ed71);
+$hotbox-icon-zoom-split-in: unicode(ed72);
+$hotbox-icon-zoom-split-out: unicode(ed73);
+$hotbox-icon-zoom-split: unicode(ed74);
+$hotbox-icon-mirror-2-2: unicode(ed75);
+$hotbox-icon-full-screen: unicode(ed76);
+$hotbox-icon-sidebar-2: unicode(ed77);
+$hotbox-icon-blog: unicode(ed78);
+$hotbox-icon-file-delete: unicode(ed79);
+$hotbox-icon-file-add: unicode(ed7a);
+$hotbox-icon-fav-remove: unicode(ed7b);
+$hotbox-icon-gantt: unicode(ed7c);
+$hotbox-icon-alarm-add: unicode(ed7d);
+$hotbox-icon-timeline-2: unicode(ed7e);
+$hotbox-icon-comment-add: unicode(ed7f);
+$hotbox-icon-alarm-delete: unicode(ed80);
+$hotbox-icon-at-sign: unicode(ed81);
+$hotbox-icon-design-system-2: unicode(ed82);
+$hotbox-icon-components-2: unicode(ed83);
+$hotbox-icon-opening-times: unicode(ed84);
+$hotbox-icon-event-create: unicode(ed85);
+$hotbox-icon-event-confirm: unicode(ed86);
+$hotbox-icon-hot-key-2: unicode(ed87);
+$hotbox-icon-tags-stack: unicode(ed89);
+$hotbox-icon-check-all: unicode(ed8a);
+$hotbox-icon-analytics: unicode(ed8b);
+$hotbox-icon-check-double: unicode(ed8c);
+$hotbox-icon-check-single: unicode(ed8d);
+$hotbox-icon-progress-indicator: unicode(ed8e);
+$hotbox-icon-video-gallery: unicode(ed8f);
+$hotbox-icon-geometry-2: unicode(ed90);
+$hotbox-icon-apps-2: unicode(ed91);
+$hotbox-icon-a-tag: unicode(ed92);
+$hotbox-icon-a-tag-add: unicode(ed93);
+$hotbox-icon-a-tag-remove: unicode(ed94);
+$hotbox-icon-questionnaire: unicode(ed95);
+$hotbox-icon-check-list: unicode(ed96);
+$hotbox-icon-survey: unicode(ed97);
+$hotbox-icon-app-store-2: unicode(ed98);
+$hotbox-icon-saved-items: unicode(ed99);
+$hotbox-icon-fav-list: unicode(ed9a);
+$hotbox-icon-save-to-list: unicode(ed9b);
+$hotbox-icon-star-rate: unicode(ed9c);
+$hotbox-icon-bookmarks: unicode(ed9d);
+$hotbox-icon-feedback: unicode(ed9e);
+$hotbox-icon-a-add: unicode(ed9f);
+$hotbox-icon-a-check: unicode(eda0);
+$hotbox-icon-a-delete: unicode(eda1);
+$hotbox-icon-a-edit: unicode(eda2);
+$hotbox-icon-a-heart: unicode(eda3);
+$hotbox-icon-a-location: unicode(eda4);
+$hotbox-icon-a-remove: unicode(eda5);
+$hotbox-icon-a-search: unicode(eda6);
+$hotbox-icon-a-security: unicode(eda7);
+$hotbox-icon-a-share: unicode(eda8);
+$hotbox-icon-a-star: unicode(eda9);
+$hotbox-icon-a-sync: unicode(edaa);
+$hotbox-icon-a-time: unicode(edab);
+$hotbox-icon-accessibility: unicode(edac);
+$hotbox-icon-add-27: unicode(edad);
+$hotbox-icon-add-29: unicode(edae);
+$hotbox-icon-b-add: unicode(edaf);
+$hotbox-icon-b-check: unicode(edb0);
+$hotbox-icon-b-location: unicode(edb1);
+$hotbox-icon-b-love: unicode(edb2);
+$hotbox-icon-b-meeting: unicode(edb3);
+$hotbox-icon-b-remove: unicode(edb4);
+$hotbox-icon-b-security: unicode(edb5);
+$hotbox-icon-badge-13: unicode(edb6);
+$hotbox-icon-badge-14: unicode(edb7);
+$hotbox-icon-badge-15: unicode(edb8);
+$hotbox-icon-circle-08: unicode(edb9);
+$hotbox-icon-circle-09: unicode(edba);
+$hotbox-icon-circle-10: unicode(edbb);
+$hotbox-icon-contacts-2-2: unicode(edbc);
+$hotbox-icon-contacts-44: unicode(edbd);
+$hotbox-icon-contacts-45: unicode(edbe);
+$hotbox-icon-contacts-3: unicode(edbf);
+$hotbox-icon-delete-28: unicode(edc2);
+$hotbox-icon-delete-30: unicode(edc3);
+$hotbox-icon-disabled: unicode(edc4);
+$hotbox-icon-exchange: unicode(edc5);
+$hotbox-icon-family: unicode(edc6);
+$hotbox-icon-focus: unicode(edc7);
+$hotbox-icon-folder-shared: unicode(edc8);
+$hotbox-icon-folder-user: unicode(edc9);
+$hotbox-icon-property: unicode(edca);
+$hotbox-icon-man-20: unicode(edcb);
+$hotbox-icon-man-down: unicode(edcc);
+$hotbox-icon-man-glasses: unicode(edcd);
+$hotbox-icon-man-up: unicode(edce);
+$hotbox-icon-meeting: unicode(edd0);
+$hotbox-icon-mobile-contact: unicode(edd1);
+$hotbox-icon-multiple-11: unicode(edd2);
+$hotbox-icon-multiple-19: unicode(edd3);
+$hotbox-icon-multiple: unicode(edd4);
+$hotbox-icon-network: unicode(edd5);
+$hotbox-icon-parent: unicode(edd6);
+$hotbox-icon-pin-4: unicode(edd7);
+$hotbox-icon-search-3: unicode(edd9);
+$hotbox-icon-shared: unicode(edda);
+$hotbox-icon-single-01: unicode(eddb);
+$hotbox-icon-single-02: unicode(eddc);
+$hotbox-icon-single-03: unicode(eddd);
+$hotbox-icon-single-04: unicode(edde);
+$hotbox-icon-single-05: unicode(eddf);
+$hotbox-icon-single-body: unicode(ede0);
+$hotbox-icon-single-position: unicode(ede1);
+$hotbox-icon-user-frame-31: unicode(ede2);
+$hotbox-icon-user-frame-32: unicode(ede3);
+$hotbox-icon-user-frame-33: unicode(ede4);
+$hotbox-icon-standing-man: unicode(ede5);
+$hotbox-icon-standing-woman: unicode(ede6);
+$hotbox-icon-user: unicode(ede7);
+$hotbox-icon-voice-record: unicode(ede8);
+$hotbox-icon-wc: unicode(ede9);
+$hotbox-icon-woman: unicode(edea);
+$hotbox-icon-woman-down: unicode(edeb);
+$hotbox-icon-woman-up: unicode(edec);
+$hotbox-icon-woman-2: unicode(eded);
+$hotbox-icon-round-dollar-add-real-2: unicode(edee);
+$hotbox-icon-mjleaf: unicode(edef);
+$hotbox-icon-stock-2: unicode(edf0);
+$hotbox-icon-gift: unicode(edf1);
+$hotbox-icon-gift-exchange: unicode(edf2);
+$hotbox-icon-present-2: unicode(edf3);
+$hotbox-icon-app-2: unicode(edf4);
+$hotbox-icon-delivery-3: unicode(edf5);
+$hotbox-icon-box: unicode(edf6);
+$hotbox-icon-box-ribbon: unicode(edf7);
+$hotbox-icon-box-3d-67: unicode(edf8);
+$hotbox-icon-box-3d-50: unicode(edf9);
+$hotbox-icon-box-2: unicode(edfa);
+$hotbox-icon-sale: unicode(edfb);
+$hotbox-icon-coupon: unicode(edfc);
+$hotbox-icon-new: unicode(edfd);
+$hotbox-icon-discount: unicode(edfe);
+$hotbox-icon-discount-2: unicode(edff);
+$hotbox-icon-atom: unicode(ee00);
+$hotbox-icon-cash-register: unicode(ee01);
+$hotbox-icon-pos: unicode(ee02);
+$hotbox-icon-cheque-2: unicode(ee03);
+$hotbox-icon-cheque-4: unicode(ee04);
+$hotbox-icon-bill-2: unicode(ee05);
+$hotbox-icon-cheque-3: unicode(ee06);
+$hotbox-icon-payment-method: unicode(ee0d);
+$hotbox-icon-card-edit: unicode(ee0e);
+$hotbox-icon-card-favorite: unicode(ee0f);
+$hotbox-icon-card-remove: unicode(ee10);
+$hotbox-icon-card-update: unicode(ee11);
+$hotbox-icon-cash-register-2: unicode(ee12);
+$hotbox-icon-cheque-2-2: unicode(ee13);
+$hotbox-icon-cheque-3-2: unicode(ee14);
+$hotbox-icon-cheque-5: unicode(ee15);
+$hotbox-icon-coins-2: unicode(ee17);
+$hotbox-icon-credit-card-in: unicode(ee18);
+$hotbox-icon-credit-card: unicode(ee19);
+$hotbox-icon-currency-dollar-2: unicode(ee1a);
+$hotbox-icon-currency-exchange: unicode(ee1c);
+$hotbox-icon-folder-money: unicode(ee21);
+$hotbox-icon-hand-card: unicode(ee22);
+$hotbox-icon-handout-2: unicode(ee23);
+$hotbox-icon-handshake-2: unicode(ee24);
+$hotbox-icon-mobile-card: unicode(ee28);
+$hotbox-icon-money-11-2: unicode(ee29);
+$hotbox-icon-money-12-2: unicode(ee2a);
+$hotbox-icon-money-13-2: unicode(ee2b);
+$hotbox-icon-money-bag-2: unicode(ee2c);
+$hotbox-icon-money-coins-2: unicode(ee2d);
+$hotbox-icon-money-growth-2: unicode(ee2e);
+$hotbox-icon-money-time-2: unicode(ee2f);
+$hotbox-icon-money: unicode(ee30);
+$hotbox-icon-payment-2: unicode(ee31);
+$hotbox-icon-round-dollar-2: unicode(ee33);
+$hotbox-icon-solo: unicode(ee37);
+$hotbox-icon-stock-3: unicode(ee38);
+$hotbox-icon-wallet-43-2: unicode(ee3c);
+$hotbox-icon-wallet-44-2: unicode(ee3d);
+$hotbox-icon-wallet-90-2: unicode(ee3e);
+$hotbox-icon-wallet: unicode(ee3f);
+$hotbox-icon-dots-06-1: unicode(ee40);
+$hotbox-icon-dots-07-1: unicode(ee41);
+$hotbox-icon-dots-06-2: unicode(ee42);
+$hotbox-icon-dots-07-2: unicode(ee43);
+
+.hotbox-icon-back-78::before {
+  content: $hotbox-icon-back-78;
+}
+
+.hotbox-icon-back-80::before {
+  content: $hotbox-icon-back-80;
+}
+
+.hotbox-icon-block-bottom-left::before {
+  content: $hotbox-icon-block-bottom-left;
+}
+
+.hotbox-icon-block-bottom-right::before {
+  content: $hotbox-icon-block-bottom-right;
+}
+
+.hotbox-icon-block-down::before {
+  content: $hotbox-icon-block-down;
+}
+
+.hotbox-icon-block-left::before {
+  content: $hotbox-icon-block-left;
+}
+
+.hotbox-icon-block-right::before {
+  content: $hotbox-icon-block-right;
+}
+
+.hotbox-icon-block-top-left::before {
+  content: $hotbox-icon-block-top-left;
+}
+
+.hotbox-icon-block-top-right::before {
+  content: $hotbox-icon-block-top-right;
+}
+
+.hotbox-icon-block-up::before {
+  content: $hotbox-icon-block-up;
+}
+
+.hotbox-icon-bold-direction::before {
+  content: $hotbox-icon-bold-direction;
+}
+
+.hotbox-icon-bold-down::before {
+  content: $hotbox-icon-bold-down;
+}
+
+.hotbox-icon-bold-left::before {
+  content: $hotbox-icon-bold-left;
+}
+
+.hotbox-icon-bold-right::before {
+  content: $hotbox-icon-bold-right;
+}
+
+.hotbox-icon-bold-up::before {
+  content: $hotbox-icon-bold-up;
+}
+
+.hotbox-icon-centralize::before {
+  content: $hotbox-icon-centralize;
+}
+
+.hotbox-icon-circle-down-12::before {
+  content: $hotbox-icon-circle-down-12;
+}
+
+.hotbox-icon-circle-down-40::before {
+  content: $hotbox-icon-circle-down-40;
+}
+
+.hotbox-icon-circle-down::before {
+  content: $hotbox-icon-circle-down;
+}
+
+.hotbox-icon-circle-in::before {
+  content: $hotbox-icon-circle-in;
+}
+
+.hotbox-icon-circle-left-10::before {
+  content: $hotbox-icon-circle-left-10;
+}
+
+.hotbox-icon-circle-left-38::before {
+  content: $hotbox-icon-circle-left-38;
+}
+
+.hotbox-icon-circle-left::before {
+  content: $hotbox-icon-circle-left;
+}
+
+.hotbox-icon-circle-out::before {
+  content: $hotbox-icon-circle-out;
+}
+
+.hotbox-icon-circle-right-09::before {
+  content: $hotbox-icon-circle-right-09;
+}
+
+.hotbox-icon-circle-right-37::before {
+  content: $hotbox-icon-circle-right-37;
+}
+
+.hotbox-icon-circle-right::before {
+  content: $hotbox-icon-circle-right;
+}
+
+.hotbox-icon-circle-simple-down::before {
+  content: $hotbox-icon-circle-simple-down;
+}
+
+.hotbox-icon-circle-simple-left::before {
+  content: $hotbox-icon-circle-simple-left;
+}
+
+.hotbox-icon-circle-simple-right::before {
+  content: $hotbox-icon-circle-simple-right;
+}
+
+.hotbox-icon-circle-simple-up::before {
+  content: $hotbox-icon-circle-simple-up;
+}
+
+.hotbox-icon-circle-up-11::before {
+  content: $hotbox-icon-circle-up-11;
+}
+
+.hotbox-icon-circle-up-39::before {
+  content: $hotbox-icon-circle-up-39;
+}
+
+.hotbox-icon-circle-up::before {
+  content: $hotbox-icon-circle-up;
+}
+
+.hotbox-icon-circuit-round::before {
+  content: $hotbox-icon-circuit-round;
+}
+
+.hotbox-icon-circuit::before {
+  content: $hotbox-icon-circuit;
+}
+
+.hotbox-icon-cloud-download-93::before {
+  content: $hotbox-icon-cloud-download-93;
+}
+
+.hotbox-icon-cloud-download-95::before {
+  content: $hotbox-icon-cloud-download-95;
+}
+
+.hotbox-icon-cloud-refresh::before {
+  content: $hotbox-icon-cloud-refresh;
+}
+
+.hotbox-icon-cloud-upload-94::before {
+  content: $hotbox-icon-cloud-upload-94;
+}
+
+.hotbox-icon-cloud-upload-96::before {
+  content: $hotbox-icon-cloud-upload-96;
+}
+
+.hotbox-icon-compare::before {
+  content: $hotbox-icon-compare;
+}
+
+.hotbox-icon-computer-upload::before {
+  content: $hotbox-icon-computer-upload;
+}
+
+.hotbox-icon-contrast::before {
+  content: $hotbox-icon-contrast;
+}
+
+.hotbox-icon-conversion::before {
+  content: $hotbox-icon-conversion;
+}
+
+.hotbox-icon-corner-down-round::before {
+  content: $hotbox-icon-corner-down-round;
+}
+
+.hotbox-icon-corner-down::before {
+  content: $hotbox-icon-corner-down;
+}
+
+.hotbox-icon-corner-left-down::before {
+  content: $hotbox-icon-corner-left-down;
+}
+
+.hotbox-icon-corner-left-round::before {
+  content: $hotbox-icon-corner-left-round;
+}
+
+.hotbox-icon-corner-left::before {
+  content: $hotbox-icon-corner-left;
+}
+
+.hotbox-icon-corner-right-down::before {
+  content: $hotbox-icon-corner-right-down;
+}
+
+.hotbox-icon-corner-right-round::before {
+  content: $hotbox-icon-corner-right-round;
+}
+
+.hotbox-icon-corner-right::before {
+  content: $hotbox-icon-corner-right;
+}
+
+.hotbox-icon-corner-up-left::before {
+  content: $hotbox-icon-corner-up-left;
+}
+
+.hotbox-icon-corner-up-right::before {
+  content: $hotbox-icon-corner-up-right;
+}
+
+.hotbox-icon-corner-up-round::before {
+  content: $hotbox-icon-corner-up-round;
+}
+
+.hotbox-icon-corner-up::before {
+  content: $hotbox-icon-corner-up;
+}
+
+.hotbox-icon-cross-down::before {
+  content: $hotbox-icon-cross-down;
+}
+
+.hotbox-icon-cross-horizontal::before {
+  content: $hotbox-icon-cross-horizontal;
+}
+
+.hotbox-icon-cross-left::before {
+  content: $hotbox-icon-cross-left;
+}
+
+.hotbox-icon-cross-right::before {
+  content: $hotbox-icon-cross-right;
+}
+
+.hotbox-icon-cross-up::before {
+  content: $hotbox-icon-cross-up;
+}
+
+.hotbox-icon-cross-vertical::before {
+  content: $hotbox-icon-cross-vertical;
+}
+
+.hotbox-icon-cross::before {
+  content: $hotbox-icon-cross;
+}
+
+.hotbox-icon-curve-circuit::before {
+  content: $hotbox-icon-curve-circuit;
+}
+
+.hotbox-icon-curve-directions::before {
+  content: $hotbox-icon-curve-directions;
+}
+
+.hotbox-icon-curve-split::before {
+  content: $hotbox-icon-curve-split;
+}
+
+.hotbox-icon-curved-next::before {
+  content: $hotbox-icon-curved-next;
+}
+
+.hotbox-icon-curved-previous::before {
+  content: $hotbox-icon-curved-previous;
+}
+
+.hotbox-icon-delete-49::before {
+  content: $hotbox-icon-delete-49;
+}
+
+.hotbox-icon-delete-50::before {
+  content: $hotbox-icon-delete-50;
+}
+
+.hotbox-icon-diag-bottom-left::before {
+  content: $hotbox-icon-diag-bottom-left;
+}
+
+.hotbox-icon-diag-bottom-right::before {
+  content: $hotbox-icon-diag-bottom-right;
+}
+
+.hotbox-icon-diag-top-left::before {
+  content: $hotbox-icon-diag-top-left;
+}
+
+.hotbox-icon-diag-top-right::before {
+  content: $hotbox-icon-diag-top-right;
+}
+
+.hotbox-icon-direction-53::before {
+  content: $hotbox-icon-direction-53;
+}
+
+.hotbox-icon-direction-56::before {
+  content: $hotbox-icon-direction-56;
+}
+
+.hotbox-icon-direction::before {
+  content: $hotbox-icon-direction;
+}
+
+.hotbox-icon-disperse::before {
+  content: $hotbox-icon-disperse;
+}
+
+.hotbox-icon-dots-download::before {
+  content: $hotbox-icon-dots-download;
+}
+
+.hotbox-icon-dots-upload::before {
+  content: $hotbox-icon-dots-upload;
+}
+
+.hotbox-icon-double-left::before {
+  content: $hotbox-icon-double-left;
+}
+
+.hotbox-icon-double-right::before {
+  content: $hotbox-icon-double-right;
+}
+
+.hotbox-icon-download-file::before {
+  content: $hotbox-icon-download-file;
+}
+
+.hotbox-icon-download-3::before {
+  content: $hotbox-icon-download-3;
+}
+
+.hotbox-icon-download::before {
+  content: $hotbox-icon-download;
+}
+
+.hotbox-icon-eject::before {
+  content: $hotbox-icon-eject;
+}
+
+.hotbox-icon-enlarge-45::before {
+  content: $hotbox-icon-enlarge-45;
+}
+
+.hotbox-icon-enlarge-46::before {
+  content: $hotbox-icon-enlarge-46;
+}
+
+.hotbox-icon-enlarge-circle::before {
+  content: $hotbox-icon-enlarge-circle;
+}
+
+.hotbox-icon-enlarge-diagonal-43::before {
+  content: $hotbox-icon-enlarge-diagonal-43;
+}
+
+.hotbox-icon-enlarge-diagonal-44::before {
+  content: $hotbox-icon-enlarge-diagonal-44;
+}
+
+.hotbox-icon-enlarge-horizontal::before {
+  content: $hotbox-icon-enlarge-horizontal;
+}
+
+.hotbox-icon-enlarge-vertical::before {
+  content: $hotbox-icon-enlarge-vertical;
+}
+
+.hotbox-icon-export::before {
+  content: $hotbox-icon-export;
+}
+
+.hotbox-icon-file-download-87::before {
+  content: $hotbox-icon-file-download-87;
+}
+
+.hotbox-icon-file-download-89::before {
+  content: $hotbox-icon-file-download-89;
+}
+
+.hotbox-icon-file-download-94::before {
+  content: $hotbox-icon-file-download-94;
+}
+
+.hotbox-icon-file-upload-86::before {
+  content: $hotbox-icon-file-upload-86;
+}
+
+.hotbox-icon-file-upload-88::before {
+  content: $hotbox-icon-file-upload-88;
+}
+
+.hotbox-icon-file-upload-93::before {
+  content: $hotbox-icon-file-upload-93;
+}
+
+.hotbox-icon-fit-horizontal::before {
+  content: $hotbox-icon-fit-horizontal;
+}
+
+.hotbox-icon-fit-vertical::before {
+  content: $hotbox-icon-fit-vertical;
+}
+
+.hotbox-icon-fork-round::before {
+  content: $hotbox-icon-fork-round;
+}
+
+.hotbox-icon-fork::before {
+  content: $hotbox-icon-fork;
+}
+
+.hotbox-icon-format-left::before {
+  content: $hotbox-icon-format-left;
+}
+
+.hotbox-icon-format-right::before {
+  content: $hotbox-icon-format-right;
+}
+
+.hotbox-icon-fullscreen-70::before {
+  content: $hotbox-icon-fullscreen-70;
+}
+
+.hotbox-icon-fullscreen-71::before {
+  content: $hotbox-icon-fullscreen-71;
+}
+
+.hotbox-icon-fullscreen-76::before {
+  content: $hotbox-icon-fullscreen-76;
+}
+
+.hotbox-icon-fullscreen-77::before {
+  content: $hotbox-icon-fullscreen-77;
+}
+
+.hotbox-icon-fullscreen-double-74::before {
+  content: $hotbox-icon-fullscreen-double-74;
+}
+
+.hotbox-icon-fullscreen-double-75::before {
+  content: $hotbox-icon-fullscreen-double-75;
+}
+
+.hotbox-icon-fullscreen-split-72::before {
+  content: $hotbox-icon-fullscreen-split-72;
+}
+
+.hotbox-icon-fullscreen-split-73::before {
+  content: $hotbox-icon-fullscreen-split-73;
+}
+
+.hotbox-icon-hit-down::before {
+  content: $hotbox-icon-hit-down;
+}
+
+.hotbox-icon-hit-left::before {
+  content: $hotbox-icon-hit-left;
+}
+
+.hotbox-icon-hit-right::before {
+  content: $hotbox-icon-hit-right;
+}
+
+.hotbox-icon-hit-up::before {
+  content: $hotbox-icon-hit-up;
+}
+
+.hotbox-icon-input-12::before {
+  content: $hotbox-icon-input-12;
+}
+
+.hotbox-icon-input-21::before {
+  content: $hotbox-icon-input-21;
+}
+
+.hotbox-icon-invert::before {
+  content: $hotbox-icon-invert;
+}
+
+.hotbox-icon-launch-11::before {
+  content: $hotbox-icon-launch-11;
+}
+
+.hotbox-icon-launch-47::before {
+  content: $hotbox-icon-launch-47;
+}
+
+.hotbox-icon-lines::before {
+  content: $hotbox-icon-lines;
+}
+
+.hotbox-icon-log-in::before {
+  content: $hotbox-icon-log-in;
+}
+
+.hotbox-icon-log-out-2::before {
+  content: $hotbox-icon-log-out-2;
+}
+
+.hotbox-icon-log-out::before {
+  content: $hotbox-icon-log-out;
+}
+
+.hotbox-icon-logout::before {
+  content: $hotbox-icon-logout;
+}
+
+.hotbox-icon-loop-30::before {
+  content: $hotbox-icon-loop-30;
+}
+
+.hotbox-icon-loop-34::before {
+  content: $hotbox-icon-loop-34;
+}
+
+.hotbox-icon-loop-82::before {
+  content: $hotbox-icon-loop-82;
+}
+
+.hotbox-icon-loop-83::before {
+  content: $hotbox-icon-loop-83;
+}
+
+.hotbox-icon-loop::before {
+  content: $hotbox-icon-loop;
+}
+
+.hotbox-icon-merge-2::before {
+  content: $hotbox-icon-merge-2;
+}
+
+.hotbox-icon-merge-round::before {
+  content: $hotbox-icon-merge-round;
+}
+
+.hotbox-icon-merge::before {
+  content: $hotbox-icon-merge;
+}
+
+.hotbox-icon-minimal-down::before {
+  content: $hotbox-icon-minimal-down;
+}
+
+.hotbox-icon-minimal-left::before {
+  content: $hotbox-icon-minimal-left;
+}
+
+.hotbox-icon-minimal-right::before {
+  content: $hotbox-icon-minimal-right;
+}
+
+.hotbox-icon-minimal-up::before {
+  content: $hotbox-icon-minimal-up;
+}
+
+.hotbox-icon-move-05::before {
+  content: $hotbox-icon-move-05;
+}
+
+.hotbox-icon-move-06::before {
+  content: $hotbox-icon-move-06;
+}
+
+.hotbox-icon-move-92::before {
+  content: $hotbox-icon-move-92;
+}
+
+.hotbox-icon-move-down-2::before {
+  content: $hotbox-icon-move-down-2;
+}
+
+.hotbox-icon-move-down-right::before {
+  content: $hotbox-icon-move-down-right;
+}
+
+.hotbox-icon-move-down::before {
+  content: $hotbox-icon-move-down;
+}
+
+.hotbox-icon-move-left::before {
+  content: $hotbox-icon-move-left;
+}
+
+.hotbox-icon-move-right::before {
+  content: $hotbox-icon-move-right;
+}
+
+.hotbox-icon-move-up-2::before {
+  content: $hotbox-icon-move-up-2;
+}
+
+.hotbox-icon-move-up-left::before {
+  content: $hotbox-icon-move-up-left;
+}
+
+.hotbox-icon-move-up::before {
+  content: $hotbox-icon-move-up;
+}
+
+.hotbox-icon-open-in-browser::before {
+  content: $hotbox-icon-open-in-browser;
+}
+
+.hotbox-icon-priority-high::before {
+  content: $hotbox-icon-priority-high;
+}
+
+.hotbox-icon-priority-low::before {
+  content: $hotbox-icon-priority-low;
+}
+
+.hotbox-icon-push-next::before {
+  content: $hotbox-icon-push-next;
+}
+
+.hotbox-icon-push-previous::before {
+  content: $hotbox-icon-push-previous;
+}
+
+.hotbox-icon-redo-10::before {
+  content: $hotbox-icon-redo-10;
+}
+
+.hotbox-icon-redo-26::before {
+  content: $hotbox-icon-redo-26;
+}
+
+.hotbox-icon-redo-79::before {
+  content: $hotbox-icon-redo-79;
+}
+
+.hotbox-icon-redo-81::before {
+  content: $hotbox-icon-redo-81;
+}
+
+.hotbox-icon-refresh-68::before {
+  content: $hotbox-icon-refresh-68;
+}
+
+.hotbox-icon-refresh-69::before {
+  content: $hotbox-icon-refresh-69;
+}
+
+.hotbox-icon-reload::before {
+  content: $hotbox-icon-reload;
+}
+
+.hotbox-icon-replay::before {
+  content: $hotbox-icon-replay;
+}
+
+.hotbox-icon-reply-all::before {
+  content: $hotbox-icon-reply-all;
+}
+
+.hotbox-icon-reply::before {
+  content: $hotbox-icon-reply;
+}
+
+.hotbox-icon-restore::before {
+  content: $hotbox-icon-restore;
+}
+
+.hotbox-icon-rotate-left-2::before {
+  content: $hotbox-icon-rotate-left-2;
+}
+
+.hotbox-icon-rotate-left::before {
+  content: $hotbox-icon-rotate-left;
+}
+
+.hotbox-icon-rotate-right-2::before {
+  content: $hotbox-icon-rotate-right-2;
+}
+
+.hotbox-icon-rotate-right::before {
+  content: $hotbox-icon-rotate-right;
+}
+
+.hotbox-icon-round-down::before {
+  content: $hotbox-icon-round-down;
+}
+
+.hotbox-icon-round-left-down::before {
+  content: $hotbox-icon-round-left-down;
+}
+
+.hotbox-icon-round-left::before {
+  content: $hotbox-icon-round-left;
+}
+
+.hotbox-icon-round-right-down::before {
+  content: $hotbox-icon-round-right-down;
+}
+
+.hotbox-icon-round-right::before {
+  content: $hotbox-icon-round-right;
+}
+
+.hotbox-icon-round-up-left::before {
+  content: $hotbox-icon-round-up-left;
+}
+
+.hotbox-icon-round-up-right::before {
+  content: $hotbox-icon-round-up-right;
+}
+
+.hotbox-icon-round-up::before {
+  content: $hotbox-icon-round-up;
+}
+
+.hotbox-icon-select-83::before {
+  content: $hotbox-icon-select-83;
+}
+
+.hotbox-icon-select-84::before {
+  content: $hotbox-icon-select-84;
+}
+
+.hotbox-icon-separate-2::before {
+  content: $hotbox-icon-separate-2;
+}
+
+.hotbox-icon-separate-round::before {
+  content: $hotbox-icon-separate-round;
+}
+
+.hotbox-icon-separate::before {
+  content: $hotbox-icon-separate;
+}
+
+.hotbox-icon-upload::before {
+  content: $hotbox-icon-upload;
+}
+
+.hotbox-icon-share-91::before {
+  content: $hotbox-icon-share-91;
+}
+
+.hotbox-icon-share-92::before {
+  content: $hotbox-icon-share-92;
+}
+
+.hotbox-icon-share-left::before {
+  content: $hotbox-icon-share-left;
+}
+
+.hotbox-icon-share-right::before {
+  content: $hotbox-icon-share-right;
+}
+
+.hotbox-icon-share::before {
+  content: $hotbox-icon-share;
+}
+
+.hotbox-icon-shuffle-01::before {
+  content: $hotbox-icon-shuffle-01;
+}
+
+.hotbox-icon-shuffle-35::before {
+  content: $hotbox-icon-shuffle-35;
+}
+
+.hotbox-icon-shuffle-97::before {
+  content: $hotbox-icon-shuffle-97;
+}
+
+.hotbox-icon-shuffle-98::before {
+  content: $hotbox-icon-shuffle-98;
+}
+
+.hotbox-icon-simple-down::before {
+  content: $hotbox-icon-simple-down;
+}
+
+.hotbox-icon-simple-left::before {
+  content: $hotbox-icon-simple-left;
+}
+
+.hotbox-icon-simple-right::before {
+  content: $hotbox-icon-simple-right;
+}
+
+.hotbox-icon-simple-up::before {
+  content: $hotbox-icon-simple-up;
+}
+
+.hotbox-icon-skew-down::before {
+  content: $hotbox-icon-skew-down;
+}
+
+.hotbox-icon-skew-left::before {
+  content: $hotbox-icon-skew-left;
+}
+
+.hotbox-icon-skew-right::before {
+  content: $hotbox-icon-skew-right;
+}
+
+.hotbox-icon-skew-up::before {
+  content: $hotbox-icon-skew-up;
+}
+
+.hotbox-icon-small-down::before {
+  content: $hotbox-icon-small-down;
+}
+
+.hotbox-icon-small-left::before {
+  content: $hotbox-icon-small-left;
+}
+
+.hotbox-icon-small-right::before {
+  content: $hotbox-icon-small-right;
+}
+
+.hotbox-icon-small-triangle-down::before {
+  content: $hotbox-icon-small-triangle-down;
+}
+
+.hotbox-icon-small-triangle-left::before {
+  content: $hotbox-icon-small-triangle-left;
+}
+
+.hotbox-icon-small-triangle-right::before {
+  content: $hotbox-icon-small-triangle-right;
+}
+
+.hotbox-icon-small-triangle-up::before {
+  content: $hotbox-icon-small-triangle-up;
+}
+
+.hotbox-icon-small-up::before {
+  content: $hotbox-icon-small-up;
+}
+
+.hotbox-icon-split-33::before {
+  content: $hotbox-icon-split-33;
+}
+
+.hotbox-icon-split-37::before {
+  content: $hotbox-icon-split-37;
+}
+
+.hotbox-icon-split-horizontal::before {
+  content: $hotbox-icon-split-horizontal;
+}
+
+.hotbox-icon-split-round::before {
+  content: $hotbox-icon-split-round;
+}
+
+.hotbox-icon-split-vertical::before {
+  content: $hotbox-icon-split-vertical;
+}
+
+.hotbox-icon-split::before {
+  content: $hotbox-icon-split;
+}
+
+.hotbox-icon-square-corner-down-left::before {
+  content: $hotbox-icon-square-corner-down-left;
+}
+
+.hotbox-icon-square-corner-down-right::before {
+  content: $hotbox-icon-square-corner-down-right;
+}
+
+.hotbox-icon-square-corner-up-left::before {
+  content: $hotbox-icon-square-corner-up-left;
+}
+
+.hotbox-icon-square-corner-up-right::before {
+  content: $hotbox-icon-square-corner-up-right;
+}
+
+.hotbox-icon-square-down-06::before {
+  content: $hotbox-icon-square-down-06;
+}
+
+.hotbox-icon-square-down-22::before {
+  content: $hotbox-icon-square-down-22;
+}
+
+.hotbox-icon-square-down::before {
+  content: $hotbox-icon-square-down;
+}
+
+.hotbox-icon-square-download::before {
+  content: $hotbox-icon-square-download;
+}
+
+.hotbox-icon-square-enlarge::before {
+  content: $hotbox-icon-square-enlarge;
+}
+
+.hotbox-icon-square-left-04::before {
+  content: $hotbox-icon-square-left-04;
+}
+
+.hotbox-icon-square-left-20::before {
+  content: $hotbox-icon-square-left-20;
+}
+
+.hotbox-icon-square-left::before {
+  content: $hotbox-icon-square-left;
+}
+
+.hotbox-icon-square-right-03::before {
+  content: $hotbox-icon-square-right-03;
+}
+
+.hotbox-icon-square-right-19::before {
+  content: $hotbox-icon-square-right-19;
+}
+
+.hotbox-icon-square-right::before {
+  content: $hotbox-icon-square-right;
+}
+
+.hotbox-icon-square-simple-down::before {
+  content: $hotbox-icon-square-simple-down;
+}
+
+.hotbox-icon-square-simple-left::before {
+  content: $hotbox-icon-square-simple-left;
+}
+
+.hotbox-icon-square-simple-right::before {
+  content: $hotbox-icon-square-simple-right;
+}
+
+.hotbox-icon-square-simple-up::before {
+  content: $hotbox-icon-square-simple-up;
+}
+
+.hotbox-icon-square-up-05::before {
+  content: $hotbox-icon-square-up-05;
+}
+
+.hotbox-icon-square-up-21::before {
+  content: $hotbox-icon-square-up-21;
+}
+
+.hotbox-icon-square-up::before {
+  content: $hotbox-icon-square-up;
+}
+
+.hotbox-icon-square-upload::before {
+  content: $hotbox-icon-square-upload;
+}
+
+.hotbox-icon-square-zoom::before {
+  content: $hotbox-icon-square-zoom;
+}
+
+.hotbox-icon-stre-down::before {
+  content: $hotbox-icon-stre-down;
+}
+
+.hotbox-icon-stre-left::before {
+  content: $hotbox-icon-stre-left;
+}
+
+.hotbox-icon-stre-right::before {
+  content: $hotbox-icon-stre-right;
+}
+
+.hotbox-icon-stre-up::before {
+  content: $hotbox-icon-stre-up;
+}
+
+.hotbox-icon-strong-down::before {
+  content: $hotbox-icon-strong-down;
+}
+
+.hotbox-icon-strong-left::before {
+  content: $hotbox-icon-strong-left;
+}
+
+.hotbox-icon-strong-right::before {
+  content: $hotbox-icon-strong-right;
+}
+
+.hotbox-icon-strong-up::before {
+  content: $hotbox-icon-strong-up;
+}
+
+.hotbox-icon-super-bold-down::before {
+  content: $hotbox-icon-super-bold-down;
+}
+
+.hotbox-icon-super-bold-left::before {
+  content: $hotbox-icon-super-bold-left;
+}
+
+.hotbox-icon-super-bold-right::before {
+  content: $hotbox-icon-super-bold-right;
+}
+
+.hotbox-icon-super-bold-up::before {
+  content: $hotbox-icon-super-bold-up;
+}
+
+.hotbox-icon-swap-horizontal::before {
+  content: $hotbox-icon-swap-horizontal;
+}
+
+.hotbox-icon-swap-vertical::before {
+  content: $hotbox-icon-swap-vertical;
+}
+
+.hotbox-icon-system-update::before {
+  content: $hotbox-icon-system-update;
+}
+
+.hotbox-icon-tail-down::before {
+  content: $hotbox-icon-tail-down;
+}
+
+.hotbox-icon-tail-left::before {
+  content: $hotbox-icon-tail-left;
+}
+
+.hotbox-icon-tail-right::before {
+  content: $hotbox-icon-tail-right;
+}
+
+.hotbox-icon-tail-triangle-down::before {
+  content: $hotbox-icon-tail-triangle-down;
+}
+
+.hotbox-icon-tail-triangle-left::before {
+  content: $hotbox-icon-tail-triangle-left;
+}
+
+.hotbox-icon-tail-triangle-right::before {
+  content: $hotbox-icon-tail-triangle-right;
+}
+
+.hotbox-icon-tail-triangle-up::before {
+  content: $hotbox-icon-tail-triangle-up;
+}
+
+.hotbox-icon-tail-up::before {
+  content: $hotbox-icon-tail-up;
+}
+
+.hotbox-icon-time::before {
+  content: $hotbox-icon-time;
+}
+
+.hotbox-icon-trend-down::before {
+  content: $hotbox-icon-trend-down;
+}
+
+.hotbox-icon-trend-up::before {
+  content: $hotbox-icon-trend-up;
+}
+
+.hotbox-icon-triangle-down-20::before {
+  content: $hotbox-icon-triangle-down-20;
+}
+
+.hotbox-icon-triangle-down-65::before {
+  content: $hotbox-icon-triangle-down-65;
+}
+
+.hotbox-icon-triangle-down::before {
+  content: $hotbox-icon-triangle-down;
+}
+
+.hotbox-icon-triangle-left-18::before {
+  content: $hotbox-icon-triangle-left-18;
+}
+
+.hotbox-icon-triangle-left-63::before {
+  content: $hotbox-icon-triangle-left-63;
+}
+
+.hotbox-icon-triangle-left::before {
+  content: $hotbox-icon-triangle-left;
+}
+
+.hotbox-icon-triangle-right-17::before {
+  content: $hotbox-icon-triangle-right-17;
+}
+
+.hotbox-icon-triangle-right-62::before {
+  content: $hotbox-icon-triangle-right-62;
+}
+
+.hotbox-icon-triangle-right::before {
+  content: $hotbox-icon-triangle-right;
+}
+
+.hotbox-icon-triangle-up-19::before {
+  content: $hotbox-icon-triangle-up-19;
+}
+
+.hotbox-icon-triangle-up-64::before {
+  content: $hotbox-icon-triangle-up-64;
+}
+
+.hotbox-icon-triangle-up::before {
+  content: $hotbox-icon-triangle-up;
+}
+
+.hotbox-icon-undo-25::before {
+  content: $hotbox-icon-undo-25;
+}
+
+.hotbox-icon-undo-29::before {
+  content: $hotbox-icon-undo-29;
+}
+
+.hotbox-icon-unite-round::before {
+  content: $hotbox-icon-unite-round;
+}
+
+.hotbox-icon-unite::before {
+  content: $hotbox-icon-unite;
+}
+
+.hotbox-icon-upload-2::before {
+  content: $hotbox-icon-upload-2;
+}
+
+.hotbox-icon-upload-file::before {
+  content: $hotbox-icon-upload-file;
+}
+
+.hotbox-icon-window-zoom-in::before {
+  content: $hotbox-icon-window-zoom-in;
+}
+
+.hotbox-icon-window-zoom-out::before {
+  content: $hotbox-icon-window-zoom-out;
+}
+
+.hotbox-icon-zoom-88::before {
+  content: $hotbox-icon-zoom-88;
+}
+
+.hotbox-icon-zoom-99::before {
+  content: $hotbox-icon-zoom-99;
+}
+
+.hotbox-icon-zoom-100::before {
+  content: $hotbox-icon-zoom-100;
+}
+
+.hotbox-icon-zoom::before {
+  content: $hotbox-icon-zoom;
+}
+
+.hotbox-icon-zoom-e::before {
+  content: $hotbox-icon-zoom-e;
+}
+
+.hotbox-icon-zoom-triangles::before {
+  content: $hotbox-icon-zoom-triangles;
+}
+
+.hotbox-icon-resize-v::before {
+  content: $hotbox-icon-resize-v;
+}
+
+.hotbox-icon-resize-h::before {
+  content: $hotbox-icon-resize-h;
+}
+
+.hotbox-icon-backward::before {
+  content: $hotbox-icon-backward;
+}
+
+.hotbox-icon-forward::before {
+  content: $hotbox-icon-forward;
+}
+
+.hotbox-icon-slide-left::before {
+  content: $hotbox-icon-slide-left;
+}
+
+.hotbox-icon-slide-right::before {
+  content: $hotbox-icon-slide-right;
+}
+
+.hotbox-icon-agenda::before {
+  content: $hotbox-icon-agenda;
+}
+
+.hotbox-icon-atm::before {
+  content: $hotbox-icon-atm;
+}
+
+.hotbox-icon-cockade::before {
+  content: $hotbox-icon-cockade;
+}
+
+.hotbox-icon-award-49::before {
+  content: $hotbox-icon-award-49;
+}
+
+.hotbox-icon-certificate::before {
+  content: $hotbox-icon-certificate;
+}
+
+.hotbox-icon-badge::before {
+  content: $hotbox-icon-badge;
+}
+
+.hotbox-icon-bank::before {
+  content: $hotbox-icon-bank;
+}
+
+.hotbox-icon-board-27::before {
+  content: $hotbox-icon-board-27;
+}
+
+.hotbox-icon-board-28::before {
+  content: $hotbox-icon-board-28;
+}
+
+.hotbox-icon-board-29::before {
+  content: $hotbox-icon-board-29;
+}
+
+.hotbox-icon-board-30::before {
+  content: $hotbox-icon-board-30;
+}
+
+.hotbox-icon-books::before {
+  content: $hotbox-icon-books;
+}
+
+.hotbox-icon-briefcase-24::before {
+  content: $hotbox-icon-briefcase-24;
+}
+
+.hotbox-icon-briefcase-25::before {
+  content: $hotbox-icon-briefcase-25;
+}
+
+.hotbox-icon-briefcase-26::before {
+  content: $hotbox-icon-briefcase-26;
+}
+
+.hotbox-icon-building::before {
+  content: $hotbox-icon-building;
+}
+
+.hotbox-icon-bulb-61::before {
+  content: $hotbox-icon-bulb-61;
+}
+
+.hotbox-icon-bulb-62::before {
+  content: $hotbox-icon-bulb-62;
+}
+
+.hotbox-icon-bulb-63::before {
+  content: $hotbox-icon-bulb-63;
+}
+
+.hotbox-icon-businessman-03::before {
+  content: $hotbox-icon-businessman-03;
+}
+
+.hotbox-icon-businessman-04::before {
+  content: $hotbox-icon-businessman-04;
+}
+
+.hotbox-icon-calculator::before {
+  content: $hotbox-icon-calculator;
+}
+
+.hotbox-icon-chair::before {
+  content: $hotbox-icon-chair;
+}
+
+.hotbox-icon-chart-bar-32::before {
+  content: $hotbox-icon-chart-bar-32;
+}
+
+.hotbox-icon-chart-bar-33::before {
+  content: $hotbox-icon-chart-bar-33;
+}
+
+.hotbox-icon-chart-growth::before {
+  content: $hotbox-icon-chart-growth;
+}
+
+.hotbox-icon-chart-pie-35::before {
+  content: $hotbox-icon-chart-pie-35;
+}
+
+.hotbox-icon-chart-pie-36::before {
+  content: $hotbox-icon-chart-pie-36;
+}
+
+.hotbox-icon-chart::before {
+  content: $hotbox-icon-chart;
+}
+
+.hotbox-icon-cheque::before {
+  content: $hotbox-icon-cheque;
+}
+
+.hotbox-icon-coins::before {
+  content: $hotbox-icon-coins;
+}
+
+.hotbox-icon-connect::before {
+  content: $hotbox-icon-connect;
+}
+
+.hotbox-icon-contacts-2::before {
+  content: $hotbox-icon-contacts-2;
+}
+
+.hotbox-icon-contacts::before {
+  content: $hotbox-icon-contacts;
+}
+
+.hotbox-icon-currency-dollar::before {
+  content: $hotbox-icon-currency-dollar;
+}
+
+.hotbox-icon-dice::before {
+  content: $hotbox-icon-dice;
+}
+
+.hotbox-icon-factory::before {
+  content: $hotbox-icon-factory;
+}
+
+.hotbox-icon-globe::before {
+  content: $hotbox-icon-globe;
+}
+
+.hotbox-icon-goal-64::before {
+  content: $hotbox-icon-goal-64;
+}
+
+.hotbox-icon-goal-65::before {
+  content: $hotbox-icon-goal-65;
+}
+
+.hotbox-icon-gold::before {
+  content: $hotbox-icon-gold;
+}
+
+.hotbox-icon-handout::before {
+  content: $hotbox-icon-handout;
+}
+
+.hotbox-icon-handshake::before {
+  content: $hotbox-icon-handshake;
+}
+
+.hotbox-icon-hierarchy-53::before {
+  content: $hotbox-icon-hierarchy-53;
+}
+
+.hotbox-icon-hierarchy-54::before {
+  content: $hotbox-icon-hierarchy-54;
+}
+
+.hotbox-icon-hierarchy-55::before {
+  content: $hotbox-icon-hierarchy-55;
+}
+
+.hotbox-icon-hierarchy-56::before {
+  content: $hotbox-icon-hierarchy-56;
+}
+
+.hotbox-icon-math::before {
+  content: $hotbox-icon-math;
+}
+
+.hotbox-icon-money-11::before {
+  content: $hotbox-icon-money-11;
+}
+
+.hotbox-icon-money-12::before {
+  content: $hotbox-icon-money-12;
+}
+
+.hotbox-icon-money-13::before {
+  content: $hotbox-icon-money-13;
+}
+
+.hotbox-icon-money-bag::before {
+  content: $hotbox-icon-money-bag;
+}
+
+.hotbox-icon-money-coins::before {
+  content: $hotbox-icon-money-coins;
+}
+
+.hotbox-icon-money-growth::before {
+  content: $hotbox-icon-money-growth;
+}
+
+.hotbox-icon-money-time::before {
+  content: $hotbox-icon-money-time;
+}
+
+.hotbox-icon-net::before {
+  content: $hotbox-icon-net;
+}
+
+.hotbox-icon-notes::before {
+  content: $hotbox-icon-notes;
+}
+
+.hotbox-icon-payment::before {
+  content: $hotbox-icon-payment;
+}
+
+.hotbox-icon-percentage-38::before {
+  content: $hotbox-icon-percentage-38;
+}
+
+.hotbox-icon-percentage-39::before {
+  content: $hotbox-icon-percentage-39;
+}
+
+.hotbox-icon-pig::before {
+  content: $hotbox-icon-pig;
+}
+
+.hotbox-icon-pin::before {
+  content: $hotbox-icon-pin;
+}
+
+.hotbox-icon-plug::before {
+  content: $hotbox-icon-plug;
+}
+
+.hotbox-icon-progress::before {
+  content: $hotbox-icon-progress;
+}
+
+.hotbox-icon-round-dollar::before {
+  content: $hotbox-icon-round-dollar;
+}
+
+.hotbox-icon-safe::before {
+  content: $hotbox-icon-safe;
+}
+
+.hotbox-icon-scale::before {
+  content: $hotbox-icon-scale;
+}
+
+.hotbox-icon-sign::before {
+  content: $hotbox-icon-sign;
+}
+
+.hotbox-icon-signature::before {
+  content: $hotbox-icon-signature;
+}
+
+.hotbox-icon-stock::before {
+  content: $hotbox-icon-stock;
+}
+
+.hotbox-icon-tactic::before {
+  content: $hotbox-icon-tactic;
+}
+
+.hotbox-icon-wallet-43::before {
+  content: $hotbox-icon-wallet-43;
+}
+
+.hotbox-icon-wallet-44::before {
+  content: $hotbox-icon-wallet-44;
+}
+
+.hotbox-icon-wallet-90::before {
+  content: $hotbox-icon-wallet-90;
+}
+
+.hotbox-icon-bill::before {
+  content: $hotbox-icon-bill;
+}
+
+.hotbox-icon-name-card::before {
+  content: $hotbox-icon-name-card;
+}
+
+.hotbox-icon-privacy-policy::before {
+  content: $hotbox-icon-privacy-policy;
+}
+
+.hotbox-icon-ranking::before {
+  content: $hotbox-icon-ranking;
+}
+
+.hotbox-icon-personal-trainer::before {
+  content: $hotbox-icon-personal-trainer;
+}
+
+.hotbox-icon-presentation::before {
+  content: $hotbox-icon-presentation;
+}
+
+.hotbox-icon-3d-model::before {
+  content: $hotbox-icon-3d-model;
+}
+
+.hotbox-icon-3d-29::before {
+  content: $hotbox-icon-3d-29;
+}
+
+.hotbox-icon-album-2::before {
+  content: $hotbox-icon-album-2;
+}
+
+.hotbox-icon-album::before {
+  content: $hotbox-icon-album;
+}
+
+.hotbox-icon-align-bottom::before {
+  content: $hotbox-icon-align-bottom;
+}
+
+.hotbox-icon-align-center-horizontal::before {
+  content: $hotbox-icon-align-center-horizontal;
+}
+
+.hotbox-icon-align-center-vertical::before {
+  content: $hotbox-icon-align-center-vertical;
+}
+
+.hotbox-icon-align-left::before {
+  content: $hotbox-icon-align-left;
+}
+
+.hotbox-icon-align-right::before {
+  content: $hotbox-icon-align-right;
+}
+
+.hotbox-icon-align-top::before {
+  content: $hotbox-icon-align-top;
+}
+
+.hotbox-icon-angle::before {
+  content: $hotbox-icon-angle;
+}
+
+.hotbox-icon-animation-14::before {
+  content: $hotbox-icon-animation-14;
+}
+
+.hotbox-icon-animation-31::before {
+  content: $hotbox-icon-animation-31;
+}
+
+.hotbox-icon-animation-32::before {
+  content: $hotbox-icon-animation-32;
+}
+
+.hotbox-icon-app::before {
+  content: $hotbox-icon-app;
+}
+
+.hotbox-icon-artboard::before {
+  content: $hotbox-icon-artboard;
+}
+
+.hotbox-icon-blend::before {
+  content: $hotbox-icon-blend;
+}
+
+.hotbox-icon-book-bookmark-2::before {
+  content: $hotbox-icon-book-bookmark-2;
+}
+
+.hotbox-icon-book-bookmark::before {
+  content: $hotbox-icon-book-bookmark;
+}
+
+.hotbox-icon-book-open-2::before {
+  content: $hotbox-icon-book-open-2;
+}
+
+.hotbox-icon-book-open::before {
+  content: $hotbox-icon-book-open;
+}
+
+.hotbox-icon-browser-safari::before {
+  content: $hotbox-icon-browser-safari;
+}
+
+.hotbox-icon-brush::before {
+  content: $hotbox-icon-brush;
+}
+
+.hotbox-icon-bucket::before {
+  content: $hotbox-icon-bucket;
+}
+
+.hotbox-icon-bug::before {
+  content: $hotbox-icon-bug;
+}
+
+.hotbox-icon-bullet-list-67::before {
+  content: $hotbox-icon-bullet-list-67;
+}
+
+.hotbox-icon-bullet-list-68::before {
+  content: $hotbox-icon-bullet-list-68;
+}
+
+.hotbox-icon-bullet-list-69::before {
+  content: $hotbox-icon-bullet-list-69;
+}
+
+.hotbox-icon-bullet-list-70::before {
+  content: $hotbox-icon-bullet-list-70;
+}
+
+.hotbox-icon-button-2::before {
+  content: $hotbox-icon-button-2;
+}
+
+.hotbox-icon-canvas::before {
+  content: $hotbox-icon-canvas;
+}
+
+.hotbox-icon-clone::before {
+  content: $hotbox-icon-clone;
+}
+
+.hotbox-icon-code-editor::before {
+  content: $hotbox-icon-code-editor;
+}
+
+.hotbox-icon-code::before {
+  content: $hotbox-icon-code;
+}
+
+.hotbox-icon-collection::before {
+  content: $hotbox-icon-collection;
+}
+
+.hotbox-icon-command::before {
+  content: $hotbox-icon-command;
+}
+
+.hotbox-icon-contrast-2::before {
+  content: $hotbox-icon-contrast-2;
+}
+
+.hotbox-icon-copy::before {
+  content: $hotbox-icon-copy;
+}
+
+.hotbox-icon-crop::before {
+  content: $hotbox-icon-crop;
+}
+
+.hotbox-icon-cursor-48::before {
+  content: $hotbox-icon-cursor-48;
+}
+
+.hotbox-icon-cursor-49::before {
+  content: $hotbox-icon-cursor-49;
+}
+
+.hotbox-icon-cursor-text::before {
+  content: $hotbox-icon-cursor-text;
+}
+
+.hotbox-icon-design::before {
+  content: $hotbox-icon-design;
+}
+
+.hotbox-icon-distribute-horizontal::before {
+  content: $hotbox-icon-distribute-horizontal;
+}
+
+.hotbox-icon-distribute-vertical::before {
+  content: $hotbox-icon-distribute-vertical;
+}
+
+.hotbox-icon-divider::before {
+  content: $hotbox-icon-divider;
+}
+
+.hotbox-icon-drag::before {
+  content: $hotbox-icon-drag;
+}
+
+.hotbox-icon-drop-15::before {
+  content: $hotbox-icon-drop-15;
+}
+
+.hotbox-icon-eps::before {
+  content: $hotbox-icon-eps;
+}
+
+.hotbox-icon-eraser-32::before {
+  content: $hotbox-icon-eraser-32;
+}
+
+.hotbox-icon-eraser-33::before {
+  content: $hotbox-icon-eraser-33;
+}
+
+.hotbox-icon-eraser-46::before {
+  content: $hotbox-icon-eraser-46;
+}
+
+.hotbox-icon-filter-organization::before {
+  content: $hotbox-icon-filter-organization;
+}
+
+.hotbox-icon-flip-horizontal::before {
+  content: $hotbox-icon-flip-horizontal;
+}
+
+.hotbox-icon-flip-vertical::before {
+  content: $hotbox-icon-flip-vertical;
+}
+
+.hotbox-icon-form::before {
+  content: $hotbox-icon-form;
+}
+
+.hotbox-icon-frame::before {
+  content: $hotbox-icon-frame;
+}
+
+.hotbox-icon-group::before {
+  content: $hotbox-icon-group;
+}
+
+.hotbox-icon-image-2::before {
+  content: $hotbox-icon-image-2;
+}
+
+.hotbox-icon-image::before {
+  content: $hotbox-icon-image;
+}
+
+.hotbox-icon-layers-3::before {
+  content: $hotbox-icon-layers-3;
+}
+
+.hotbox-icon-layers-2::before {
+  content: $hotbox-icon-layers-2;
+}
+
+.hotbox-icon-layers::before {
+  content: $hotbox-icon-layers;
+}
+
+.hotbox-icon-layout-11::before {
+  content: $hotbox-icon-layout-11;
+}
+
+.hotbox-icon-layout-25::before {
+  content: $hotbox-icon-layout-25;
+}
+
+.hotbox-icon-magnet::before {
+  content: $hotbox-icon-magnet;
+}
+
+.hotbox-icon-marker::before {
+  content: $hotbox-icon-marker;
+}
+
+.hotbox-icon-measure-02::before {
+  content: $hotbox-icon-measure-02;
+}
+
+.hotbox-icon-measure-17::before {
+  content: $hotbox-icon-measure-17;
+}
+
+.hotbox-icon-measure-big::before {
+  content: $hotbox-icon-measure-big;
+}
+
+.hotbox-icon-microsoft::before {
+  content: $hotbox-icon-microsoft;
+}
+
+.hotbox-icon-mirror::before {
+  content: $hotbox-icon-mirror;
+}
+
+.hotbox-icon-mobile-design::before {
+  content: $hotbox-icon-mobile-design;
+}
+
+.hotbox-icon-mobile-dev::before {
+  content: $hotbox-icon-mobile-dev;
+}
+
+.hotbox-icon-mouse-08::before {
+  content: $hotbox-icon-mouse-08;
+}
+
+.hotbox-icon-mouse-09::before {
+  content: $hotbox-icon-mouse-09;
+}
+
+.hotbox-icon-mouse-10::before {
+  content: $hotbox-icon-mouse-10;
+}
+
+.hotbox-icon-move-down-2-2::before {
+  content: $hotbox-icon-move-down-2-2;
+}
+
+.hotbox-icon-move-up-2-2::before {
+  content: $hotbox-icon-move-up-2-2;
+}
+
+.hotbox-icon-newsletter-dev::before {
+  content: $hotbox-icon-newsletter-dev;
+}
+
+.hotbox-icon-note-code::before {
+  content: $hotbox-icon-note-code;
+}
+
+.hotbox-icon-paint-16::before {
+  content: $hotbox-icon-paint-16;
+}
+
+.hotbox-icon-paint-37::before {
+  content: $hotbox-icon-paint-37;
+}
+
+.hotbox-icon-paint-38::before {
+  content: $hotbox-icon-paint-38;
+}
+
+.hotbox-icon-paint-brush::before {
+  content: $hotbox-icon-paint-brush;
+}
+
+.hotbox-icon-paint-bucket-39::before {
+  content: $hotbox-icon-paint-bucket-39;
+}
+
+.hotbox-icon-paint-bucket-40::before {
+  content: $hotbox-icon-paint-bucket-40;
+}
+
+.hotbox-icon-palette::before {
+  content: $hotbox-icon-palette;
+}
+
+.hotbox-icon-pantone::before {
+  content: $hotbox-icon-pantone;
+}
+
+.hotbox-icon-paper-design::before {
+  content: $hotbox-icon-paper-design;
+}
+
+.hotbox-icon-paper-dev::before {
+  content: $hotbox-icon-paper-dev;
+}
+
+.hotbox-icon-patch-19::before {
+  content: $hotbox-icon-patch-19;
+}
+
+.hotbox-icon-patch-34::before {
+  content: $hotbox-icon-patch-34;
+}
+
+.hotbox-icon-path-exclude::before {
+  content: $hotbox-icon-path-exclude;
+}
+
+.hotbox-icon-path-intersect::before {
+  content: $hotbox-icon-path-intersect;
+}
+
+.hotbox-icon-path-minus::before {
+  content: $hotbox-icon-path-minus;
+}
+
+.hotbox-icon-path-unite::before {
+  content: $hotbox-icon-path-unite;
+}
+
+.hotbox-icon-pen-01::before {
+  content: $hotbox-icon-pen-01;
+}
+
+.hotbox-icon-pen-23::before {
+  content: $hotbox-icon-pen-23;
+}
+
+.hotbox-icon-pen-tool::before {
+  content: $hotbox-icon-pen-tool;
+}
+
+.hotbox-icon-phone::before {
+  content: $hotbox-icon-phone;
+}
+
+.hotbox-icon-photo-editor::before {
+  content: $hotbox-icon-photo-editor;
+}
+
+.hotbox-icon-responsive::before {
+  content: $hotbox-icon-responsive;
+}
+
+.hotbox-icon-ruler-pencil::before {
+  content: $hotbox-icon-ruler-pencil;
+}
+
+.hotbox-icon-scale-2::before {
+  content: $hotbox-icon-scale-2;
+}
+
+.hotbox-icon-scale-down::before {
+  content: $hotbox-icon-scale-down;
+}
+
+.hotbox-icon-scale-up::before {
+  content: $hotbox-icon-scale-up;
+}
+
+.hotbox-icon-scissors-dashed::before {
+  content: $hotbox-icon-scissors-dashed;
+}
+
+.hotbox-icon-scissors::before {
+  content: $hotbox-icon-scissors;
+}
+
+.hotbox-icon-selection::before {
+  content: $hotbox-icon-selection;
+}
+
+.hotbox-icon-shape-adjust::before {
+  content: $hotbox-icon-shape-adjust;
+}
+
+.hotbox-icon-shape-circle::before {
+  content: $hotbox-icon-shape-circle;
+}
+
+.hotbox-icon-shape-polygon::before {
+  content: $hotbox-icon-shape-polygon;
+}
+
+.hotbox-icon-shape-square::before {
+  content: $hotbox-icon-shape-square;
+}
+
+.hotbox-icon-shape-triangle::before {
+  content: $hotbox-icon-shape-triangle;
+}
+
+.hotbox-icon-shapes::before {
+  content: $hotbox-icon-shapes;
+}
+
+.hotbox-icon-sharpener::before {
+  content: $hotbox-icon-sharpener;
+}
+
+.hotbox-icon-slice::before {
+  content: $hotbox-icon-slice;
+}
+
+.hotbox-icon-slider::before {
+  content: $hotbox-icon-slider;
+}
+
+.hotbox-icon-spray::before {
+  content: $hotbox-icon-spray;
+}
+
+.hotbox-icon-stamp::before {
+  content: $hotbox-icon-stamp;
+}
+
+.hotbox-icon-tablet-mobile::before {
+  content: $hotbox-icon-tablet-mobile;
+}
+
+.hotbox-icon-tablet::before {
+  content: $hotbox-icon-tablet;
+}
+
+.hotbox-icon-text-2::before {
+  content: $hotbox-icon-text-2;
+}
+
+.hotbox-icon-text::before {
+  content: $hotbox-icon-text;
+}
+
+.hotbox-icon-time-2::before {
+  content: $hotbox-icon-time-2;
+}
+
+.hotbox-icon-todo::before {
+  content: $hotbox-icon-todo;
+}
+
+.hotbox-icon-transform-origin::before {
+  content: $hotbox-icon-transform-origin;
+}
+
+.hotbox-icon-transform::before {
+  content: $hotbox-icon-transform;
+}
+
+.hotbox-icon-undo-29-2::before {
+  content: $hotbox-icon-undo-29-2;
+}
+
+.hotbox-icon-ungroup::before {
+  content: $hotbox-icon-ungroup;
+}
+
+.hotbox-icon-usb::before {
+  content: $hotbox-icon-usb;
+}
+
+.hotbox-icon-vector::before {
+  content: $hotbox-icon-vector;
+}
+
+.hotbox-icon-wand-11::before {
+  content: $hotbox-icon-wand-11;
+}
+
+.hotbox-icon-wand-99::before {
+  content: $hotbox-icon-wand-99;
+}
+
+.hotbox-icon-watch-dev::before {
+  content: $hotbox-icon-watch-dev;
+}
+
+.hotbox-icon-web-design::before {
+  content: $hotbox-icon-web-design;
+}
+
+.hotbox-icon-webpage::before {
+  content: $hotbox-icon-webpage;
+}
+
+.hotbox-icon-window-code::before {
+  content: $hotbox-icon-window-code;
+}
+
+.hotbox-icon-window-dev::before {
+  content: $hotbox-icon-window-dev;
+}
+
+.hotbox-icon-window-paragraph::before {
+  content: $hotbox-icon-window-paragraph;
+}
+
+.hotbox-icon-window-responsive::before {
+  content: $hotbox-icon-window-responsive;
+}
+
+.hotbox-icon-design-dev::before {
+  content: $hotbox-icon-design-dev;
+}
+
+.hotbox-icon-zoom-2::before {
+  content: $hotbox-icon-zoom-2;
+}
+
+.hotbox-icon-zoom-99-2::before {
+  content: $hotbox-icon-zoom-99-2;
+}
+
+.hotbox-icon-refresh-02::before {
+  content: $hotbox-icon-refresh-02;
+}
+
+.hotbox-icon-mirror-2::before {
+  content: $hotbox-icon-mirror-2;
+}
+
+.hotbox-icon-sidebar::before {
+  content: $hotbox-icon-sidebar;
+}
+
+.hotbox-icon-timeline::before {
+  content: $hotbox-icon-timeline;
+}
+
+.hotbox-icon-gradient::before {
+  content: $hotbox-icon-gradient;
+}
+
+.hotbox-icon-prototype::before {
+  content: $hotbox-icon-prototype;
+}
+
+.hotbox-icon-cards::before {
+  content: $hotbox-icon-cards;
+}
+
+.hotbox-icon-transform-2d::before {
+  content: $hotbox-icon-transform-2d;
+}
+
+.hotbox-icon-border::before {
+  content: $hotbox-icon-border;
+}
+
+.hotbox-icon-border-radius::before {
+  content: $hotbox-icon-border-radius;
+}
+
+.hotbox-icon-position::before {
+  content: $hotbox-icon-position;
+}
+
+.hotbox-icon-shape-triangle-2::before {
+  content: $hotbox-icon-shape-triangle-2;
+}
+
+.hotbox-icon-shape-oval::before {
+  content: $hotbox-icon-shape-oval;
+}
+
+.hotbox-icon-shape-rectangle::before {
+  content: $hotbox-icon-shape-rectangle;
+}
+
+.hotbox-icon-shape-polygon-2::before {
+  content: $hotbox-icon-shape-polygon-2;
+}
+
+.hotbox-icon-shape-star::before {
+  content: $hotbox-icon-shape-star;
+}
+
+.hotbox-icon-shape-line::before {
+  content: $hotbox-icon-shape-line;
+}
+
+.hotbox-icon-shape-arrow::before {
+  content: $hotbox-icon-shape-arrow;
+}
+
+.hotbox-icon-shape-custom::before {
+  content: $hotbox-icon-shape-custom;
+}
+
+.hotbox-icon-design-system::before {
+  content: $hotbox-icon-design-system;
+}
+
+.hotbox-icon-git-commit::before {
+  content: $hotbox-icon-git-commit;
+}
+
+.hotbox-icon-size-small::before {
+  content: $hotbox-icon-size-small;
+}
+
+.hotbox-icon-size-medium::before {
+  content: $hotbox-icon-size-medium;
+}
+
+.hotbox-icon-size-large::before {
+  content: $hotbox-icon-size-large;
+}
+
+.hotbox-icon-transparent::before {
+  content: $hotbox-icon-transparent;
+}
+
+.hotbox-icon-tool-blur::before {
+  content: $hotbox-icon-tool-blur;
+}
+
+.hotbox-icon-texture::before {
+  content: $hotbox-icon-texture;
+}
+
+.hotbox-icon-mask-oval::before {
+  content: $hotbox-icon-mask-oval;
+}
+
+.hotbox-icon-mask-rect::before {
+  content: $hotbox-icon-mask-rect;
+}
+
+.hotbox-icon-grid-system::before {
+  content: $hotbox-icon-grid-system;
+}
+
+.hotbox-icon-components::before {
+  content: $hotbox-icon-components;
+}
+
+.hotbox-icon-tool-select::before {
+  content: $hotbox-icon-tool-select;
+}
+
+.hotbox-icon-tool-hand::before {
+  content: $hotbox-icon-tool-hand;
+}
+
+.hotbox-icon-hot-key::before {
+  content: $hotbox-icon-hot-key;
+}
+
+.hotbox-icon-img-stack::before {
+  content: $hotbox-icon-img-stack;
+}
+
+.hotbox-icon-geometry::before {
+  content: $hotbox-icon-geometry;
+}
+
+.hotbox-icon-apps::before {
+  content: $hotbox-icon-apps;
+}
+
+.hotbox-icon-app-store::before {
+  content: $hotbox-icon-app-store;
+}
+
+.hotbox-icon-layout-grid::before {
+  content: $hotbox-icon-layout-grid;
+}
+
+.hotbox-icon-layout::before {
+  content: $hotbox-icon-layout;
+}
+
+.hotbox-icon-wireframe::before {
+  content: $hotbox-icon-wireframe;
+}
+
+.hotbox-icon-battery-charging::before {
+  content: $hotbox-icon-battery-charging;
+}
+
+.hotbox-icon-battery-status::before {
+  content: $hotbox-icon-battery-status;
+}
+
+.hotbox-icon-battery-low::before {
+  content: $hotbox-icon-battery-low;
+}
+
+.hotbox-icon-battery-power::before {
+  content: $hotbox-icon-battery-power;
+}
+
+.hotbox-icon-temperature-24::before {
+  content: $hotbox-icon-temperature-24;
+}
+
+.hotbox-icon-temperature-23::before {
+  content: $hotbox-icon-temperature-23;
+}
+
+.hotbox-icon-bulb::before {
+  content: $hotbox-icon-bulb;
+}
+
+.hotbox-icon-brightness-46::before {
+  content: $hotbox-icon-brightness-46;
+}
+
+.hotbox-icon-plant-leaf::before {
+  content: $hotbox-icon-plant-leaf;
+}
+
+.hotbox-icon-plant-vase::before {
+  content: $hotbox-icon-plant-vase;
+}
+
+.hotbox-icon-plant-ground::before {
+  content: $hotbox-icon-plant-ground;
+}
+
+.hotbox-icon-water-hand::before {
+  content: $hotbox-icon-water-hand;
+}
+
+.hotbox-icon-water-sink::before {
+  content: $hotbox-icon-water-sink;
+}
+
+.hotbox-icon-water::before {
+  content: $hotbox-icon-water;
+}
+
+.hotbox-icon-oil::before {
+  content: $hotbox-icon-oil;
+}
+
+.hotbox-icon-round-dollar-add-real::before {
+  content: $hotbox-icon-round-dollar-add-real;
+}
+
+.hotbox-icon-warning::before {
+  content: $hotbox-icon-warning;
+}
+
+.hotbox-icon-question::before {
+  content: $hotbox-icon-question;
+}
+
+.hotbox-icon-c-warning::before {
+  content: $hotbox-icon-c-warning;
+}
+
+.hotbox-icon-c-question::before {
+  content: $hotbox-icon-c-question;
+}
+
+.hotbox-icon-c-info::before {
+  content: $hotbox-icon-c-info;
+}
+
+.hotbox-icon-info::before {
+  content: $hotbox-icon-info;
+}
+
+.hotbox-icon-s-warning::before {
+  content: $hotbox-icon-s-warning;
+}
+
+.hotbox-icon-s-question::before {
+  content: $hotbox-icon-s-question;
+}
+
+.hotbox-icon-s-info::before {
+  content: $hotbox-icon-s-info;
+}
+
+.hotbox-icon-t-warning::before {
+  content: $hotbox-icon-t-warning;
+}
+
+.hotbox-icon-s-pulse::before {
+  content: $hotbox-icon-s-pulse;
+}
+
+.hotbox-icon-c-pulse::before {
+  content: $hotbox-icon-c-pulse;
+}
+
+.hotbox-icon-archive-drawer::before {
+  content: $hotbox-icon-archive-drawer;
+}
+
+.hotbox-icon-archive::before {
+  content: $hotbox-icon-archive;
+}
+
+.hotbox-icon-attachment::before {
+  content: $hotbox-icon-attachment;
+}
+
+.hotbox-icon-attach::before {
+  content: $hotbox-icon-attach;
+}
+
+.hotbox-icon-backward-2::before {
+  content: $hotbox-icon-backward-2;
+}
+
+.hotbox-icon-shopping-bag::before {
+  content: $hotbox-icon-shopping-bag;
+}
+
+.hotbox-icon-s-ban::before {
+  content: $hotbox-icon-s-ban;
+}
+
+.hotbox-icon-ban::before {
+  content: $hotbox-icon-ban;
+}
+
+.hotbox-icon-basket::before {
+  content: $hotbox-icon-basket;
+}
+
+.hotbox-icon-battery-power-2::before {
+  content: $hotbox-icon-battery-power-2;
+}
+
+.hotbox-icon-battery-charging-2::before {
+  content: $hotbox-icon-battery-charging-2;
+}
+
+.hotbox-icon-battery-status-2::before {
+  content: $hotbox-icon-battery-status-2;
+}
+
+.hotbox-icon-battery-low-2::before {
+  content: $hotbox-icon-battery-low-2;
+}
+
+.hotbox-icon-alarm::before {
+  content: $hotbox-icon-alarm;
+}
+
+.hotbox-icon-buzz::before {
+  content: $hotbox-icon-buzz;
+}
+
+.hotbox-icon-bell::before {
+  content: $hotbox-icon-bell;
+}
+
+.hotbox-icon-bluetooth::before {
+  content: $hotbox-icon-bluetooth;
+}
+
+.hotbox-icon-d-add::before {
+  content: $hotbox-icon-d-add;
+}
+
+.hotbox-icon-d-delete::before {
+  content: $hotbox-icon-d-delete;
+}
+
+.hotbox-icon-d-remove::before {
+  content: $hotbox-icon-d-remove;
+}
+
+.hotbox-icon-bolt::before {
+  content: $hotbox-icon-bolt;
+}
+
+.hotbox-icon-book::before {
+  content: $hotbox-icon-book;
+}
+
+.hotbox-icon-bookmark::before {
+  content: $hotbox-icon-bookmark;
+}
+
+.hotbox-icon-bookmark-add::before {
+  content: $hotbox-icon-bookmark-add;
+}
+
+.hotbox-icon-bookmark-add-2::before {
+  content: $hotbox-icon-bookmark-add-2;
+}
+
+.hotbox-icon-bookmark-delete::before {
+  content: $hotbox-icon-bookmark-delete;
+}
+
+.hotbox-icon-bookmark-delete-2::before {
+  content: $hotbox-icon-bookmark-delete-2;
+}
+
+.hotbox-icon-bullet-list::before {
+  content: $hotbox-icon-bullet-list;
+}
+
+.hotbox-icon-calendar::before {
+  content: $hotbox-icon-calendar;
+}
+
+.hotbox-icon-calendar-2::before {
+  content: $hotbox-icon-calendar-2;
+}
+
+.hotbox-icon-calendar-event-create::before {
+  content: $hotbox-icon-calendar-event-create;
+}
+
+.hotbox-icon-calendar-event::before {
+  content: $hotbox-icon-calendar-event;
+}
+
+.hotbox-icon-calendar-event-2::before {
+  content: $hotbox-icon-calendar-event-2;
+}
+
+.hotbox-icon-calendar-date::before {
+  content: $hotbox-icon-calendar-date;
+}
+
+.hotbox-icon-calendar-date-2::before {
+  content: $hotbox-icon-calendar-date-2;
+}
+
+.hotbox-icon-add-notification::before {
+  content: $hotbox-icon-add-notification;
+}
+
+.hotbox-icon-new-notification::before {
+  content: $hotbox-icon-new-notification;
+}
+
+.hotbox-icon-add-to-cart-2::before {
+  content: $hotbox-icon-add-to-cart-2;
+}
+
+.hotbox-icon-shopping-cart-2::before {
+  content: $hotbox-icon-shopping-cart-2;
+}
+
+.hotbox-icon-add-to-cart::before {
+  content: $hotbox-icon-add-to-cart;
+}
+
+.hotbox-icon-shopping-cart::before {
+  content: $hotbox-icon-shopping-cart;
+}
+
+.hotbox-icon-a-chart::before {
+  content: $hotbox-icon-a-chart;
+}
+
+.hotbox-icon-p-chart::before {
+  content: $hotbox-icon-p-chart;
+}
+
+.hotbox-icon-g-chart::before {
+  content: $hotbox-icon-g-chart;
+}
+
+.hotbox-icon-d-chart::before {
+  content: $hotbox-icon-d-chart;
+}
+
+.hotbox-icon-b-chart::before {
+  content: $hotbox-icon-b-chart;
+}
+
+.hotbox-icon-chart-2::before {
+  content: $hotbox-icon-chart-2;
+}
+
+.hotbox-icon-b-comment::before {
+  content: $hotbox-icon-b-comment;
+}
+
+.hotbox-icon-a-chat::before {
+  content: $hotbox-icon-a-chat;
+}
+
+.hotbox-icon-b-chat::before {
+  content: $hotbox-icon-b-chat;
+}
+
+.hotbox-icon-f-chat::before {
+  content: $hotbox-icon-f-chat;
+}
+
+.hotbox-icon-r-chat::before {
+  content: $hotbox-icon-r-chat;
+}
+
+.hotbox-icon-f-comment::before {
+  content: $hotbox-icon-f-comment;
+}
+
+.hotbox-icon-comment::before {
+  content: $hotbox-icon-comment;
+}
+
+.hotbox-icon-chat::before {
+  content: $hotbox-icon-chat;
+}
+
+.hotbox-icon-check::before {
+  content: $hotbox-icon-check;
+}
+
+.hotbox-icon-o-check::before {
+  content: $hotbox-icon-o-check;
+}
+
+.hotbox-icon-n-check::before {
+  content: $hotbox-icon-n-check;
+}
+
+.hotbox-icon-c-check::before {
+  content: $hotbox-icon-c-check;
+}
+
+.hotbox-icon-g-check::before {
+  content: $hotbox-icon-g-check;
+}
+
+.hotbox-icon-check-in::before {
+  content: $hotbox-icon-check-in;
+}
+
+.hotbox-icon-check-out::before {
+  content: $hotbox-icon-check-out;
+}
+
+.hotbox-icon-f-check::before {
+  content: $hotbox-icon-f-check;
+}
+
+.hotbox-icon-d-check::before {
+  content: $hotbox-icon-d-check;
+}
+
+.hotbox-icon-i-check::before {
+  content: $hotbox-icon-i-check;
+}
+
+.hotbox-icon-s-check::before {
+  content: $hotbox-icon-s-check;
+}
+
+.hotbox-icon-c-add::before {
+  content: $hotbox-icon-c-add;
+}
+
+.hotbox-icon-f-add::before {
+  content: $hotbox-icon-f-add;
+}
+
+.hotbox-icon-f-delete::before {
+  content: $hotbox-icon-f-delete;
+}
+
+.hotbox-icon-f-remove::before {
+  content: $hotbox-icon-f-remove;
+}
+
+.hotbox-icon-c-delete::before {
+  content: $hotbox-icon-c-delete;
+}
+
+.hotbox-icon-c-remove::before {
+  content: $hotbox-icon-c-remove;
+}
+
+.hotbox-icon-cloud-forecast::before {
+  content: $hotbox-icon-cloud-forecast;
+}
+
+.hotbox-icon-cloud::before {
+  content: $hotbox-icon-cloud;
+}
+
+.hotbox-icon-speedometer::before {
+  content: $hotbox-icon-speedometer;
+}
+
+.hotbox-icon-f-dashboard::before {
+  content: $hotbox-icon-f-dashboard;
+}
+
+.hotbox-icon-h-dashboard::before {
+  content: $hotbox-icon-h-dashboard;
+}
+
+.hotbox-icon-dashboard::before {
+  content: $hotbox-icon-dashboard;
+}
+
+.hotbox-icon-database::before {
+  content: $hotbox-icon-database;
+}
+
+.hotbox-icon-floppy-disk::before {
+  content: $hotbox-icon-floppy-disk;
+}
+
+.hotbox-icon-disk::before {
+  content: $hotbox-icon-disk;
+}
+
+.hotbox-icon-dock-bottom::before {
+  content: $hotbox-icon-dock-bottom;
+}
+
+.hotbox-icon-dock-left::before {
+  content: $hotbox-icon-dock-left;
+}
+
+.hotbox-icon-dock-right::before {
+  content: $hotbox-icon-dock-right;
+}
+
+.hotbox-icon-dock-top::before {
+  content: $hotbox-icon-dock-top;
+}
+
+.hotbox-icon-download-2::before {
+  content: $hotbox-icon-download-2;
+}
+
+.hotbox-icon-drop::before {
+  content: $hotbox-icon-drop;
+}
+
+.hotbox-icon-pen-2::before {
+  content: $hotbox-icon-pen-2;
+}
+
+.hotbox-icon-pen::before {
+  content: $hotbox-icon-pen;
+}
+
+.hotbox-icon-i-edit::before {
+  content: $hotbox-icon-i-edit;
+}
+
+.hotbox-icon-edit::before {
+  content: $hotbox-icon-edit;
+}
+
+.hotbox-icon-n-edit::before {
+  content: $hotbox-icon-n-edit;
+}
+
+.hotbox-icon-d-edit::before {
+  content: $hotbox-icon-d-edit;
+}
+
+.hotbox-icon-s-edit::before {
+  content: $hotbox-icon-s-edit;
+}
+
+.hotbox-icon-c-edit::before {
+  content: $hotbox-icon-c-edit;
+}
+
+.hotbox-icon-letter::before {
+  content: $hotbox-icon-letter;
+}
+
+.hotbox-icon-mail::before {
+  content: $hotbox-icon-mail;
+}
+
+.hotbox-icon-email::before {
+  content: $hotbox-icon-email;
+}
+
+.hotbox-icon-screen-maximize::before {
+  content: $hotbox-icon-screen-maximize;
+}
+
+.hotbox-icon-screen-enlarge::before {
+  content: $hotbox-icon-screen-enlarge;
+}
+
+.hotbox-icon-screen-expand::before {
+  content: $hotbox-icon-screen-expand;
+}
+
+.hotbox-icon-preview::before {
+  content: $hotbox-icon-preview;
+}
+
+.hotbox-icon-eye::before {
+  content: $hotbox-icon-eye;
+}
+
+.hotbox-icon-b-preview::before {
+  content: $hotbox-icon-b-preview;
+}
+
+.hotbox-icon-b-eye::before {
+  content: $hotbox-icon-b-eye;
+}
+
+.hotbox-icon-t-add::before {
+  content: $hotbox-icon-t-add;
+}
+
+.hotbox-icon-t-delete::before {
+  content: $hotbox-icon-t-delete;
+}
+
+.hotbox-icon-t-remove::before {
+  content: $hotbox-icon-t-remove;
+}
+
+.hotbox-icon-heart::before {
+  content: $hotbox-icon-heart;
+}
+
+.hotbox-icon-star::before {
+  content: $hotbox-icon-star;
+}
+
+.hotbox-icon-add-fav::before {
+  content: $hotbox-icon-add-fav;
+}
+
+.hotbox-icon-add-like::before {
+  content: $hotbox-icon-add-like;
+}
+
+.hotbox-icon-remove-fav::before {
+  content: $hotbox-icon-remove-fav;
+}
+
+.hotbox-icon-remove-like::before {
+  content: $hotbox-icon-remove-like;
+}
+
+.hotbox-icon-filter-check::before {
+  content: $hotbox-icon-filter-check;
+}
+
+.hotbox-icon-filter-remove::before {
+  content: $hotbox-icon-filter-remove;
+}
+
+.hotbox-icon-filter::before {
+  content: $hotbox-icon-filter;
+}
+
+.hotbox-icon-flame::before {
+  content: $hotbox-icon-flame;
+}
+
+.hotbox-icon-forward-2::before {
+  content: $hotbox-icon-forward-2;
+}
+
+.hotbox-icon-fullsize::before {
+  content: $hotbox-icon-fullsize;
+}
+
+.hotbox-icon-sort-tool::before {
+  content: $hotbox-icon-sort-tool;
+}
+
+.hotbox-icon-filter-tool::before {
+  content: $hotbox-icon-filter-tool;
+}
+
+.hotbox-icon-funnel::before {
+  content: $hotbox-icon-funnel;
+}
+
+.hotbox-icon-present::before {
+  content: $hotbox-icon-present;
+}
+
+.hotbox-icon-grid-interface::before {
+  content: $hotbox-icon-grid-interface;
+}
+
+.hotbox-icon-gallery-view::before {
+  content: $hotbox-icon-gallery-view;
+}
+
+.hotbox-icon-grid-view::before {
+  content: $hotbox-icon-grid-view;
+}
+
+.hotbox-icon-table-layout::before {
+  content: $hotbox-icon-table-layout;
+}
+
+.hotbox-icon-gallery-layout::before {
+  content: $hotbox-icon-gallery-layout;
+}
+
+.hotbox-icon-grid-layout::before {
+  content: $hotbox-icon-grid-layout;
+}
+
+.hotbox-icon-favorite::before {
+  content: $hotbox-icon-favorite;
+}
+
+.hotbox-icon-heart-add::before {
+  content: $hotbox-icon-heart-add;
+}
+
+.hotbox-icon-heart-remove::before {
+  content: $hotbox-icon-heart-remove;
+}
+
+.hotbox-icon-home-2::before {
+  content: $hotbox-icon-home-2;
+}
+
+.hotbox-icon-home-3::before {
+  content: $hotbox-icon-home-3;
+}
+
+.hotbox-icon-home-minimal::before {
+  content: $hotbox-icon-home-minimal;
+}
+
+.hotbox-icon-home-simple::before {
+  content: $hotbox-icon-home-simple;
+}
+
+.hotbox-icon-hourglass::before {
+  content: $hotbox-icon-hourglass;
+}
+
+.hotbox-icon-infinite::before {
+  content: $hotbox-icon-infinite;
+}
+
+.hotbox-icon-key-25::before {
+  content: $hotbox-icon-key-25;
+}
+
+.hotbox-icon-key-26::before {
+  content: $hotbox-icon-key-26;
+}
+
+.hotbox-icon-lab::before {
+  content: $hotbox-icon-lab;
+}
+
+.hotbox-icon-layers-3-2::before {
+  content: $hotbox-icon-layers-3-2;
+}
+
+.hotbox-icon-plant-leaf-2::before {
+  content: $hotbox-icon-plant-leaf-2;
+}
+
+.hotbox-icon-leaf-81::before {
+  content: $hotbox-icon-leaf-81;
+}
+
+.hotbox-icon-leaf-edit::before {
+  content: $hotbox-icon-leaf-edit;
+}
+
+.hotbox-icon-like-2::before {
+  content: $hotbox-icon-like-2;
+}
+
+.hotbox-icon-link-2::before {
+  content: $hotbox-icon-link-2;
+}
+
+.hotbox-icon-link-66::before {
+  content: $hotbox-icon-link-66;
+}
+
+.hotbox-icon-link-67::before {
+  content: $hotbox-icon-link-67;
+}
+
+.hotbox-icon-link-68::before {
+  content: $hotbox-icon-link-68;
+}
+
+.hotbox-icon-link-69::before {
+  content: $hotbox-icon-link-69;
+}
+
+.hotbox-icon-link-71::before {
+  content: $hotbox-icon-link-71;
+}
+
+.hotbox-icon-link-72::before {
+  content: $hotbox-icon-link-72;
+}
+
+.hotbox-icon-link-broken-70::before {
+  content: $hotbox-icon-link-broken-70;
+}
+
+.hotbox-icon-link-broken-73::before {
+  content: $hotbox-icon-link-broken-73;
+}
+
+.hotbox-icon-lock-circle-open::before {
+  content: $hotbox-icon-lock-circle-open;
+}
+
+.hotbox-icon-lock-circle::before {
+  content: $hotbox-icon-lock-circle;
+}
+
+.hotbox-icon-lock-open::before {
+  content: $hotbox-icon-lock-open;
+}
+
+.hotbox-icon-lock::before {
+  content: $hotbox-icon-lock;
+}
+
+.hotbox-icon-log-out-2-2::before {
+  content: $hotbox-icon-log-out-2-2;
+}
+
+.hotbox-icon-log-out-3::before {
+  content: $hotbox-icon-log-out-3;
+}
+
+.hotbox-icon-menu-34::before {
+  content: $hotbox-icon-menu-34;
+}
+
+.hotbox-icon-menu-35::before {
+  content: $hotbox-icon-menu-35;
+}
+
+.hotbox-icon-menu-bold::before {
+  content: $hotbox-icon-menu-bold;
+}
+
+.hotbox-icon-menu-dots::before {
+  content: $hotbox-icon-menu-dots;
+}
+
+.hotbox-icon-menu-left::before {
+  content: $hotbox-icon-menu-left;
+}
+
+.hotbox-icon-menu-right::before {
+  content: $hotbox-icon-menu-right;
+}
+
+.hotbox-icon-menu-square::before {
+  content: $hotbox-icon-menu-square;
+}
+
+.hotbox-icon-menu::before {
+  content: $hotbox-icon-menu;
+}
+
+.hotbox-icon-metrics::before {
+  content: $hotbox-icon-metrics;
+}
+
+.hotbox-icon-node::before {
+  content: $hotbox-icon-node;
+}
+
+.hotbox-icon-notification-69::before {
+  content: $hotbox-icon-notification-69;
+}
+
+.hotbox-icon-notification-70::before {
+  content: $hotbox-icon-notification-70;
+}
+
+.hotbox-icon-paper-2::before {
+  content: $hotbox-icon-paper-2;
+}
+
+.hotbox-icon-paragraph::before {
+  content: $hotbox-icon-paragraph;
+}
+
+.hotbox-icon-pencil::before {
+  content: $hotbox-icon-pencil;
+}
+
+.hotbox-icon-phone-2::before {
+  content: $hotbox-icon-phone-2;
+}
+
+.hotbox-icon-phone-3::before {
+  content: $hotbox-icon-phone-3;
+}
+
+.hotbox-icon-phone-call-end::before {
+  content: $hotbox-icon-phone-call-end;
+}
+
+.hotbox-icon-phone-call::before {
+  content: $hotbox-icon-phone-call;
+}
+
+.hotbox-icon-playlist::before {
+  content: $hotbox-icon-playlist;
+}
+
+.hotbox-icon-preferences-circle-rotate::before {
+  content: $hotbox-icon-preferences-circle-rotate;
+}
+
+.hotbox-icon-preferences-circle::before {
+  content: $hotbox-icon-preferences-circle;
+}
+
+.hotbox-icon-preferences-container-circle-rotate::before {
+  content: $hotbox-icon-preferences-container-circle-rotate;
+}
+
+.hotbox-icon-preferences-container-circle::before {
+  content: $hotbox-icon-preferences-container-circle;
+}
+
+.hotbox-icon-preferences-container-rotate::before {
+  content: $hotbox-icon-preferences-container-rotate;
+}
+
+.hotbox-icon-preferences-container::before {
+  content: $hotbox-icon-preferences-container;
+}
+
+.hotbox-icon-preferences-rotate::before {
+  content: $hotbox-icon-preferences-rotate;
+}
+
+.hotbox-icon-preferences::before {
+  content: $hotbox-icon-preferences;
+}
+
+.hotbox-icon-search-2::before {
+  content: $hotbox-icon-search-2;
+}
+
+.hotbox-icon-security::before {
+  content: $hotbox-icon-security;
+}
+
+.hotbox-icon-segmentation::before {
+  content: $hotbox-icon-segmentation;
+}
+
+.hotbox-icon-select-83-2::before {
+  content: $hotbox-icon-select-83-2;
+}
+
+.hotbox-icon-select-84-2::before {
+  content: $hotbox-icon-select-84-2;
+}
+
+.hotbox-icon-select::before {
+  content: $hotbox-icon-select;
+}
+
+.hotbox-icon-send-2::before {
+  content: $hotbox-icon-send-2;
+}
+
+.hotbox-icon-send::before {
+  content: $hotbox-icon-send;
+}
+
+.hotbox-icon-settings-gear-63::before {
+  content: $hotbox-icon-settings-gear-63;
+}
+
+.hotbox-icon-settings-gear-64::before {
+  content: $hotbox-icon-settings-gear-64;
+}
+
+.hotbox-icon-settings-gear-65::before {
+  content: $hotbox-icon-settings-gear-65;
+}
+
+.hotbox-icon-settings-tool-66::before {
+  content: $hotbox-icon-settings-tool-66;
+}
+
+.hotbox-icon-settings-tool-67::before {
+  content: $hotbox-icon-settings-tool-67;
+}
+
+.hotbox-icon-settings::before {
+  content: $hotbox-icon-settings;
+}
+
+.hotbox-icon-share-2::before {
+  content: $hotbox-icon-share-2;
+}
+
+.hotbox-icon-upload-3::before {
+  content: $hotbox-icon-upload-3;
+}
+
+.hotbox-icon-share-91-2::before {
+  content: $hotbox-icon-share-91-2;
+}
+
+.hotbox-icon-share-92-2::before {
+  content: $hotbox-icon-share-92-2;
+}
+
+.hotbox-icon-network-connection::before {
+  content: $hotbox-icon-network-connection;
+}
+
+.hotbox-icon-share-3::before {
+  content: $hotbox-icon-share-3;
+}
+
+.hotbox-icon-shop::before {
+  content: $hotbox-icon-shop;
+}
+
+.hotbox-icon-signal-2::before {
+  content: $hotbox-icon-signal-2;
+}
+
+.hotbox-icon-e-add::before {
+  content: $hotbox-icon-e-add;
+}
+
+.hotbox-icon-e-delete::before {
+  content: $hotbox-icon-e-delete;
+}
+
+.hotbox-icon-e-remove::before {
+  content: $hotbox-icon-e-remove;
+}
+
+.hotbox-icon-single-folded-content::before {
+  content: $hotbox-icon-single-folded-content;
+}
+
+.hotbox-icon-single-paragraph::before {
+  content: $hotbox-icon-single-paragraph;
+}
+
+.hotbox-icon-slide-left-2::before {
+  content: $hotbox-icon-slide-left-2;
+}
+
+.hotbox-icon-slide-right-2::before {
+  content: $hotbox-icon-slide-right-2;
+}
+
+.hotbox-icon-i-add::before {
+  content: $hotbox-icon-i-add;
+}
+
+.hotbox-icon-i-delete::before {
+  content: $hotbox-icon-i-delete;
+}
+
+.hotbox-icon-i-remove::before {
+  content: $hotbox-icon-i-remove;
+}
+
+.hotbox-icon-spaceship::before {
+  content: $hotbox-icon-spaceship;
+}
+
+.hotbox-icon-s-add::before {
+  content: $hotbox-icon-s-add;
+}
+
+.hotbox-icon-square-add-11::before {
+  content: $hotbox-icon-square-add-11;
+}
+
+.hotbox-icon-s-delete::before {
+  content: $hotbox-icon-s-delete;
+}
+
+.hotbox-icon-square-delete-13::before {
+  content: $hotbox-icon-square-delete-13;
+}
+
+.hotbox-icon-square-download-2::before {
+  content: $hotbox-icon-square-download-2;
+}
+
+.hotbox-icon-s-remove::before {
+  content: $hotbox-icon-s-remove;
+}
+
+.hotbox-icon-square-remove-12::before {
+  content: $hotbox-icon-square-remove-12;
+}
+
+.hotbox-icon-square-upload-2::before {
+  content: $hotbox-icon-square-upload-2;
+}
+
+.hotbox-icon-table-left::before {
+  content: $hotbox-icon-table-left;
+}
+
+.hotbox-icon-table-right::before {
+  content: $hotbox-icon-table-right;
+}
+
+.hotbox-icon-shopping-label::before {
+  content: $hotbox-icon-shopping-label;
+}
+
+.hotbox-icon-tag-content::before {
+  content: $hotbox-icon-tag-content;
+}
+
+.hotbox-icon-tag-line::before {
+  content: $hotbox-icon-tag-line;
+}
+
+.hotbox-icon-tag::before {
+  content: $hotbox-icon-tag;
+}
+
+.hotbox-icon-target::before {
+  content: $hotbox-icon-target;
+}
+
+.hotbox-icon-layout-grid-2::before {
+  content: $hotbox-icon-layout-grid-2;
+}
+
+.hotbox-icon-layout-2::before {
+  content: $hotbox-icon-layout-2;
+}
+
+.hotbox-icon-clock::before {
+  content: $hotbox-icon-clock;
+}
+
+.hotbox-icon-time-alarm::before {
+  content: $hotbox-icon-time-alarm;
+}
+
+.hotbox-icon-time-clock::before {
+  content: $hotbox-icon-time-clock;
+}
+
+.hotbox-icon--stopwatch::before {
+  content: $hotbox-icon--stopwatch;
+}
+
+.hotbox-icon-time-3::before {
+  content: $hotbox-icon-time-3;
+}
+
+.hotbox-icon-trash-round::before {
+  content: $hotbox-icon-trash-round;
+}
+
+.hotbox-icon-trash-simple::before {
+  content: $hotbox-icon-trash-simple;
+}
+
+.hotbox-icon-trash::before {
+  content: $hotbox-icon-trash;
+}
+
+.hotbox-icon-ui-03::before {
+  content: $hotbox-icon-ui-03;
+}
+
+.hotbox-icon-ui-04::before {
+  content: $hotbox-icon-ui-04;
+}
+
+.hotbox-icon-wireframe-2::before {
+  content: $hotbox-icon-wireframe-2;
+}
+
+.hotbox-icon-webpage-2::before {
+  content: $hotbox-icon-webpage-2;
+}
+
+.hotbox-icon-widget::before {
+  content: $hotbox-icon-widget;
+}
+
+.hotbox-icon-window-add::before {
+  content: $hotbox-icon-window-add;
+}
+
+.hotbox-icon-window-delete::before {
+  content: $hotbox-icon-window-delete;
+}
+
+.hotbox-icon-zoom-2-2::before {
+  content: $hotbox-icon-zoom-2-2;
+}
+
+.hotbox-icon-zoom-bold-in::before {
+  content: $hotbox-icon-zoom-bold-in;
+}
+
+.hotbox-icon-zoom-bold-out::before {
+  content: $hotbox-icon-zoom-bold-out;
+}
+
+.hotbox-icon-zoom-bold::before {
+  content: $hotbox-icon-zoom-bold;
+}
+
+.hotbox-icon-zoom-in::before {
+  content: $hotbox-icon-zoom-in;
+}
+
+.hotbox-icon-zoom-out::before {
+  content: $hotbox-icon-zoom-out;
+}
+
+.hotbox-icon-zoom-split-in::before {
+  content: $hotbox-icon-zoom-split-in;
+}
+
+.hotbox-icon-zoom-split-out::before {
+  content: $hotbox-icon-zoom-split-out;
+}
+
+.hotbox-icon-zoom-split::before {
+  content: $hotbox-icon-zoom-split;
+}
+
+.hotbox-icon-mirror-2-2::before {
+  content: $hotbox-icon-mirror-2-2;
+}
+
+.hotbox-icon-full-screen::before {
+  content: $hotbox-icon-full-screen;
+}
+
+.hotbox-icon-sidebar-2::before {
+  content: $hotbox-icon-sidebar-2;
+}
+
+.hotbox-icon-blog::before {
+  content: $hotbox-icon-blog;
+}
+
+.hotbox-icon-file-delete::before {
+  content: $hotbox-icon-file-delete;
+}
+
+.hotbox-icon-file-add::before {
+  content: $hotbox-icon-file-add;
+}
+
+.hotbox-icon-fav-remove::before {
+  content: $hotbox-icon-fav-remove;
+}
+
+.hotbox-icon-gantt::before {
+  content: $hotbox-icon-gantt;
+}
+
+.hotbox-icon-alarm-add::before {
+  content: $hotbox-icon-alarm-add;
+}
+
+.hotbox-icon-timeline-2::before {
+  content: $hotbox-icon-timeline-2;
+}
+
+.hotbox-icon-comment-add::before {
+  content: $hotbox-icon-comment-add;
+}
+
+.hotbox-icon-alarm-delete::before {
+  content: $hotbox-icon-alarm-delete;
+}
+
+.hotbox-icon-at-sign::before {
+  content: $hotbox-icon-at-sign;
+}
+
+.hotbox-icon-design-system-2::before {
+  content: $hotbox-icon-design-system-2;
+}
+
+.hotbox-icon-components-2::before {
+  content: $hotbox-icon-components-2;
+}
+
+.hotbox-icon-opening-times::before {
+  content: $hotbox-icon-opening-times;
+}
+
+.hotbox-icon-event-create::before {
+  content: $hotbox-icon-event-create;
+}
+
+.hotbox-icon-event-confirm::before {
+  content: $hotbox-icon-event-confirm;
+}
+
+.hotbox-icon-hot-key-2::before {
+  content: $hotbox-icon-hot-key-2;
+}
+
+.hotbox-icon-tags-stack::before {
+  content: $hotbox-icon-tags-stack;
+}
+
+.hotbox-icon-check-all::before {
+  content: $hotbox-icon-check-all;
+}
+
+.hotbox-icon-analytics::before {
+  content: $hotbox-icon-analytics;
+}
+
+.hotbox-icon-check-double::before {
+  content: $hotbox-icon-check-double;
+}
+
+.hotbox-icon-check-single::before {
+  content: $hotbox-icon-check-single;
+}
+
+.hotbox-icon-progress-indicator::before {
+  content: $hotbox-icon-progress-indicator;
+}
+
+.hotbox-icon-video-gallery::before {
+  content: $hotbox-icon-video-gallery;
+}
+
+.hotbox-icon-geometry-2::before {
+  content: $hotbox-icon-geometry-2;
+}
+
+.hotbox-icon-apps-2::before {
+  content: $hotbox-icon-apps-2;
+}
+
+.hotbox-icon-a-tag::before {
+  content: $hotbox-icon-a-tag;
+}
+
+.hotbox-icon-a-tag-add::before {
+  content: $hotbox-icon-a-tag-add;
+}
+
+.hotbox-icon-a-tag-remove::before {
+  content: $hotbox-icon-a-tag-remove;
+}
+
+.hotbox-icon-questionnaire::before {
+  content: $hotbox-icon-questionnaire;
+}
+
+.hotbox-icon-check-list::before {
+  content: $hotbox-icon-check-list;
+}
+
+.hotbox-icon-survey::before {
+  content: $hotbox-icon-survey;
+}
+
+.hotbox-icon-app-store-2::before {
+  content: $hotbox-icon-app-store-2;
+}
+
+.hotbox-icon-saved-items::before {
+  content: $hotbox-icon-saved-items;
+}
+
+.hotbox-icon-fav-list::before {
+  content: $hotbox-icon-fav-list;
+}
+
+.hotbox-icon-save-to-list::before {
+  content: $hotbox-icon-save-to-list;
+}
+
+.hotbox-icon-star-rate::before {
+  content: $hotbox-icon-star-rate;
+}
+
+.hotbox-icon-bookmarks::before {
+  content: $hotbox-icon-bookmarks;
+}
+
+.hotbox-icon-feedback::before {
+  content: $hotbox-icon-feedback;
+}
+
+.hotbox-icon-a-add::before {
+  content: $hotbox-icon-a-add;
+}
+
+.hotbox-icon-a-check::before {
+  content: $hotbox-icon-a-check;
+}
+
+.hotbox-icon-a-delete::before {
+  content: $hotbox-icon-a-delete;
+}
+
+.hotbox-icon-a-edit::before {
+  content: $hotbox-icon-a-edit;
+}
+
+.hotbox-icon-a-heart::before {
+  content: $hotbox-icon-a-heart;
+}
+
+.hotbox-icon-a-location::before {
+  content: $hotbox-icon-a-location;
+}
+
+.hotbox-icon-a-remove::before {
+  content: $hotbox-icon-a-remove;
+}
+
+.hotbox-icon-a-search::before {
+  content: $hotbox-icon-a-search;
+}
+
+.hotbox-icon-a-security::before {
+  content: $hotbox-icon-a-security;
+}
+
+.hotbox-icon-a-share::before {
+  content: $hotbox-icon-a-share;
+}
+
+.hotbox-icon-a-star::before {
+  content: $hotbox-icon-a-star;
+}
+
+.hotbox-icon-a-sync::before {
+  content: $hotbox-icon-a-sync;
+}
+
+.hotbox-icon-a-time::before {
+  content: $hotbox-icon-a-time;
+}
+
+.hotbox-icon-accessibility::before {
+  content: $hotbox-icon-accessibility;
+}
+
+.hotbox-icon-add-27::before {
+  content: $hotbox-icon-add-27;
+}
+
+.hotbox-icon-add-29::before {
+  content: $hotbox-icon-add-29;
+}
+
+.hotbox-icon-b-add::before {
+  content: $hotbox-icon-b-add;
+}
+
+.hotbox-icon-b-check::before {
+  content: $hotbox-icon-b-check;
+}
+
+.hotbox-icon-b-location::before {
+  content: $hotbox-icon-b-location;
+}
+
+.hotbox-icon-b-love::before {
+  content: $hotbox-icon-b-love;
+}
+
+.hotbox-icon-b-meeting::before {
+  content: $hotbox-icon-b-meeting;
+}
+
+.hotbox-icon-b-remove::before {
+  content: $hotbox-icon-b-remove;
+}
+
+.hotbox-icon-b-security::before {
+  content: $hotbox-icon-b-security;
+}
+
+.hotbox-icon-badge-13::before {
+  content: $hotbox-icon-badge-13;
+}
+
+.hotbox-icon-badge-14::before {
+  content: $hotbox-icon-badge-14;
+}
+
+.hotbox-icon-badge-15::before {
+  content: $hotbox-icon-badge-15;
+}
+
+.hotbox-icon-circle-08::before {
+  content: $hotbox-icon-circle-08;
+}
+
+.hotbox-icon-circle-09::before {
+  content: $hotbox-icon-circle-09;
+}
+
+.hotbox-icon-circle-10::before {
+  content: $hotbox-icon-circle-10;
+}
+
+.hotbox-icon-contacts-2-2::before {
+  content: $hotbox-icon-contacts-2-2;
+}
+
+.hotbox-icon-contacts-44::before {
+  content: $hotbox-icon-contacts-44;
+}
+
+.hotbox-icon-contacts-45::before {
+  content: $hotbox-icon-contacts-45;
+}
+
+.hotbox-icon-contacts-3::before {
+  content: $hotbox-icon-contacts-3;
+}
+
+.hotbox-icon-delete-28::before {
+  content: $hotbox-icon-delete-28;
+}
+
+.hotbox-icon-delete-30::before {
+  content: $hotbox-icon-delete-30;
+}
+
+.hotbox-icon-disabled::before {
+  content: $hotbox-icon-disabled;
+}
+
+.hotbox-icon-exchange::before {
+  content: $hotbox-icon-exchange;
+}
+
+.hotbox-icon-family::before {
+  content: $hotbox-icon-family;
+}
+
+.hotbox-icon-focus::before {
+  content: $hotbox-icon-focus;
+}
+
+.hotbox-icon-folder-shared::before {
+  content: $hotbox-icon-folder-shared;
+}
+
+.hotbox-icon-folder-user::before {
+  content: $hotbox-icon-folder-user;
+}
+
+.hotbox-icon-property::before {
+  content: $hotbox-icon-property;
+}
+
+.hotbox-icon-man-20::before {
+  content: $hotbox-icon-man-20;
+}
+
+.hotbox-icon-man-down::before {
+  content: $hotbox-icon-man-down;
+}
+
+.hotbox-icon-man-glasses::before {
+  content: $hotbox-icon-man-glasses;
+}
+
+.hotbox-icon-man-up::before {
+  content: $hotbox-icon-man-up;
+}
+
+.hotbox-icon-meeting::before {
+  content: $hotbox-icon-meeting;
+}
+
+.hotbox-icon-mobile-contact::before {
+  content: $hotbox-icon-mobile-contact;
+}
+
+.hotbox-icon-multiple-11::before {
+  content: $hotbox-icon-multiple-11;
+}
+
+.hotbox-icon-multiple-19::before {
+  content: $hotbox-icon-multiple-19;
+}
+
+.hotbox-icon-multiple::before {
+  content: $hotbox-icon-multiple;
+}
+
+.hotbox-icon-network::before {
+  content: $hotbox-icon-network;
+}
+
+.hotbox-icon-parent::before {
+  content: $hotbox-icon-parent;
+}
+
+.hotbox-icon-pin-4::before {
+  content: $hotbox-icon-pin-4;
+}
+
+.hotbox-icon-search-3::before {
+  content: $hotbox-icon-search-3;
+}
+
+.hotbox-icon-shared::before {
+  content: $hotbox-icon-shared;
+}
+
+.hotbox-icon-single-01::before {
+  content: $hotbox-icon-single-01;
+}
+
+.hotbox-icon-single-02::before {
+  content: $hotbox-icon-single-02;
+}
+
+.hotbox-icon-single-03::before {
+  content: $hotbox-icon-single-03;
+}
+
+.hotbox-icon-single-04::before {
+  content: $hotbox-icon-single-04;
+}
+
+.hotbox-icon-single-05::before {
+  content: $hotbox-icon-single-05;
+}
+
+.hotbox-icon-single-body::before {
+  content: $hotbox-icon-single-body;
+}
+
+.hotbox-icon-single-position::before {
+  content: $hotbox-icon-single-position;
+}
+
+.hotbox-icon-user-frame-31::before {
+  content: $hotbox-icon-user-frame-31;
+}
+
+.hotbox-icon-user-frame-32::before {
+  content: $hotbox-icon-user-frame-32;
+}
+
+.hotbox-icon-user-frame-33::before {
+  content: $hotbox-icon-user-frame-33;
+}
+
+.hotbox-icon-standing-man::before {
+  content: $hotbox-icon-standing-man;
+}
+
+.hotbox-icon-standing-woman::before {
+  content: $hotbox-icon-standing-woman;
+}
+
+.hotbox-icon-user::before {
+  content: $hotbox-icon-user;
+}
+
+.hotbox-icon-voice-record::before {
+  content: $hotbox-icon-voice-record;
+}
+
+.hotbox-icon-wc::before {
+  content: $hotbox-icon-wc;
+}
+
+.hotbox-icon-woman::before {
+  content: $hotbox-icon-woman;
+}
+
+.hotbox-icon-woman-down::before {
+  content: $hotbox-icon-woman-down;
+}
+
+.hotbox-icon-woman-up::before {
+  content: $hotbox-icon-woman-up;
+}
+
+.hotbox-icon-woman-2::before {
+  content: $hotbox-icon-woman-2;
+}
+
+.hotbox-icon-round-dollar-add-real-2::before {
+  content: $hotbox-icon-round-dollar-add-real-2;
+}
+
+.hotbox-icon-mjleaf::before {
+  content: $hotbox-icon-mjleaf;
+}
+
+.hotbox-icon-stock-2::before {
+  content: $hotbox-icon-stock-2;
+}
+
+.hotbox-icon-gift::before {
+  content: $hotbox-icon-gift;
+}
+
+.hotbox-icon-gift-exchange::before {
+  content: $hotbox-icon-gift-exchange;
+}
+
+.hotbox-icon-present-2::before {
+  content: $hotbox-icon-present-2;
+}
+
+.hotbox-icon-app-2::before {
+  content: $hotbox-icon-app-2;
+}
+
+.hotbox-icon-delivery-3::before {
+  content: $hotbox-icon-delivery-3;
+}
+
+.hotbox-icon-box::before {
+  content: $hotbox-icon-box;
+}
+
+.hotbox-icon-box-ribbon::before {
+  content: $hotbox-icon-box-ribbon;
+}
+
+.hotbox-icon-box-3d-67::before {
+  content: $hotbox-icon-box-3d-67;
+}
+
+.hotbox-icon-box-3d-50::before {
+  content: $hotbox-icon-box-3d-50;
+}
+
+.hotbox-icon-box-2::before {
+  content: $hotbox-icon-box-2;
+}
+
+.hotbox-icon-sale::before {
+  content: $hotbox-icon-sale;
+}
+
+.hotbox-icon-coupon::before {
+  content: $hotbox-icon-coupon;
+}
+
+.hotbox-icon-new::before {
+  content: $hotbox-icon-new;
+}
+
+.hotbox-icon-discount::before {
+  content: $hotbox-icon-discount;
+}
+
+.hotbox-icon-discount-2::before {
+  content: $hotbox-icon-discount-2;
+}
+
+.hotbox-icon-atom::before {
+  content: $hotbox-icon-atom;
+}
+
+.hotbox-icon-cash-register::before {
+  content: $hotbox-icon-cash-register;
+}
+
+.hotbox-icon-pos::before {
+  content: $hotbox-icon-pos;
+}
+
+.hotbox-icon-cheque-2::before {
+  content: $hotbox-icon-cheque-2;
+}
+
+.hotbox-icon-cheque-4::before {
+  content: $hotbox-icon-cheque-4;
+}
+
+.hotbox-icon-bill-2::before {
+  content: $hotbox-icon-bill-2;
+}
+
+.hotbox-icon-cheque-3::before {
+  content: $hotbox-icon-cheque-3;
+}
+
+.hotbox-icon-payment-method::before {
+  content: $hotbox-icon-payment-method;
+}
+
+.hotbox-icon-card-edit::before {
+  content: $hotbox-icon-card-edit;
+}
+
+.hotbox-icon-card-favorite::before {
+  content: $hotbox-icon-card-favorite;
+}
+
+.hotbox-icon-card-remove::before {
+  content: $hotbox-icon-card-remove;
+}
+
+.hotbox-icon-card-update::before {
+  content: $hotbox-icon-card-update;
+}
+
+.hotbox-icon-cash-register-2::before {
+  content: $hotbox-icon-cash-register-2;
+}
+
+.hotbox-icon-cheque-2-2::before {
+  content: $hotbox-icon-cheque-2-2;
+}
+
+.hotbox-icon-cheque-3-2::before {
+  content: $hotbox-icon-cheque-3-2;
+}
+
+.hotbox-icon-cheque-5::before {
+  content: $hotbox-icon-cheque-5;
+}
+
+.hotbox-icon-coins-2::before {
+  content: $hotbox-icon-coins-2;
+}
+
+.hotbox-icon-credit-card-in::before {
+  content: $hotbox-icon-credit-card-in;
+}
+
+.hotbox-icon-credit-card::before {
+  content: $hotbox-icon-credit-card;
+}
+
+.hotbox-icon-currency-dollar-2::before {
+  content: $hotbox-icon-currency-dollar-2;
+}
+
+.hotbox-icon-currency-exchange::before {
+  content: $hotbox-icon-currency-exchange;
+}
+
+.hotbox-icon-folder-money::before {
+  content: $hotbox-icon-folder-money;
+}
+
+.hotbox-icon-hand-card::before {
+  content: $hotbox-icon-hand-card;
+}
+
+.hotbox-icon-handout-2::before {
+  content: $hotbox-icon-handout-2;
+}
+
+.hotbox-icon-handshake-2::before {
+  content: $hotbox-icon-handshake-2;
+}
+
+.hotbox-icon-mobile-card::before {
+  content: $hotbox-icon-mobile-card;
+}
+
+.hotbox-icon-money-11-2::before {
+  content: $hotbox-icon-money-11-2;
+}
+
+.hotbox-icon-money-12-2::before {
+  content: $hotbox-icon-money-12-2;
+}
+
+.hotbox-icon-money-13-2::before {
+  content: $hotbox-icon-money-13-2;
+}
+
+.hotbox-icon-money-bag-2::before {
+  content: $hotbox-icon-money-bag-2;
+}
+
+.hotbox-icon-money-coins-2::before {
+  content: $hotbox-icon-money-coins-2;
+}
+
+.hotbox-icon-money-growth-2::before {
+  content: $hotbox-icon-money-growth-2;
+}
+
+.hotbox-icon-money-time-2::before {
+  content: $hotbox-icon-money-time-2;
+}
+
+.hotbox-icon-money::before {
+  content: $hotbox-icon-money;
+}
+
+.hotbox-icon-payment-2::before {
+  content: $hotbox-icon-payment-2;
+}
+
+.hotbox-icon-round-dollar-2::before {
+  content: $hotbox-icon-round-dollar-2;
+}
+
+.hotbox-icon-solo::before {
+  content: $hotbox-icon-solo;
+}
+
+.hotbox-icon-stock-3::before {
+  content: $hotbox-icon-stock-3;
+}
+
+.hotbox-icon-wallet-43-2::before {
+  content: $hotbox-icon-wallet-43-2;
+}
+
+.hotbox-icon-wallet-44-2::before {
+  content: $hotbox-icon-wallet-44-2;
+}
+
+.hotbox-icon-wallet-90-2::before {
+  content: $hotbox-icon-wallet-90-2;
+}
+
+.hotbox-icon-wallet::before {
+  content: $hotbox-icon-wallet;
+}
+
+.hotbox-icon-dots-06-1::before {
+  content: $hotbox-icon-dots-06-1;
+}
+
+.hotbox-icon-dots-07-1::before {
+  content: $hotbox-icon-dots-07-1;
+}
+
+.hotbox-icon-dots-06-2::before {
+  content: $hotbox-icon-dots-06-2;
+}
+
+.hotbox-icon-dots-07-2::before {
+  content: $hotbox-icon-dots-07-2;
+}
+

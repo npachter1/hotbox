@@ -1,0 +1,252 @@
+{
+  "code": "category_schema",
+  "type": "model",
+  "content": {
+    "model": {
+      "id": 0,
+      "metrc_category_id": null,
+      "equivalency_type": "flower",
+      "name": null,
+      "notes": null,
+      "settings": {},
+      "public_img": null,
+      "contains_thc": true,
+      "products": [],
+      "archived_at": null,
+      "created_at": null,
+      "updated_at": null
+    },
+    "filters": {
+      "equivalency_type": {
+        "type": "wherein",
+        "values": [],
+        "name": "By Type"
+      }
+    },
+    "form": {
+      "name": {
+        "type": "text",
+        "name": "name",
+        "title": "Category Title",
+        "placeholder": "Buds",
+        "validation": "required",
+        "container": "col-12 col-sm-6 clearfix",
+        "batchable": true
+      },
+      "metrc_category_id": {
+        "type": "select",
+        "name": "metrc_category_id",
+        "title": "Category Type",
+        "values": []
+      },
+      "equivalency_type": {
+        "type": "select",
+        "name": "equivalency_type",
+        "title": "Equivalency Type",
+        "validation": "required",
+        "description": "What type of category is this - used for regulatory reporting and to calculate the equavelant carry weight per unit ordered.",
+        "batchable": true,
+        "values": [
+          {
+            "id": "flower",
+            "name": "Flower: 1g is equivalent to 1g Carry Weight",
+            "value": 1,
+            "prompt": "amount",
+            "scope": [
+              "all"
+            ],
+            "migration_matches": [
+              "Flower",
+              "Buds",
+              "Bud",
+              "Shake",
+              "Trim",
+              "Joint",
+              "blunt",
+              "ShakeTrim",
+              "Preroll",
+              "Indica",
+              "Sativa",
+              "Strain"
+            ]
+          },
+          {
+            "id": "shake/trim",
+            "name": "Shake/Trim",
+            "value": 1,
+            "prompt": "amount",
+            "scope": [
+              "none",
+              "omma"
+            ],
+            "migration_matches": [
+              "Shake",
+              "Trim"
+            ]
+          },
+          {
+            "id": "edible",
+            "name": "Edible/(Single Serve): 100mg is equivalent to 1/8oz Carry Weight",
+            "value": 35.4,
+            "prompt": "potency",
+            "scope": [
+              "all"
+            ],
+            "migration_matches": [
+              "InfusedEdible",
+              "Edible",
+              "Edibles",
+              "Singleserve",
+              "Singleserver"
+            ]
+          },
+          {
+            "id": "concentrate",
+            "name": "Concentrate: 1g is equivalent to  to 1/8oz Carry Weight",
+            "value": 3.54,
+            "prompt": "potency",
+            "scope": [
+              "all"
+            ],
+            "migration_matches": [
+              "Concentrate",
+              "Concentrates",
+              "Cartridges",
+              "Extract"
+            ]
+          },
+          {
+            "id": "extract",
+            "name": "Extract: 1g is equivalent to  to 1/8oz Carry Weight",
+            "value": 3.5,
+            "prompt": "potency",
+            "scope": [
+              "none",
+              "omma"
+            ],
+            "migration_matches": [
+              "Extract"
+            ]
+          },
+          {
+            "id": "topical",
+            "name": "Topical: 1g is equivalent to  to 1/8oz Carry Weight",
+            "value": 3.5,
+            "prompt": "potency",
+            "scope": [
+              "none",
+              "omma"
+            ],
+            "migration_matches": [
+              "Topical"
+            ]
+          },
+          {
+            "id": "tincture",
+            "name": "Tincture: 1g is equivalent to  to 1/8oz Carry Weight",
+            "value": 3.5,
+            "prompt": "potency",
+            "scope": [
+              "none",
+              "omma"
+            ],
+            "migration_matches": [
+              "Tincture"
+            ]
+          },
+          {
+            "id": "noncannabis",
+            "name": "N/A - Items do not contain Cannabis",
+            "value": 0,
+            "prompt": "amount",
+            "scope": [
+              "all"
+            ],
+            "migration_matches": [
+              "merchandise",
+              "gear"
+            ]
+          }
+        ]
+      },
+      "contains_thc": {
+        "type": "boolean",
+        "name": "contains_thc",
+        "title": "Contains THC"
+      },
+      "notes": {
+        "type": "textarea",
+        "name": "description",
+        "title": "Description / Notes on File"
+      },
+      "public_img": {
+        "type": "image",
+        "name": "public_img",
+        "title": "Category Lookup Thumbnail"
+      }
+    },
+    "lang": {
+      "items": "Product Categories",
+      "searchPrompt": "Search by Title, Type"
+    },
+    "meta": {
+      "fields": [
+        {
+          "key": "batch_ids",
+          "label": "Sel",
+          "sortable": false
+        },
+        {
+          "key": "public_img",
+          "label": "Thumb",
+          "sortable": false
+        },
+        {
+          "key": "name",
+          "label": "Name",
+          "sortable": true
+        },
+        {
+          "key": "equivalency_type",
+          "label": "Equivalency Type",
+          "sortable": true,
+          "toggle": true
+        },
+        {
+          "key": "products_count",
+          "label": "# Products",
+          "sortable": false
+        },
+        {
+          "key": "contains_thc",
+          "label": "Contains THC",
+          "sortable": false
+        },
+        {
+          "key": "notes",
+          "label": "Notes",
+          "sortable": false,
+          "toggle": false
+        },
+        {
+          "key": "updated_at",
+          "label": "Updated On",
+          "sortable": true,
+          "toggle": false
+        },
+        {
+          "key": "actions",
+          "label": "",
+          "sortable": false,
+          "icon": "hotbox-icon hotbox-icon-refresh-69"
+        }
+      ],
+      "can_edit": [
+        "Product Category Update"
+      ],
+      "resource": "admin/dispensary/categories"
+    }
+  },
+  "created_at": "2019-07-29 06:51:29",
+  "updated_at": "2020-03-02 07:47:55"
+}

@@ -1,0 +1,30 @@
+<?php
+
+namespace App\Http\Resources\{{service}};
+
+use Illuminate\Http\Resources\Json\Resource;
+
+use App\Models\{{service}}\{{model}};
+
+
+class {{model}}Resource extends Resource
+{
+    
+    /**
+     * Transform the resource into an array.
+     *
+     * @param  \Illuminate\Http\Request
+     *
+     * @return array
+     */
+    public function toArray($request){
+        
+        $data = parent::toArray($request);
+        $data['schema'] = {{model}}::_getSchema();
+
+
+        return $data;
+
+    }
+    
+}

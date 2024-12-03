@@ -1,0 +1,155 @@
+/* --------------------------------
+
+Hotbox Web Font
+Generated using nucleoapp.com
+
+-------------------------------- */
+@import "variables";
+@import "mixins";
+
+@font-face {
+  font-family: 'Hotbox';
+  src: url('#{$hotbox-icon-font-path}/Hotbox.eot');
+  src: url('#{$hotbox-icon-font-path}/Hotbox.eot') format('embedded-opentype'),
+    url('#{$hotbox-icon-font-path}/Hotbox.woff2') format('woff2'),
+    url('#{$hotbox-icon-font-path}/Hotbox.woff') format('woff'),
+    url('#{$hotbox-icon-font-path}/Hotbox.ttf') format('truetype'),
+    url('#{$hotbox-icon-font-path}/Hotbox.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*------------------------
+	base class definition
+-------------------------*/
+
+.hotbox-icon {
+  display: inline-block;
+  font: normal normal normal 1em/1 'Hotbox';
+  speak: none;
+  text-transform: none;
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*------------------------
+  change icon size
+-------------------------*/
+
+/* relative units */
+.hotbox-icon-sm {
+  font-size: 0.8em;
+}
+.hotbox-icon-lg {
+  font-size: 1.2em;
+}
+/* absolute units */
+.hotbox-icon-16 {
+  font-size: 16px;
+}
+.hotbox-icon-32 {
+  font-size: 32px;
+}
+
+/*----------------------------------
+  add a square/circle background
+-----------------------------------*/
+
+.hotbox-icon-bg-square,
+.hotbox-icon-bg-circle {
+  padding: 0.35em;
+  background-color: $hotbox-icon-background-color;
+}
+
+.hotbox-icon-bg-circle {
+  border-radius: 50%;
+}
+
+/*------------------------------------
+  use icons as list item markers
+-------------------------------------*/
+
+.hotbox-icon-ul {
+  padding-left: 0;
+  list-style-type: none;
+
+  > li {
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.4;
+  }
+
+  > li > .hotbox-icon {
+    margin-right: $hotbox-icon-li-margin-right;
+    line-height: inherit;
+  }
+}
+
+/*------------------------
+  spinning icons
+-------------------------*/
+
+.hotbox-icon-is-spinning {
+  -webkit-animation: hotbox-icon-spin 2s infinite linear;
+  -moz-animation: hotbox-icon-spin 2s infinite linear;
+  animation: hotbox-icon-spin 2s infinite linear;
+}
+
+@-webkit-keyframes hotbox-icon-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes hotbox-icon-spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@keyframes hotbox-icon-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/*------------------------
+  rotated/flipped icons
+-------------------------*/
+
+.hotbox-icon-rotate-90  {
+	@include hotbox-icon-rotate(90deg, 1);
+}
+
+.hotbox-icon-rotate-180 {
+	@include hotbox-icon-rotate(180deg, 2);
+}
+
+.hotbox-icon-rotate-270 {
+	@include hotbox-icon-rotate(270deg, 3);
+}
+
+.hotbox-icon-flip-y {
+	@include hotbox-icon-flip(-1, 1, 0);
+}
+.hotbox-icon-flip-x {
+	@include hotbox-icon-flip(1, -1, 2);
+}
+
+@import "icons";
